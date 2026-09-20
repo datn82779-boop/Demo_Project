@@ -1,0 +1,108 @@
+{
+    "id":  "4",
+    "type":  "pic_to_word",
+    "title":  "Write the English Words for the Pictures",
+    "description":  "Look at each picture and write the correct English word in the blank.",
+    "questions":  [
+                      {
+                          "id":  "1",
+                          "image":  "/lessons/media/gs6/unit-7/images/programme.webp",
+                          "correct_answer":  "programme"
+                      },
+                      {
+                          "id":  "2",
+                          "image":  "/lessons/media/gs6/unit-7/images/animated-film.webp",
+                          "correct_answer":  "animated film"
+                      },
+                      {
+                          "id":  "3",
+                          "image":  "/lessons/media/gs6/unit-7/images/cartoon.webp",
+                          "correct_answer":  "cartoon"
+                      },
+                      {
+                          "id":  "4",
+                          "image":  "/lessons/media/gs6/unit-7/images/comedy.webp",
+                          "correct_answer":  "comedy"
+                      },
+                      {
+                          "id":  "5",
+                          "image":  "/lessons/media/gs6/unit-7/images/talent-show.webp",
+                          "correct_answer":  "talent show"
+                      },
+                      {
+                          "id":  "6",
+                          "image":  "/lessons/media/gs6/unit-7/images/game-show.webp",
+                          "correct_answer":  "game show"
+                      },
+                      {
+                          "id":  "7",
+                          "image":  "/lessons/media/gs6/unit-7/images/educational-programme.webp",
+                          "correct_answer":  "educational programme"
+                      },
+                      {
+                          "id":  "8",
+                          "image":  "/lessons/media/gs6/unit-7/images/wildlife-programme.webp",
+                          "correct_answer":  "wildlife programme"
+                      },
+                      {
+                          "id":  "9",
+                          "image":  "/lessons/media/gs6/unit-7/images/sports-programme.webp",
+                          "correct_answer":  "sports programme"
+                      },
+                      {
+                          "id":  "10",
+                          "image":  "/lessons/media/gs6/unit-7/images/science-programme.webp",
+                          "correct_answer":  "science programme"
+                      },
+                      {
+                          "id":  "11",
+                          "image":  "/lessons/media/gs6/unit-7/images/tv-series.webp",
+                          "correct_answer":  "TV series"
+                      },
+                      {
+                          "id":  "12",
+                          "image":  "/lessons/media/gs6/unit-7/images/channel.webp",
+                          "correct_answer":  "channel"
+                      },
+                      {
+                          "id":  "13",
+                          "image":  "/lessons/media/gs6/unit-7/images/tv-guide.webp",
+                          "correct_answer":  "TV guide"
+                      },
+                      {
+                          "id":  "14",
+                          "image":  "/lessons/media/gs6/unit-7/images/film.webp",
+                          "correct_answer":  "film"
+                      },
+                      {
+                          "id":  "15",
+                          "image":  "/lessons/media/gs6/unit-7/images/clip.webp",
+                          "correct_answer":  "clip"
+                      },
+                      {
+                          "id":  "16",
+                          "image":  "/lessons/media/gs6/unit-7/images/viewer.webp",
+                          "correct_answer":  "viewer"
+                      },
+                      {
+                          "id":  "17",
+                          "image":  "/lessons/media/gs6/unit-7/images/character.webp",
+                          "correct_answer":  "character"
+                      },
+                      {
+                          "id":  "18",
+                          "image":  "/lessons/media/gs6/unit-7/images/performer.webp",
+                          "correct_answer":  "performer"
+                      },
+                      {
+                          "id":  "19",
+                          "image":  "/lessons/media/gs6/unit-7/images/cute.webp",
+                          "correct_answer":  "cute"
+                      },
+                      {
+                          "id":  "20",
+                          "image":  "/lessons/media/gs6/unit-7/images/boring.webp",
+                          "correct_answer":  "boring"
+                      }
+                  ]
+}

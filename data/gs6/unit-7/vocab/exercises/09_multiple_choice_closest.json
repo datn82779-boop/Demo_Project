@@ -1,0 +1,63 @@
+{
+    "id":  "9",
+    "type":  "multiple_choice",
+    "title":  "Multiple Choice - Closest in Meaning",
+    "description":  "Choose the word or phrase CLOSEST in meaning to the underlined part.",
+    "questions":  [
+                      {
+                          "id":  "1",
+                          "text":  "The film on channel three is very [funny], so my whole family laughs out loud.",
+                          "options":  [
+                                          "serious",
+                                          "scary",
+                                          "heavy",
+                                          "humorous"
+                                      ],
+                          "correct_answer":  "humorous"
+                      },
+                      {
+                          "id":  "2",
+                          "text":  "The little mouse in the cartoon is very [clever] and escapes from the cat every time.",
+                          "options":  [
+                                          "slow",
+                                          "lazy",
+                                          "smart",
+                                          "foolish"
+                                      ],
+                          "correct_answer":  "smart"
+                      },
+                      {
+                          "id":  "3",
+                          "text":  "Millions of [viewers] watch the final singing competition every Sunday evening.",
+                          "options":  [
+                                          "audiences",
+                                          "actors",
+                                          "directors",
+                                          "singers"
+                                      ],
+                          "correct_answer":  "audiences"
+                      },
+                      {
+                          "id":  "4",
+                          "text":  "The special effects in this fantasy movie are truly [wonderful] and breathtaking.",
+                          "options":  [
+                                          "terrible",
+                                          "fantastic",
+                                          "ordinary",
+                                          "ugly"
+                                      ],
+                          "correct_answer":  "fantastic"
+                      },
+                      {
+                          "id":  "5",
+                          "text":  "Football is the most [popular] sport in Viet Nam, and many people play it after work.",
+                          "options":  [
+                                          "rare",
+                                          "hidden",
+                                          "well-known",
+                                          "boring"
+                                      ],
+                          "correct_answer":  "well-known"
+                      }
+                  ]
+}

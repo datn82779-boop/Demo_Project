@@ -1,0 +1,138 @@
+{
+    "id":  "5",
+    "type":  "write_english_words",
+    "title":  "Write English words",
+    "description":  "Write the English word for each Vietnamese meaning below.",
+    "questions":  [
+                      {
+                          "id":  "1",
+                          "parts":  [
+                                        {
+                                            "vietnamese":  "chương trình (truyền hình/phát thanh)",
+                                            "correct_answer":  "programme"
+                                        },
+                                        {
+                                            "vietnamese":  "phim hoạt hình (đồ họa động)",
+                                            "correct_answer":  "animated film"
+                                        }
+                                    ]
+                      },
+                      {
+                          "id":  "2",
+                          "parts":  [
+                                        {
+                                            "vietnamese":  "phim hoạt hình",
+                                            "correct_answer":  "cartoon"
+                                        },
+                                        {
+                                            "vietnamese":  "phim hài, kịch hài",
+                                            "correct_answer":  "comedy"
+                                        }
+                                    ]
+                      },
+                      {
+                          "id":  "3",
+                          "parts":  [
+                                        {
+                                            "vietnamese":  "cuộc thi tài năng",
+                                            "correct_answer":  "talent show"
+                                        },
+                                        {
+                                            "vietnamese":  "trò chơi truyền hình",
+                                            "correct_answer":  "game show"
+                                        }
+                                    ]
+                      },
+                      {
+                          "id":  "4",
+                          "parts":  [
+                                        {
+                                            "vietnamese":  "chương trình giáo dục",
+                                            "correct_answer":  "educational programme"
+                                        },
+                                        {
+                                            "vietnamese":  "chương trình thế giới hoang dã",
+                                            "correct_answer":  "wildlife programme"
+                                        }
+                                    ]
+                      },
+                      {
+                          "id":  "5",
+                          "parts":  [
+                                        {
+                                            "vietnamese":  "chương trình thể thao",
+                                            "correct_answer":  "sports programme"
+                                        },
+                                        {
+                                            "vietnamese":  "chương trình khoa học",
+                                            "correct_answer":  "science programme"
+                                        }
+                                    ]
+                      },
+                      {
+                          "id":  "6",
+                          "parts":  [
+                                        {
+                                            "vietnamese":  "phim truyền hình nhiều tập",
+                                            "correct_answer":  "TV series"
+                                        },
+                                        {
+                                            "vietnamese":  "kênh truyền hình",
+                                            "correct_answer":  "channel"
+                                        }
+                                    ]
+                      },
+                      {
+                          "id":  "7",
+                          "parts":  [
+                                        {
+                                            "vietnamese":  "lịch phát sóng truyền hình",
+                                            "correct_answer":  "TV guide"
+                                        },
+                                        {
+                                            "vietnamese":  "người xem truyền hình, khán giả",
+                                            "correct_answer":  "viewer"
+                                        }
+                                    ]
+                      },
+                      {
+                          "id":  "8",
+                          "parts":  [
+                                        {
+                                            "vietnamese":  "nhân vật (trong phim, truyện)",
+                                            "correct_answer":  "character"
+                                        },
+                                        {
+                                            "vietnamese":  "người biểu diễn, nghệ sĩ trình diễn",
+                                            "correct_answer":  "performer"
+                                        }
+                                    ]
+                      },
+                      {
+                          "id":  "9",
+                          "parts":  [
+                                        {
+                                            "vietnamese":  "mang tính giáo dục",
+                                            "correct_answer":  "educational"
+                                        },
+                                        {
+                                            "vietnamese":  "thú vị, hấp dẫn",
+                                            "correct_answer":  "interesting"
+                                        }
+                                    ]
+                      },
+                      {
+                          "id":  "10",
+                          "parts":  [
+                                        {
+                                            "vietnamese":  "hài hước, buồn cười",
+                                            "correct_answer":  "funny"
+                                        },
+                                        {
+                                            "vietnamese":  "thông minh, khôn ngoan",
+                                            "correct_answer":  "clever"
+                                        }
+                                    ]
+                      }
+                  ]
+}

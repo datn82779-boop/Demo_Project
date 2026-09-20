@@ -1,0 +1,118 @@
+{
+    "id":  "1",
+    "type":  "multiple_choice",
+    "title":  "Multiple Choice - Direct Questions",
+    "description":  "Choose the best answer for each question.",
+    "questions":  [
+                      {
+                          "id":  "1",
+                          "text":  "Which type of TV programme makes people laugh with humorous stories?",
+                          "options":  [
+                                          "weather forecast",
+                                          "comedy",
+                                          "science programme",
+                                          "news report"
+                                      ],
+                          "correct_answer":  "comedy"
+                      },
+                      {
+                          "id":  "2",
+                          "text":  "What do we call a person who watches a television show or broadcast?",
+                          "options":  [
+                                          "performer",
+                                          "doctor",
+                                          "writer",
+                                          "viewer"
+                                      ],
+                          "correct_answer":  "viewer"
+                      },
+                      {
+                          "id":  "3",
+                          "text":  "Which show usually invites contestants to answer quiz questions or play games for prizes?",
+                          "options":  [
+                                          "music video",
+                                          "wildlife programme",
+                                          "game show",
+                                          "action movie"
+                                      ],
+                          "correct_answer":  "game show"
+                      },
+                      {
+                          "id":  "4",
+                          "text":  "What do we look at when we want to check the broadcasting schedule and times of TV programmes?",
+                          "options":  [
+                                          "ticket machine",
+                                          "story book",
+                                          "TV guide",
+                                          "station map"
+                                      ],
+                          "correct_answer":  "TV guide"
+                      },
+                      {
+                          "id":  "5",
+                          "text":  "Which type of programme teaches students useful knowledge about nature, languages, or science?",
+                          "options":  [
+                                          "detective story",
+                                          "educational programme",
+                                          "horror film",
+                                          "shopping channel"
+                                      ],
+                          "correct_answer":  "educational programme"
+                      },
+                      {
+                          "id":  "6",
+                          "text":  "What kind of show features people displaying special abilities like dancing, singing, or magic?",
+                          "options":  [
+                                          "weather report",
+                                          "talent show",
+                                          "sports programme",
+                                          "news broadcast"
+                                      ],
+                          "correct_answer":  "talent show"
+                      },
+                      {
+                          "id":  "7",
+                          "text":  "Which broadcast shows wild animals in their natural habitats like forests and savannas?",
+                          "options":  [
+                                          "cartoon",
+                                          "comedy",
+                                          "wildlife programme",
+                                          "game show"
+                                      ],
+                          "correct_answer":  "wildlife programme"
+                      },
+                      {
+                          "id":  "8",
+                          "text":  "What do you call an imaginary animal or person in a movie or story?",
+                          "options":  [
+                                          "reporter",
+                                          "viewer",
+                                          "director",
+                                          "character"
+                                      ],
+                          "correct_answer":  "character"
+                      },
+                      {
+                          "id":  "9",
+                          "text":  "Which word describes a TV show that is being broadcast at the exact moment it happens?",
+                          "options":  [
+                                          "live",
+                                          "boring",
+                                          "tasty",
+                                          "clever"
+                                      ],
+                          "correct_answer":  "live"
+                      },
+                      {
+                          "id":  "10",
+                          "text":  "What term describes a television story with many continuous episodes over several weeks?",
+                          "options":  [
+                                          "TV series",
+                                          "short clip",
+                                          "paper notice",
+                                          "single photo"
+                                      ],
+                          "correct_answer":  "TV series"
+                      }
+                  ]
+}

@@ -1,0 +1,118 @@
+{
+    "id":  "14",
+    "type":  "word_families_mcq",
+    "title":  "Multiple Choice – Word Families",
+    "description":  "Choose the correct word to complete each sentence.",
+    "questions":  [
+                      {
+                          "id":  "1",
+                          "text":  "Good television programmes provide children with useful __________.",
+                          "options":  [
+                                          "educate",
+                                          "educational",
+                                          "educating",
+                                          "education"
+                                      ],
+                          "correct_answer":  "education"
+                      },
+                      {
+                          "id":  "2",
+                          "text":  "The young singer gives a great __________ on the music stage tonight.",
+                          "options":  [
+                                          "performance",
+                                          "performer",
+                                          "performing",
+                                          "perform"
+                                      ],
+                          "correct_answer":  "performance"
+                      },
+                      {
+                          "id":  "3",
+                          "text":  "Each active __________ can vote for their favourite contestant by phone.",
+                          "options":  [
+                                          "viewed",
+                                          "view",
+                                          "viewer",
+                                          "viewing"
+                                      ],
+                          "correct_answer":  "viewer"
+                      },
+                      {
+                          "id":  "4",
+                          "text":  "My brother is very __________ in watching science documentaries about animals.",
+                          "options":  [
+                                          "interested",
+                                          "interesting",
+                                          "interest",
+                                          "interests"
+                                      ],
+                          "correct_answer":  "interested"
+                      },
+                      {
+                          "id":  "5",
+                          "text":  "The children have a lot of __________ watching the silly puppy on TV.",
+                          "options":  [
+                                          "funny",
+                                          "funnier",
+                                          "fun",
+                                          "funniest"
+                                      ],
+                          "correct_answer":  "fun"
+                      },
+                      {
+                          "id":  "6",
+                          "text":  "I feel very __________ when the actors talk for too long without action.",
+                          "options":  [
+                                          "boring",
+                                          "boredom",
+                                          "bored",
+                                          "bore"
+                                      ],
+                          "correct_answer":  "bored"
+                      },
+                      {
+                          "id":  "7",
+                          "text":  "The game show enjoys great __________ among teenagers across the city.",
+                          "options":  [
+                                          "popularity",
+                                          "popularize",
+                                          "popularly",
+                                          "popular"
+                                      ],
+                          "correct_answer":  "popularity"
+                      },
+                      {
+                          "id":  "8",
+                          "text":  "The talented gymnast performs __________ on the balance beam tonight.",
+                          "options":  [
+                                          "wonderful",
+                                          "wonderfully",
+                                          "wonders",
+                                          "wonder"
+                                      ],
+                          "correct_answer":  "wonderfully"
+                      },
+                      {
+                          "id":  "9",
+                          "text":  "Documentaries about nature show the daily __________ of wild elephants.",
+                          "options":  [
+                                          "alive",
+                                          "live",
+                                          "living",
+                                          "life"
+                                      ],
+                          "correct_answer":  "life"
+                      },
+                      {
+                          "id":  "10",
+                          "text":  "Famous musicians always __________ with passion on the national stage.",
+                          "options":  [
+                                          "performances",
+                                          "perform",
+                                          "performer",
+                                          "performance"
+                                      ],
+                          "correct_answer":  "perform"
+                      }
+                  ]
+}

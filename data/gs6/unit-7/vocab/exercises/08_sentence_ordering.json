@@ -1,0 +1,88 @@
+{
+    "id":  "8",
+    "type":  "sentence_ordering_multiple_choice",
+    "title":  "Put the sentences in the correct order",
+    "description":  "Read the sentences and choose the correct order to form a logical paragraph or conversation.",
+    "questions":  [
+                      {
+                          "id":  "1",
+                          "sentences":  [
+                                            "a. These amazing animals travel across long savannas in search of clean water.",
+                                            "b. Our grandfather often invites us to watch nature documentaries on television.",
+                                            "c. He turns on the screen every Sunday afternoon to watch African wildlife.",
+                                            "d. We always learn so much about their survival habits from these weekly broadcasts."
+                                        ],
+                          "options":  [
+                                          "c-a-d-b",
+                                          "b-c-a-d",
+                                          "c-b-a-d",
+                                          "b-a-c-d"
+                                      ],
+                          "correct_answer":  "b-c-a-d"
+                      },
+                      {
+                          "id":  "2",
+                          "sentences":  [
+                                            "a. Peter: \u0027Yes, she has a wonderful voice and sings with great energy.\u0027",
+                                            "b. Mary: \u0027I like the young girl from Da Nang. Do you think she can win?\u0027",
+                                            "c. Mary: \u0027I agree, and millions of viewers are voting for her right now.\u0027",
+                                            "d. Peter: \u0027Which performer do you like best on the music talent show tonight?\u0027"
+                                        ],
+                          "options":  [
+                                          "b-a-c-d",
+                                          "b-d-a-c",
+                                          "d-a-b-c",
+                                          "d-b-a-c"
+                                      ],
+                          "correct_answer":  "d-b-a-c"
+                      },
+                      {
+                          "id":  "3",
+                          "sentences":  [
+                                            "a. Phong: \u0027That sounds great, but do you know what channel it is on?\u0027",
+                                            "b. Lan: \u0027Let\u0027s check the TV guide on the coffee table to find the schedule.\u0027",
+                                            "c. Lan: \u0027Why don\u0027t we turn on a funny comedy after finishing our homework?\u0027",
+                                            "d. Phong: \u0027It says the humorous show begins on channel seven at eight o\u0027clock.\u0027"
+                                        ],
+                          "options":  [
+                                          "c-a-b-d",
+                                          "c-b-a-d",
+                                          "a-c-b-d",
+                                          "a-b-d-c"
+                                      ],
+                          "correct_answer":  "c-a-b-d"
+                      },
+                      {
+                          "id":  "4",
+                          "sentences":  [
+                                            "a. The story production starts with creative artists designing a clever character.",
+                                            "b. Modern computers then combine these drawings into smooth moving scenes.",
+                                            "c. Artists draw thousands of colorful pictures to give the cute animals life.",
+                                            "d. Young viewers around the world fall in love with the finished animated film."
+                                        ],
+                          "options":  [
+                                          "a-c-b-d",
+                                          "c-b-a-d",
+                                          "a-c-d-b",
+                                          "c-a-b-d"
+                                      ],
+                          "correct_answer":  "a-c-b-d"
+                      },
+                      {
+                          "id":  "5",
+                          "sentences":  [
+                                            "a. They prepare by studying science facts and practicing with tricky puzzles.",
+                                            "b. The top winner receives a shiny golden trophy and a new computer for their school.",
+                                            "c. During the live broadcast, each contestant answers difficult questions under pressure.",
+                                            "d. Smart students from different secondary schools gather for the annual game show."
+                                        ],
+                          "options":  [
+                                          "d-a-b-c",
+                                          "d-c-a-b",
+                                          "d-a-c-b",
+                                          "a-d-c-b"
+                                      ],
+                          "correct_answer":  "d-a-c-b"
+                      }
+                  ]
+}

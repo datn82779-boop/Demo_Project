@@ -1,0 +1,166 @@
+{
+    "id":  "13",
+    "type":  "word_families_table",
+    "title":  "Word Families",
+    "description":  "Complete the table below with different forms of each word. Some forms may not exist.",
+    "questions":  [
+                      {
+                          "id":  "1",
+                          "base_word":  "educational",
+                          "base_word_type":  "adjective",
+                          "verb":  [
+                                       "educate"
+                                   ],
+                          "noun":  [
+                                       "education"
+                                   ],
+                          "adjective":  [
+                                            "educational"
+                                        ],
+                          "adverb":  [
+
+                                     ]
+                      },
+                      {
+                          "id":  "2",
+                          "base_word":  "performer",
+                          "base_word_type":  "noun",
+                          "verb":  [
+                                       "perform"
+                                   ],
+                          "noun":  [
+                                       "performer",
+                                       "performance"
+                                   ],
+                          "adjective":  [
+
+                                        ],
+                          "adverb":  [
+
+                                     ]
+                      },
+                      {
+                          "id":  "3",
+                          "base_word":  "viewer",
+                          "base_word_type":  "noun",
+                          "verb":  [
+                                       "view"
+                                   ],
+                          "noun":  [
+                                       "viewer",
+                                       "view"
+                                   ],
+                          "adjective":  [
+
+                                        ],
+                          "adverb":  [
+
+                                     ]
+                      },
+                      {
+                          "id":  "4",
+                          "base_word":  "interesting",
+                          "base_word_type":  "adjective",
+                          "verb":  [
+                                       "interest"
+                                   ],
+                          "noun":  [
+                                       "interest"
+                                   ],
+                          "adjective":  [
+                                            "interested",
+                                            "interesting"
+                                        ],
+                          "adverb":  [
+
+                                     ]
+                      },
+                      {
+                          "id":  "5",
+                          "base_word":  "funny",
+                          "base_word_type":  "adjective",
+                          "verb":  [
+
+                                   ],
+                          "noun":  [
+                                       "fun"
+                                   ],
+                          "adjective":  [
+                                            "funny"
+                                        ],
+                          "adverb":  [
+
+                                     ]
+                      },
+                      {
+                          "id":  "6",
+                          "base_word":  "boring",
+                          "base_word_type":  "adjective",
+                          "verb":  [
+                                       "bore"
+                                   ],
+                          "noun":  [
+                                       "boredom"
+                                   ],
+                          "adjective":  [
+                                            "bored",
+                                            "boring"
+                                        ],
+                          "adverb":  [
+
+                                     ]
+                      },
+                      {
+                          "id":  "7",
+                          "base_word":  "popular",
+                          "base_word_type":  "adjective",
+                          "verb":  [
+
+                                   ],
+                          "noun":  [
+                                       "popularity"
+                                   ],
+                          "adjective":  [
+                                            "popular"
+                                        ],
+                          "adverb":  [
+
+                                     ]
+                      },
+                      {
+                          "id":  "8",
+                          "base_word":  "wonderful",
+                          "base_word_type":  "adjective",
+                          "verb":  [
+                                       "wonder"
+                                   ],
+                          "noun":  [
+                                       "wonder"
+                                   ],
+                          "adjective":  [
+                                            "wonderful"
+                                        ],
+                          "adverb":  [
+                                         "wonderfully"
+                                     ]
+                      },
+                      {
+                          "id":  "9",
+                          "base_word":  "live",
+                          "base_word_type":  "adjective",
+                          "verb":  [
+                                       "live"
+                                   ],
+                          "noun":  [
+                                       "life"
+                                   ],
+                          "adjective":  [
+                                            "live",
+                                            "alive"
+                                        ],
+                          "adverb":  [
+
+                                     ]
+                      }
+                  ]
+}

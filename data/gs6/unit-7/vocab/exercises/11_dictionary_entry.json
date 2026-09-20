@@ -1,0 +1,133 @@
+{
+    "id":  "11",
+    "type":  "dictionary_entry",
+    "title":  "Dictionary Entries",
+    "description":  "Look at the dictionary entries below. Use the information provided to complete the sentences.",
+    "entries":  [
+                    {
+                        "id":  "1",
+                        "word":  "programme",
+                        "part_of_speech":  "noun",
+                        "pronunciation":  "/ˈprəʊɡræm/",
+                        "definition":  "a broadcast on television or radio",
+                        "bullet_points":  [
+                                              "Families often sit together on the sofa to [watch a programme] in the evening.",
+                                              "She turns on the television right at seven to catch her [favourite programme].",
+                                              "The weekly magazine contains a detailed [programme schedule] for all channels.",
+                                              "Many morning commuters [listen to a programme] on their car radio."
+                                          ],
+                        "questions":  [
+                                          {
+                                              "id":  "1",
+                                              "text":  "After dinner, the children usually gather around the TV screen to __________ about wild animals.",
+                                              "correct_answer":  "watch a programme"
+                                          },
+                                          {
+                                              "id":  "2",
+                                              "text":  "Our school newspaper prints the daily __________ so students can plan their viewing time.",
+                                              "correct_answer":  "programme schedule"
+                                          }
+                                      ]
+                    },
+                    {
+                        "id":  "2",
+                        "word":  "character",
+                        "part_of_speech":  "noun",
+                        "pronunciation":  "/ˈkærəktə/",
+                        "definition":  "a person or an animal represented in a film, play, or story",
+                        "bullet_points":  [
+                                              "Children love the funny yellow sponge [cartoon character] living under the ocean.",
+                                              "Costume fans like to [dress as a character] from popular fantasy comics.",
+                                              "Novelists spend months thinking of interesting traits to [create a character].",
+                                              "The brave young princess is the [main character] of this animated story."
+                                          ],
+                        "questions":  [
+                                          {
+                                              "id":  "3",
+                                              "text":  "Art students learn how to sketch expressive faces to __________ for their comic books.",
+                                              "correct_answer":  "create a character"
+                                          },
+                                          {
+                                              "id":  "4",
+                                              "text":  "In this adventure tale, the clever detective is the __________ who discovers the missing treasure.",
+                                              "correct_answer":  "main character"
+                                          }
+                                      ]
+                    },
+                    {
+                        "id":  "3",
+                        "word":  "channel",
+                        "part_of_speech":  "noun",
+                        "pronunciation":  "/ˈtʃænl/",
+                        "definition":  "a television station and its broadcast programmes",
+                        "bullet_points":  [
+                                              "Viewers can find many high-quality cooking lessons [on this channel].",
+                                              "Please check the [channel number] in the guide before entering it on the remote.",
+                                              "My uncle subscribes to a dedicated [sports channel] for weekend matches.",
+                                              "Press the red button on the remote to [change the channel] quickly."
+                                          ],
+                        "questions":  [
+                                          {
+                                              "id":  "5",
+                                              "text":  "Football fans always tune into the popular __________ to follow live tennis and athletic tournaments.",
+                                              "correct_answer":  "sports channel"
+                                          },
+                                          {
+                                              "id":  "6",
+                                              "text":  "If you do not like this boring news broadcast, you can use the remote control to __________.",
+                                              "correct_answer":  "change the channel"
+                                          }
+                                      ]
+                    },
+                    {
+                        "id":  "4",
+                        "word":  "viewer",
+                        "part_of_speech":  "noun",
+                        "pronunciation":  "/ˈvjuːə/",
+                        "definition":  "a person who watches television",
+                        "bullet_points":  [
+                                              "Colourful animations are designed specifically to entertain [young viewers].",
+                                              "Humorous jokes and bright costumes help the comedy [appeal to viewers].",
+                                              "High [viewer ratings] show that the singing contest is very successful.",
+                                              "Action movies usually [attract viewers] with exciting special effects."
+                                          ],
+                        "questions":  [
+                                          {
+                                              "id":  "7",
+                                              "text":  "The educational broadcast uses cheerful animal songs so that __________ can easily remember English words.",
+                                              "correct_answer":  "young viewers"
+                                          },
+                                          {
+                                              "id":  "8",
+                                              "text":  "Clever quiz questions and generous cash prizes help the game show __________ from all over the country.",
+                                              "correct_answer":  "attract viewers"
+                                          }
+                                      ]
+                    },
+                    {
+                        "id":  "5",
+                        "word":  "comedy",
+                        "part_of_speech":  "noun",
+                        "pronunciation":  "/ˈkɒmədi/",
+                        "definition":  "a film, play, or show with humorous characters and a happy ending",
+                        "bullet_points":  [
+                                              "That weekly [comedy series] has six episodes full of funny school situations.",
+                                              "Amateur comedians perform their funniest stand-up jokes at the downtown [comedy club].",
+                                              "People gather in the living room to [enjoy a comedy] after a long workday.",
+                                              "Couples often choose a lighthearted [romantic comedy] for date night at the cinema."
+                                          ],
+                        "questions":  [
+                                          {
+                                              "id":  "9",
+                                              "text":  "Tired workers like to sit back on the couch and __________ to forget their daily stress.",
+                                              "correct_answer":  "enjoy a comedy"
+                                          },
+                                          {
+                                              "id":  "10",
+                                              "text":  "The television network is airing a delightful new __________ about the adventures of four college roommates.",
+                                              "correct_answer":  "comedy series"
+                                          }
+                                      ]
+                    }
+                ]
+}

@@ -1,0 +1,58 @@
+{
+    "id":  "16",
+    "type":  "translate_sentences",
+    "title":  "Translation",
+    "description":  "Translate the following sentences into English, using the vocabulary you have learned.",
+    "questions":  [
+                      {
+                          "id":  "1",
+                          "vietnamese":  "Gia đình tôi thường cùng nhau xem một chương trình truyền hình thú vị sau bữa tối.",
+                          "correct_answer":  "My family often watches an interesting TV programme together after dinner."
+                      },
+                      {
+                          "id":  "2",
+                          "vietnamese":  "Em trai tôi thích xem phim hoạt hình vì các nhân vật rất dễ thương.",
+                          "correct_answer":  "My little brother likes watching animated films because the characters are very cute."
+                      },
+                      {
+                          "id":  "3",
+                          "vietnamese":  "Bộ phim hài này rất buồn cười, vì vậy mọi người đều cười rất to.",
+                          "correct_answer":  "This comedy is very funny, so everyone laughs out loud."
+                      },
+                      {
+                          "id":  "4",
+                          "vietnamese":  "Nhiều ca sĩ trẻ tham gia cuộc thi tài năng âm nhạc trên kênh này.",
+                          "correct_answer":  "Many young singers join the music talent show on this channel."
+                      },
+                      {
+                          "id":  "5",
+                          "vietnamese":  "Các thí sinh trả lời những câu hỏi đố khó trong trò chơi truyền hình.",
+                          "correct_answer":  "The contestants answer difficult quiz questions in the game show."
+                      },
+                      {
+                          "id":  "6",
+                          "vietnamese":  "Chương trình giáo dục này giúp học sinh học tiếng Anh và khoa học.",
+                          "correct_answer":  "This educational programme helps students learn English and science."
+                      },
+                      {
+                          "id":  "7",
+                          "vietnamese":  "Bố tôi thích chương trình thể thao, nhưng mẹ tôi thích chương trình thế giới hoang dã.",
+                          "correct_answer":  "My father likes sports programmes, but my mother likes wildlife programmes."
+                      },
+                      {
+                          "id":  "8",
+                          "vietnamese":  "Hãy xem lịch phát sóng truyền hình để biết phim truyện bắt đầu lúc mấy giờ.",
+                          "correct_answer":  "Check the TV guide to know what time the film starts."
+                      },
+                      {
+                          "id":  "9",
+                          "vietnamese":  "Hàng triệu khán giả đang xem buổi hòa nhạc trực tiếp tối nay.",
+                          "correct_answer":  "Millions of viewers are watching the live concert tonight."
+                      },
+                      {
+                          "id":  "10",
+                          "vietnamese":  "Bộ phim truyền hình nhiều tập này rất nổi tiếng và có nhiều tình tiết bất ngờ.",
+                          "correct_answer":  "This TV series is very popular and has many surprising events."
+                      }
+                  ]
+}

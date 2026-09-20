@@ -1,0 +1,118 @@
+{
+    "id":  "2",
+    "type":  "multiple_choice",
+    "title":  "Multiple Choice - Sentence Completion",
+    "description":  "Choose the correct word to complete the sentence.",
+    "questions":  [
+                      {
+                          "id":  "1",
+                          "text":  "The children love that __________ because the drawings of the talking rabbit are very cute.",
+                          "options":  [
+                                          "sports programme",
+                                          "weather report",
+                                          "news interview",
+                                          "animated film"
+                                      ],
+                          "correct_answer":  "animated film"
+                      },
+                      {
+                          "id":  "2",
+                          "text":  "My older sister never watches that show because she thinks it is extremely __________.",
+                          "options":  [
+                                          "clever",
+                                          "boring",
+                                          "popular",
+                                          "wonderful"
+                                      ],
+                          "correct_answer":  "boring"
+                      },
+                      {
+                          "id":  "3",
+                          "text":  "Can you switch to another television __________? I want to see the cartoon on channel nine.",
+                          "options":  [
+                                          "hospital",
+                                          "channel",
+                                          "cinema",
+                                          "stadium"
+                                      ],
+                          "correct_answer":  "channel"
+                      },
+                      {
+                          "id":  "4",
+                          "text":  "The magician on the stage is a very skillful __________ and everyone claps happily.",
+                          "options":  [
+                                          "viewer",
+                                          "performer",
+                                          "farmer",
+                                          "doctor"
+                                      ],
+                          "correct_answer":  "performer"
+                      },
+                      {
+                          "id":  "5",
+                          "text":  "Our teacher shares a short video __________ of sea turtles swimming around coral reefs.",
+                          "options":  [
+                                          "clip",
+                                          "channel",
+                                          "guide",
+                                          "series"
+                                      ],
+                          "correct_answer":  "clip"
+                      },
+                      {
+                          "id":  "6",
+                          "text":  "Mr. David likes watching the weekend __________ because he loves football and tennis.",
+                          "options":  [
+                                          "bedtime story",
+                                          "animated film",
+                                          "cooking lesson",
+                                          "sports programme"
+                                      ],
+                          "correct_answer":  "sports programme"
+                      },
+                      {
+                          "id":  "7",
+                          "text":  "This mystery detective is a very __________ character who solves hard puzzles easily.",
+                          "options":  [
+                                          "clever",
+                                          "slow",
+                                          "boring",
+                                          "sleepy"
+                                      ],
+                          "correct_answer":  "clever"
+                      },
+                      {
+                          "id":  "8",
+                          "text":  "The football final is a __________ broadcast, so millions of fans are watching it right now.",
+                          "options":  [
+                                          "past",
+                                          "quiet",
+                                          "live",
+                                          "cold"
+                                      ],
+                          "correct_answer":  "live"
+                      },
+                      {
+                          "id":  "9",
+                          "text":  "That science quiz show is very __________ among school students in our country.",
+                          "options":  [
+                                          "dark",
+                                          "lonely",
+                                          "popular",
+                                          "terrible"
+                                      ],
+                          "correct_answer":  "popular"
+                      },
+                      {
+                          "id":  "10",
+                          "text":  "We learn many useful things about space and stars from this weekly __________.",
+                          "options":  [
+                                          "comedy",
+                                          "game show",
+                                          "science programme",
+                                          "cartoon"
+                                      ],
+                          "correct_answer":  "science programme"
+                      }
+                  ]
+}

@@ -1,0 +1,137 @@
+[
+  {
+    "object": "programme",
+    "prompt": "A photo of a television screen prominently centered in a modern living room showing a colorful nature documentary broadcast, with a cozy sofa in front, highly detailed, photorealistic, 8k, cinematic lighting, don't add any text to the image",
+    "filename": "programme.webp"
+  },
+  {
+    "object": "animated film",
+    "prompt": "A digital 3D animated illustration of a cute animal adventurer in a magical forest surrounded by glowing plants and magical creatures, full cinematic animation movie style, vibrant colors, highly detailed, 8k, don't add any text to the image",
+    "filename": "animated-film.webp"
+  },
+  {
+    "object": "cartoon",
+    "prompt": "A classic 2D cartoon illustration of an energetic, playful cat chasing a witty little mouse across a bright kitchen floor, expressive cartoon art style, dynamic action, colorful and cheerful, highly detailed, 8k, don't add any text to the image",
+    "filename": "cartoon.webp"
+  },
+  {
+    "object": "comedy",
+    "prompt": "A photo of a family sitting together on a living room couch laughing joyfully with wide smiles and tears of laughter while looking at the television screen, warm ambient lighting, candid emotional moment, highly detailed, photorealistic, 8k, don't add any text to the image",
+    "filename": "comedy.webp"
+  },
+  {
+    "object": "talent show",
+    "prompt": "A photo of a talented young contestant singing passionately into a microphone on a large television talent show stage under vibrant spotlights, with judges sitting in front, highly detailed, photorealistic, 8k, cinematic lighting, don't add any text to the image",
+    "filename": "talent-show.webp"
+  },
+  {
+    "object": "game show",
+    "prompt": "A photo of a brightly lit television game show studio with two enthusiastic contestants standing behind colorful podiums with buzzers, excited studio audience in the background, highly detailed, photorealistic, 8k, don't add any text to the image",
+    "filename": "game-show.webp"
+  },
+  {
+    "object": "educational programme",
+    "prompt": "A photo of a young school student watching an educational television broadcast about science on a TV screen, showing a teacher demonstrating the solar system with globe and planets, highly detailed, photorealistic, 8k, don't add any text to the image",
+    "filename": "educational-programme.webp"
+  },
+  {
+    "object": "wildlife programme",
+    "prompt": "A photo of a large television screen displaying a breathtaking wildlife documentary of lions walking across the African savanna during sunset, highly detailed, photorealistic, 8k, cinematic nature photography, don't add any text to the image",
+    "filename": "wildlife-programme.webp"
+  },
+  {
+    "object": "sports programme",
+    "prompt": "A photo of a wide flat-screen TV broadcasting an intense live football match in a packed green stadium with stadium floodlights, highly detailed, photorealistic, 8k, cinematic sports broadcast, don't add any text to the image",
+    "filename": "sports-programme.webp"
+  },
+  {
+    "object": "science programme",
+    "prompt": "A photo of a television screen showing an engaging science show with a friendly scientist in a lab coat demonstrating a bubbling colorful chemistry experiment in a high-tech laboratory, highly detailed, photorealistic, 8k, don't add any text to the image",
+    "filename": "science-programme.webp"
+  },
+  {
+    "object": "TV series",
+    "prompt": "A photo of a group of actors in a television drama series filming a dramatic scene on a film set with professional studio cameras and boom microphones visible around them, highly detailed, photorealistic, 8k, don't add any text to the image",
+    "filename": "tv-series.webp"
+  },
+  {
+    "object": "channel",
+    "prompt": "A close-up photo of a person's hand holding a modern television remote control pointing directly at a TV screen, switching between different broadcast channels, highly detailed, photorealistic, 8k, don't add any text to the image",
+    "filename": "channel.webp"
+  },
+  {
+    "object": "TV guide",
+    "prompt": "A photo of an open printed TV guide magazine and weekly programme schedule booklet resting on a wooden coffee table next to a cup of tea, showing organized columns and grids, highly detailed, photorealistic, 8k, don't add any text to the image",
+    "filename": "tv-guide.webp"
+  },
+  {
+    "object": "film",
+    "prompt": "A photo inside a modern cinema theatre with red velvet seats, looking towards a massive glowing movie screen displaying an epic cinematic landscape scene, highly detailed, photorealistic, 8k, cinematic atmosphere, don't add any text to the image",
+    "filename": "film.webp"
+  },
+  {
+    "object": "clip",
+    "prompt": "A photo of a modern tablet screen placed on a desk, paused on a short video clip of two playful dolphins jumping out of the ocean water, scrubber bar visible at the bottom, highly detailed, photorealistic, 8k, don't add any text to the image",
+    "filename": "clip.webp"
+  },
+  {
+    "object": "viewer",
+    "prompt": "A photo of an attentive young viewer sitting comfortably on a beanbag chair in a dimly lit room, with eyes fixed on the television screen and holding a bowl of popcorn, warm television glow reflecting on face, highly detailed, photorealistic, 8k, don't add any text to the image",
+    "filename": "viewer.webp"
+  },
+  {
+    "object": "character",
+    "prompt": "A colorful 3D digital illustration of a charming, expressive fictional fox character wearing a little blue jacket and carrying a school backpack, centered and prominent, character concept art, highly detailed, 8k, don't add any text to the image",
+    "filename": "character.webp"
+  },
+  {
+    "object": "performer",
+    "prompt": "A photo of a talented musical performer holding a guitar and singing into a microphone on a vibrant concert stage under colorful stage lights and soft smoke effect, highly detailed, photorealistic, 8k, cinematic concert photography, don't add any text to the image",
+    "filename": "performer.webp"
+  },
+  {
+    "object": "educational",
+    "prompt": "A photo of curious children in a bright classroom looking excitedly at an interactive digital display showing the anatomy of a green plant with roots and leaves, hands-on learning environment, highly detailed, photorealistic, 8k, don't add any text to the image",
+    "filename": "educational.webp"
+  },
+  {
+    "object": "interesting",
+    "prompt": "A close-up photo of a young student with wide, engaged eyes and an open, fascinated facial expression while observing a glowing miniature planetarium model, curiosity and wonder, highly detailed, photorealistic, 8k, don't add any text to the image",
+    "filename": "interesting.webp"
+  },
+  {
+    "object": "funny",
+    "prompt": "A photo of a cheerful clown with a colorful costume and round red nose making comical silly faces with oversized colorful glasses, evoking spontaneous laughter, highly detailed, photorealistic, 8k, vibrant colors, don't add any text to the image",
+    "filename": "funny.webp"
+  },
+  {
+    "object": "clever",
+    "prompt": "A digital illustration of a smart, clever little owl wearing small round spectacles, skillfully piecing together the final glowing jigsaw puzzle piece with a confident smile, metaphor for intelligence, highly detailed, 8k, don't add any text to the image",
+    "filename": "clever.webp"
+  },
+  {
+    "object": "popular",
+    "prompt": "A photo of an excited crowd of diverse young fans cheering and clapping enthusiastically together in front of a giant outdoor television broadcast screen in a public square, highly detailed, photorealistic, 8k, don't add any text to the image",
+    "filename": "popular.webp"
+  },
+  {
+    "object": "cute",
+    "prompt": "A close-up photo of an adorably cute fluffy kitten with giant round blue eyes peeking playfully out from a soft woolen blanket, irresistible cuteness, highly detailed, photorealistic, 8k, soft warm lighting, don't add any text to the image",
+    "filename": "cute.webp"
+  },
+  {
+    "object": "live",
+    "prompt": "A photo of a professional television broadcast studio control room with multiple glowing monitors showing an ongoing live on-air news broadcast with anchors, camera operators active on the studio floor, highly detailed, photorealistic, 8k, don't add any text to the image",
+    "filename": "live.webp"
+  },
+  {
+    "object": "boring",
+    "prompt": "A photo of a bored teenager sitting in an armchair resting chin heavily in one hand with half-closed eyes and a sleepy, disinterested expression, remote control dangling from fingers in front of a dull screen, highly detailed, photorealistic, 8k, don't add any text to the image",
+    "filename": "boring.webp"
+  },
+  {
+    "object": "wonderful",
+    "prompt": "A photo of a breathtaking and magical natural landscape with majestic green mountains, cascading waterfalls, and a vibrant double rainbow arching across a golden sunset sky, inspiring awe and wonder, highly detailed, photorealistic, 8k, cinematic lighting, don't add any text to the image",
+    "filename": "wonderful.webp"
+  }
+]

@@ -1,0 +1,148 @@
+{
+    "id":  "12",
+    "type":  "signs_and_notices",
+    "title":  "Signs and Notices",
+    "description":  "Read the sign or notice and choose the correct meaning.",
+    "questions":  [
+                      {
+                          "id":  "1",
+                          "sign_type":  "image",
+                          "sign_image":  "images/sign_1.png",
+                          "sign_text":  "A standard circular prohibition sign with a thick red border and diagonal slash over a black camera icon with a flash on a plain white background, centered and filling 90% of the square canvas, NO outer border frame, NO inner border box, NO text or words of any kind.",
+                          "question":  "What does the sign mean?",
+                          "options":  [
+                                          "Visitors can borrow cameras from the studio media room now.",
+                                          "Please buy camera batteries at the studio reception office.",
+                                          "Taking pictures with cameras is allowed in the studio room.",
+                                          "Flash photography is not permitted in the live studio room."
+                                      ],
+                          "correct_answer":  "Flash photography is not permitted in the live studio room."
+                      },
+                      {
+                          "id":  "2",
+                          "sign_type":  "image",
+                          "sign_image":  "images/sign_2.png",
+                          "sign_text":  "A standard circular prohibition sign with a thick red border and diagonal slash over a black smartphone icon displaying sound waves on a plain white background, centered and filling 90% of the square canvas, NO outer border frame, NO inner border box, NO text or words of any kind.",
+                          "question":  "What does the sign mean?",
+                          "options":  [
+                                          "Staff members can use mobile phones anywhere inside.",
+                                          "You must not use your mobile phone during recording.",
+                                          "Free phone chargers are provided inside this studio.",
+                                          "Please answer all mobile phone calls in the hallway."
+                                      ],
+                          "correct_answer":  "You must not use your mobile phone during recording."
+                      },
+                      {
+                          "id":  "3",
+                          "sign_type":  "image",
+                          "sign_image":  "images/sign_3.png",
+                          "sign_text":  "A circular mandatory action sign with a deep blue background and a crisp white symbol of over-ear studio headphones centered, filling 90% of the square canvas, NO outer border frame, NO inner border box, NO text or words of any kind.",
+                          "question":  "What does the sign mean?",
+                          "options":  [
+                                          "Do not touch any headphones in this TV sound room.",
+                                          "You can buy stereo headphones in this studio shop.",
+                                          "You must wear audio headphones in this sound room.",
+                                          "Please return headphones to the main control desk."
+                                      ],
+                          "correct_answer":  "You must wear audio headphones in this sound room."
+                      },
+                      {
+                          "id":  "4",
+                          "sign_type":  "image",
+                          "sign_image":  "images/sign_4.png",
+                          "sign_text":  "A triangular hazard warning sign with a bold yellow background, thick black triangular border, and a black symbol of a tripping figure over tangled electric cables, centered and filling 90% of the square canvas, NO outer border frame, NO inner border box, NO text or words of any kind.",
+                          "question":  "What does the sign say?",
+                          "options":  [
+                                          "You must not bring any cables onto this stage.",
+                                          "Electric cables are on sale in the media room.",
+                                          "Watch out for loose cables on the stage floor.",
+                                          "Studio workers will repair all damaged cables."
+                                      ],
+                          "correct_answer":  "Watch out for loose cables on the stage floor."
+                      },
+                      {
+                          "id":  "5",
+                          "sign_type":  "image",
+                          "sign_image":  "images/sign_5.png",
+                          "sign_text":  "A triangular warning hazard sign with a bright yellow background, bold black border, and a black silhouette symbol of heavy stage lights falling from above, centered and filling 90% of the square canvas, NO outer border frame, NO inner border box, NO text or words of any kind.",
+                          "question":  "What does the sign say?",
+                          "options":  [
+                                          "Be careful because stage lights hang overhead.",
+                                          "Stage lights are not allowed inside this room.",
+                                          "Please turn off all bright stage lights today.",
+                                          "You can buy spare stage lights in this studio."
+                                      ],
+                          "correct_answer":  "Be careful because stage lights hang overhead."
+                      },
+                      {
+                          "id":  "6",
+                          "sign_type":  "image",
+                          "sign_image":  "images/sign_6.png",
+                          "sign_text":  "Full-bleed square graphic design, 100% edge-to-edge layout filling the entire square image canvas with zero outer background margins, showing a studio door warning sign with a glowing red illuminated box that says \u0027ON AIR - RECORDING IN PROGRESS\u0027 with text below: \u0027Do Not Enter When Lit\u0027, sleek metallic and illuminated texture, large bold typography.",
+                          "question":  "What does the sign tell us?",
+                          "options":  [
+                                          "Recording is active, so you must not enter.",
+                                          "You should turn on the studio lights today.",
+                                          "Visitors can enter the studio to watch now.",
+                                          "The TV studio is open for all visitors now."
+                                      ],
+                          "correct_answer":  "Recording is active, so you must not enter."
+                      },
+                      {
+                          "id":  "7",
+                          "sign_type":  "image",
+                          "sign_image":  "images/sign_7.png",
+                          "sign_text":  "Full-bleed square graphic design, 100% edge-to-edge layout filling the entire square image canvas with zero outer background margins, showing a yellow sticky note texture with realistic handwritten text: \u0027Minh, our favourite cartoon starts at 5:30 p.m. on Channel 7. Please record it because I have extra maths class! - Duy\u0027, clear legible handwriting.",
+                          "question":  "What does the note say?",
+                          "options":  [
+                                          "Minh and Duy will watch television at five now.",
+                                          "Minh should record the cartoon for Duy at home.",
+                                          "Duy wants Minh to attend the maths class today.",
+                                          "The cartoon on Channel 7 is cancelled tonight."
+                                      ],
+                          "correct_answer":  "Minh should record the cartoon for Duy at home."
+                      },
+                      {
+                          "id":  "8",
+                          "sign_type":  "image",
+                          "sign_image":  "images/sign_8.png",
+                          "sign_text":  "Full-bleed square graphic design, 100% edge-to-edge layout filling the entire square image canvas with zero outer background margins, showing an email client interface card with clean typography: \u0027From: Media Club \u003cmedia@school.edu\u003e\nTo: Grade 6 Students\nSubject: Auditions for Student News Host\nDate: Thursday, 3 PM\nRoom: Studio B\nPrepare a 1-minute speech about your favourite school activity.\u0027",
+                          "question":  "What does the email say?",
+                          "options":  [
+                                          "The media club meeting moves to next week.",
+                                          "Grade 6 students must write a long report.",
+                                          "Studio B is closed for students this week.",
+                                          "Students can audition to host school news."
+                                      ],
+                          "correct_answer":  "Students can audition to host school news."
+                      },
+                      {
+                          "id":  "9",
+                          "sign_type":  "image",
+                          "sign_image":  "images/sign_9.png",
+                          "sign_text":  "Full-bleed square graphic design, 100% edge-to-edge layout filling the entire square image canvas with zero outer background margins, showing a modern advertisement poster: \u0027KIDS TV STREAM - Annual Subscription Special! Pay for 6 months and get 6 months FREE! Unlimited access to 50+ educational channels and cartoons. Offer ends Sunday!\u0027",
+                          "question":  "What does the notice tell us?",
+                          "options":  [
+                                          "All educational TV channels are free forever.",
+                                          "Only fifty lucky children can join this week.",
+                                          "You pay for six months and get one full year.",
+                                          "The subscription discount ends in two months."
+                                      ],
+                          "correct_answer":  "You pay for six months and get one full year."
+                      },
+                      {
+                          "id":  "10",
+                          "sign_type":  "image",
+                          "sign_image":  "images/sign_10.png",
+                          "sign_text":  "Full-bleed square graphic design, 100% edge-to-edge layout filling the entire square image canvas with zero outer background margins, showing an event flyer poster: \u0027Junior TV Quiz Championship! Teams of 3 students. Date: Saturday, October 15 at 9:00 AM. Venue: Main School Auditorium. Grand Prize: School Trip to National TV Station! Free entry for all students.\u0027",
+                          "question":  "What does the flyer tell us?",
+                          "options":  [
+                                          "The winners will get free tickets to the cinema.",
+                                          "Only individual players can enter this quiz now.",
+                                          "The quiz takes place at the national TV station.",
+                                          "Teams of three students can enter the quiz free."
+                                      ],
+                          "correct_answer":  "Teams of three students can enter the quiz free."
+                      }
+                  ]
+}

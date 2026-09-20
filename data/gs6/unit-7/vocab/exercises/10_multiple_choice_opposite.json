@@ -1,0 +1,63 @@
+{
+    "id":  "10",
+    "type":  "multiple_choice",
+    "title":  "Multiple Choice - Opposite in Meaning",
+    "description":  "Choose the word or phrase OPPOSITE in meaning to the underlined part.",
+    "questions":  [
+                      {
+                          "id":  "1",
+                          "text":  "The children do not want to watch that documentary because it is so [boring].",
+                          "options":  [
+                                          "exciting",
+                                          "tiring",
+                                          "quiet",
+                                          "sleepy"
+                                      ],
+                          "correct_answer":  "exciting"
+                      },
+                      {
+                          "id":  "2",
+                          "text":  "This cartoon features an extremely [cute] kitten that makes everyone smile.",
+                          "options":  [
+                                          "sweet",
+                                          "clever",
+                                          "ugly",
+                                          "tiny"
+                                      ],
+                          "correct_answer":  "ugly"
+                      },
+                      {
+                          "id":  "3",
+                          "text":  "The comedian tells very [funny] jokes and makes the audience laugh all night.",
+                          "options":  [
+                                          "bright",
+                                          "humorous",
+                                          "serious",
+                                          "playful"
+                                      ],
+                          "correct_answer":  "serious"
+                      },
+                      {
+                          "id":  "4",
+                          "text":  "The main hero in this animated film is very [clever] and outsmarts all the traps.",
+                          "options":  [
+                                          "quick",
+                                          "foolish",
+                                          "active",
+                                          "talented"
+                                      ],
+                          "correct_answer":  "foolish"
+                      },
+                      {
+                          "id":  "5",
+                          "text":  "The nature documentary gives viewers a [wonderful] view of high mountains.",
+                          "options":  [
+                                          "peaceful",
+                                          "grand",
+                                          "beautiful",
+                                          "terrible"
+                                      ],
+                          "correct_answer":  "terrible"
+                      }
+                  ]
+}

@@ -1,0 +1,70 @@
+{
+    "id":  "6",
+    "type":  "fill_in_blanks",
+    "title":  "Fill in the Blanks",
+    "description":  "Complete each sentence with the correct word from the box.",
+    "word_box":  [
+                     "sports programme",
+                     "viewer",
+                     "educational",
+                     "comedy",
+                     "talent show",
+                     "character",
+                     "boring",
+                     "cartoon",
+                     "clever",
+                     "channel"
+                 ],
+    "questions":  [
+                      {
+                          "id":  "1",
+                          "text":  "An active __________ always pays close attention to the details on the screen.",
+                          "correct_answer":  "viewer"
+                      },
+                      {
+                          "id":  "2",
+                          "text":  "Young musicians from across the country sing on the __________ to win first prize.",
+                          "correct_answer":  "talent show"
+                      },
+                      {
+                          "id":  "3",
+                          "text":  "Please turn to this local news __________ so we can check the weather report.",
+                          "correct_answer":  "channel"
+                      },
+                      {
+                          "id":  "4",
+                          "text":  "The friendly blue dolphin is my favorite cartoon __________ in the whole story.",
+                          "correct_answer":  "character"
+                      },
+                      {
+                          "id":  "5",
+                          "text":  "We love watching that funny __________ on Friday evening because it makes us laugh.",
+                          "correct_answer":  "comedy"
+                      },
+                      {
+                          "id":  "6",
+                          "text":  "Teachers recommend this science channel because its shows are very __________.",
+                          "correct_answer":  "educational"
+                      },
+                      {
+                          "id":  "7",
+                          "text":  "My younger sister watches a colourful __________ about two talking mice every morning.",
+                          "correct_answer":  "cartoon"
+                      },
+                      {
+                          "id":  "8",
+                          "text":  "The lecture is so __________ that half of the students are almost falling asleep.",
+                          "correct_answer":  "boring"
+                      },
+                      {
+                          "id":  "9",
+                          "text":  "My father watches the evening __________ to see the latest tennis results.",
+                          "correct_answer":  "sports programme"
+                      },
+                      {
+                          "id":  "10",
+                          "text":  "The detective in the book is very __________ and always solves every mystery.",
+                          "correct_answer":  "clever"
+                      }
+                  ]
+}
