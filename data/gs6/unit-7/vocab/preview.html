@@ -1,0 +1,4501 @@
+﻿<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Unit Vocab & Exercises Preview</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Outfit:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --bg-primary: #f8fafc;
+      --bg-surface: #ffffff;
+      --bg-surface-elevated: #ffffff;
+      --bg-subtle: #f1f5f9;
+      --border: #e2e8f0;
+      --border-focus: #6366f1;
+      --text-main: #0f172a;
+      --text-secondary: #475569;
+      --text-muted: #64748b;
+      --text-inverse: #ffffff;
+      --primary: #4f46e5;
+      --primary-hover: #4338ca;
+      --primary-light: #eef2ff;
+      --success: #10b981;
+      --success-light: #ecfdf5;
+      --danger: #ef4444;
+      --danger-light: #fef2f2;
+      --warning: #f59e0b;
+      --warning-light: #fffbeb;
+      --info: #0284c7;
+      --info-light: #f0f9ff;
+      --shadow-sm: 0 1px 2px 0 rgb(0 0 0 / 0.05);
+      --shadow: 0 4px 6px -1px rgb(0 0 0 / 0.08), 0 2px 4px -2px rgb(0 0 0 / 0.05);
+      --shadow-lg: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
+      --radius-sm: 6px;
+      --radius-md: 10px;
+      --radius-lg: 16px;
+      --radius-full: 9999px;
+      --font-main: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+      --font-heading: 'Outfit', 'Inter', sans-serif;
+    }
+
+    [data-theme="dark"] {
+      --bg-primary: #0b0f19;
+      --bg-surface: #131b2e;
+      --bg-surface-elevated: #1a243b;
+      --bg-subtle: #1e293b;
+      --border: #2e3c59;
+      --border-focus: #818cf8;
+      --text-main: #f8fafc;
+      --text-secondary: #cbd5e1;
+      --text-muted: #8493a8;
+      --text-inverse: #0b0f19;
+      --primary: #6366f1;
+      --primary-hover: #4f46e5;
+      --primary-light: rgba(99, 102, 241, 0.15);
+      --success: #10b981;
+      --success-light: rgba(16, 185, 129, 0.15);
+      --danger: #f87171;
+      --danger-light: rgba(239, 68, 68, 0.15);
+      --warning: #fbbf24;
+      --warning-light: rgba(245, 158, 11, 0.15);
+      --info: #38bdf8;
+      --info-light: rgba(56, 189, 248, 0.15);
+      --shadow-sm: 0 1px 2px 0 rgb(0 0 0 / 0.3);
+      --shadow: 0 4px 6px -1px rgb(0 0 0 / 0.3);
+      --shadow-lg: 0 10px 20px -3px rgb(0 0 0 / 0.4);
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      transition: background-color 0.2s ease, border-color 0.2s ease, color 0.2s ease;
+    }
+
+    body {
+      font-family: var(--font-main);
+      background-color: var(--bg-primary);
+      color: var(--text-main);
+      line-height: 1.6;
+      -webkit-font-smoothing: antialiased;
+      padding-bottom: 80px;
+    }
+
+    /* Top Sticky Header */
+    header.app-header {
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      background: rgba(255, 255, 255, 0.85);
+      backdrop-filter: blur(12px);
+      -webkit-backdrop-filter: blur(12px);
+      border-bottom: 1px solid var(--border);
+    }
+
+    [data-theme="dark"] header.app-header {
+      background: rgba(19, 27, 46, 0.85);
+    }
+
+    .header-inner {
+      max-width: 1400px;
+      margin: 0 auto;
+      padding: 12px 24px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 16px;
+      flex-wrap: wrap;
+    }
+
+    .brand-section {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+    }
+
+    .brand-logo {
+      width: 42px;
+      height: 42px;
+      border-radius: var(--radius-md);
+      background: linear-gradient(135deg, var(--primary), #8b5cf6);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: white;
+      font-size: 20px;
+      box-shadow: 0 4px 10px rgba(99, 102, 241, 0.35);
+    }
+
+    .brand-text h1 {
+      font-family: var(--font-heading);
+      font-size: 1.15rem;
+      font-weight: 700;
+      line-height: 1.2;
+      color: var(--text-main);
+    }
+
+    .brand-text p {
+      font-size: 0.8rem;
+      color: var(--text-muted);
+    }
+
+    .header-actions {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      flex-wrap: wrap;
+    }
+
+    .search-box {
+      position: relative;
+    }
+
+    .search-box input {
+      background: var(--bg-subtle);
+      border: 1px solid var(--border);
+      border-radius: var(--radius-full);
+      padding: 8px 16px 8px 36px;
+      font-size: 0.85rem;
+      color: var(--text-main);
+      width: 220px;
+      outline: none;
+      transition: width 0.3s ease, border-color 0.2s;
+    }
+
+    .search-box input:focus {
+      width: 280px;
+      border-color: var(--primary);
+      background: var(--bg-surface);
+    }
+
+    .search-box svg {
+      position: absolute;
+      left: 12px;
+      top: 50%;
+      transform: translateY(-50%);
+      width: 15px;
+      height: 15px;
+      stroke: var(--text-muted);
+    }
+
+    .btn-action {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      padding: 8px 14px;
+      border-radius: var(--radius-full);
+      border: 1px solid var(--border);
+      background: var(--bg-surface);
+      color: var(--text-main);
+      font-size: 0.85rem;
+      font-weight: 600;
+      cursor: pointer;
+      box-shadow: var(--shadow-sm);
+    }
+
+    .btn-action:hover {
+      background: var(--bg-subtle);
+      border-color: var(--text-muted);
+    }
+
+    .btn-mode-toggle {
+      background: var(--primary-light);
+      color: var(--primary);
+      border-color: var(--primary);
+    }
+
+    .btn-mode-toggle.teacher-active {
+      background: var(--warning-light);
+      color: #b45309;
+      border-color: var(--warning);
+    }
+
+    [data-theme="dark"] .btn-mode-toggle.teacher-active {
+      color: #fde68a;
+    }
+
+    /* Navigation Bar (Tabs) */
+    .nav-bar {
+      background: var(--bg-surface);
+      border-bottom: 1px solid var(--border);
+    }
+
+    .nav-inner {
+      max-width: 1400px;
+      margin: 0 auto;
+      padding: 0 24px;
+      display: flex;
+      gap: 8px;
+      overflow-x: auto;
+      scrollbar-width: thin;
+    }
+
+    .nav-tab {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      padding: 14px 18px;
+      color: var(--text-secondary);
+      font-weight: 600;
+      font-size: 0.9rem;
+      border-bottom: 2px solid transparent;
+      cursor: pointer;
+      white-space: nowrap;
+      text-decoration: none;
+    }
+
+    .nav-tab:hover {
+      color: var(--primary);
+    }
+
+    .nav-tab.active {
+      color: var(--primary);
+      border-bottom-color: var(--primary);
+      background: var(--primary-light);
+    }
+
+    .nav-tab .badge {
+      background: var(--bg-subtle);
+      color: var(--text-secondary);
+      padding: 2px 8px;
+      border-radius: var(--radius-full);
+      font-size: 0.75rem;
+    }
+
+    .nav-tab.active .badge {
+      background: var(--primary);
+      color: white;
+    }
+
+    /* Main Container */
+    main.app-container {
+      max-width: 1400px;
+      margin: 24px auto;
+      padding: 0 24px;
+    }
+
+    /* Mode Banner Alert */
+    .mode-banner {
+      background: var(--info-light);
+      border: 1px solid var(--info);
+      border-radius: var(--radius-md);
+      padding: 12px 18px;
+      margin-bottom: 24px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 12px;
+      font-size: 0.9rem;
+    }
+
+    .mode-banner.teacher-mode {
+      background: var(--warning-light);
+      border-color: var(--warning);
+      color: var(--text-main);
+    }
+
+    /* Vocabulary Styles */
+    .vocab-controls {
+      display: flex;
+      gap: 8px;
+      margin-bottom: 20px;
+      flex-wrap: wrap;
+      align-items: center;
+    }
+
+    .filter-chip {
+      padding: 6px 14px;
+      border-radius: var(--radius-full);
+      background: var(--bg-surface);
+      border: 1px solid var(--border);
+      font-size: 0.85rem;
+      color: var(--text-secondary);
+      cursor: pointer;
+      font-weight: 500;
+    }
+
+    .filter-chip:hover {
+      border-color: var(--primary);
+      color: var(--primary);
+    }
+
+    .filter-chip.active {
+      background: var(--primary);
+      color: white;
+      border-color: var(--primary);
+    }
+
+    .vocab-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(340px, 1fr));
+      gap: 20px;
+    }
+
+    .vocab-card {
+      background: var(--bg-surface);
+      border: 1px solid var(--border);
+      border-radius: var(--radius-lg);
+      padding: 20px;
+      box-shadow: var(--shadow);
+      display: flex;
+      flex-direction: column;
+      gap: 14px;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .vocab-card:hover {
+      box-shadow: var(--shadow-lg);
+      border-color: var(--border-focus);
+      transform: translateY(-2px);
+    }
+
+    .vocab-card-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+      gap: 10px;
+    }
+
+    .vocab-word-title {
+      font-family: var(--font-heading);
+      font-size: 1.4rem;
+      font-weight: 700;
+      color: var(--text-main);
+    }
+
+    .vocab-badge {
+      display: inline-block;
+      padding: 2px 8px;
+      border-radius: var(--radius-sm);
+      font-size: 0.75rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      background: var(--primary-light);
+      color: var(--primary);
+    }
+
+    .vocab-ipa {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px;
+      font-size: 0.85rem;
+      color: var(--text-secondary);
+      font-family: monospace;
+    }
+
+    .vocab-ipa span {
+      display: inline-flex;
+      align-items: center;
+      gap: 4px;
+    }
+
+    .vocab-meaning {
+      font-size: 1rem;
+      font-weight: 600;
+      color: #0284c7;
+      background: var(--info-light);
+      padding: 8px 12px;
+      border-radius: var(--radius-md);
+      border-left: 3px solid #0284c7;
+    }
+
+    [data-theme="dark"] .vocab-meaning {
+      color: #38bdf8;
+    }
+
+    .vocab-examples {
+      font-size: 0.9rem;
+      color: var(--text-secondary);
+      background: var(--bg-subtle);
+      padding: 10px 14px;
+      border-radius: var(--radius-md);
+      display: flex;
+      flex-direction: column;
+      gap: 6px;
+    }
+
+    .vocab-examples .en {
+      color: var(--text-main);
+      font-weight: 500;
+    }
+
+    .vocab-examples .en mark {
+      background: #fef08a;
+      color: #713f12;
+      padding: 0 4px;
+      border-radius: 3px;
+    }
+
+    [data-theme="dark"] .vocab-examples .en mark {
+      background: #854d0e;
+      color: #fef08a;
+    }
+
+    .vocab-examples .vi {
+      font-size: 0.85rem;
+      color: var(--text-muted);
+      font-style: italic;
+    }
+
+    .vocab-media {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 12px;
+      padding-top: 6px;
+      border-top: 1px solid var(--border);
+    }
+
+    .audio-btns {
+      display: flex;
+      gap: 8px;
+    }
+
+    .btn-audio {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      padding: 6px 12px;
+      background: var(--bg-subtle);
+      border: 1px solid var(--border);
+      border-radius: var(--radius-full);
+      font-size: 0.8rem;
+      font-weight: 600;
+      color: var(--text-secondary);
+      cursor: pointer;
+    }
+
+    .btn-audio:hover {
+      background: var(--primary-light);
+      color: var(--primary);
+      border-color: var(--primary);
+    }
+
+    .btn-audio.playing {
+      background: var(--primary);
+      color: white;
+      border-color: var(--primary);
+    }
+
+    .vocab-thumb-wrap {
+      width: 70px;
+      height: 70px;
+      border-radius: var(--radius-md);
+      overflow: hidden;
+      border: 1px solid var(--border);
+      flex-shrink: 0;
+      background: var(--bg-subtle);
+      cursor: pointer;
+    }
+
+    .vocab-thumb-wrap img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      transition: transform 0.3s ease;
+    }
+
+    .vocab-thumb-wrap:hover img {
+      transform: scale(1.08);
+    }
+
+    /* Exercises Layout */
+    .exercises-wrapper {
+      display: grid;
+      grid-template-columns: 280px 1fr;
+      gap: 24px;
+      align-items: start;
+    }
+
+    @media (max-width: 960px) {
+      .exercises-wrapper {
+        grid-template-columns: 1fr;
+      }
+    }
+
+    .ex-sidebar {
+      background: var(--bg-surface);
+      border: 1px solid var(--border);
+      border-radius: var(--radius-lg);
+      padding: 16px;
+      position: sticky;
+      top: 90px;
+      max-height: calc(100vh - 120px);
+      overflow-y: auto;
+    }
+
+    .ex-sidebar-title {
+      font-size: 0.85rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      color: var(--text-muted);
+      margin-bottom: 12px;
+      letter-spacing: 0.5px;
+    }
+
+    .ex-list {
+      display: flex;
+      flex-direction: column;
+      gap: 4px;
+    }
+
+    .ex-nav-item {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 9px 12px;
+      border-radius: var(--radius-md);
+      font-size: 0.85rem;
+      font-weight: 600;
+      color: var(--text-secondary);
+      cursor: pointer;
+      text-decoration: none;
+      border: 1px solid transparent;
+    }
+
+    .ex-nav-item:hover {
+      background: var(--bg-subtle);
+      color: var(--text-main);
+    }
+
+    .ex-nav-item.active {
+      background: var(--primary-light);
+      color: var(--primary);
+      border-color: var(--primary);
+    }
+
+    .ex-nav-item .ex-num {
+      width: 22px;
+      height: 22px;
+      border-radius: var(--radius-sm);
+      background: var(--bg-subtle);
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 0.75rem;
+      font-weight: 700;
+      margin-right: 8px;
+    }
+
+    .ex-nav-item.active .ex-num {
+      background: var(--primary);
+      color: white;
+    }
+
+    .ex-nav-item .ex-score {
+      font-size: 0.75rem;
+      color: var(--text-muted);
+    }
+
+    /* Exercise Content Area */
+    .ex-content-card {
+      background: var(--bg-surface);
+      border: 1px solid var(--border);
+      border-radius: var(--radius-lg);
+      padding: 28px;
+      box-shadow: var(--shadow);
+    }
+
+    .ex-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+      gap: 16px;
+      margin-bottom: 24px;
+      padding-bottom: 20px;
+      border-bottom: 1px solid var(--border);
+      flex-wrap: wrap;
+    }
+
+    .ex-title-wrap h2 {
+      font-family: var(--font-heading);
+      font-size: 1.4rem;
+      font-weight: 700;
+      color: var(--text-main);
+      margin-bottom: 6px;
+    }
+
+    .ex-title-wrap p {
+      font-size: 0.95rem;
+      color: var(--text-secondary);
+    }
+
+    .ex-toolbar {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      flex-wrap: wrap;
+    }
+
+    .btn-check {
+      background: var(--primary);
+      color: white;
+      border: none;
+      padding: 9px 18px;
+      border-radius: var(--radius-full);
+      font-weight: 600;
+      font-size: 0.85rem;
+      cursor: pointer;
+      box-shadow: 0 2px 6px rgba(99, 102, 241, 0.3);
+    }
+
+    .btn-check:hover {
+      background: var(--primary-hover);
+    }
+
+    .btn-reset {
+      background: var(--bg-subtle);
+      color: var(--text-secondary);
+      border: 1px solid var(--border);
+      padding: 9px 16px;
+      border-radius: var(--radius-full);
+      font-weight: 600;
+      font-size: 0.85rem;
+      cursor: pointer;
+    }
+
+    .btn-reset:hover {
+      background: var(--border);
+      color: var(--text-main);
+    }
+
+    .score-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      padding: 6px 12px;
+      border-radius: var(--radius-full);
+      background: var(--bg-subtle);
+      font-weight: 700;
+      font-size: 0.85rem;
+      color: var(--text-main);
+    }
+
+    .score-badge.good {
+      background: var(--success-light);
+      color: var(--success);
+    }
+
+    /* Question Cards */
+    .question-list {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+    }
+
+    .question-card {
+      background: var(--bg-subtle);
+      border: 1px solid var(--border);
+      border-radius: var(--radius-md);
+      padding: 18px 20px;
+      position: relative;
+    }
+
+    .question-card.correct {
+      border-color: var(--success);
+      background: var(--success-light);
+    }
+
+    .question-card.incorrect {
+      border-color: var(--danger);
+      background: var(--danger-light);
+    }
+
+    .q-number {
+      font-weight: 700;
+      color: var(--primary);
+      margin-right: 6px;
+    }
+
+    .q-text {
+      font-size: 1rem;
+      color: var(--text-main);
+      font-weight: 500;
+      margin-bottom: 12px;
+    }
+
+    .target-highlight {
+      font-weight: 700;
+      color: #d97706;
+      text-decoration: underline;
+      padding: 0 4px;
+      background: #fef3c7;
+      border-radius: 3px;
+    }
+
+    [data-theme="dark"] .target-highlight {
+      background: #78350f;
+      color: #fde68a;
+    }
+
+    /* MCQ Options */
+    .mcq-options {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+      gap: 10px;
+      margin-top: 10px;
+    }
+
+    .mcq-option {
+      background: var(--bg-surface);
+      border: 1px solid var(--border);
+      border-radius: var(--radius-md);
+      padding: 10px 14px;
+      font-size: 0.9rem;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      text-align: left;
+      color: var(--text-main);
+      font-weight: 500;
+    }
+
+    .mcq-option:hover {
+      border-color: var(--primary);
+      background: var(--primary-light);
+    }
+
+    .mcq-option.selected {
+      border-color: var(--primary);
+      background: var(--primary-light);
+      font-weight: 600;
+    }
+
+    .mcq-option.is-correct {
+      border-color: var(--success) !important;
+      background: #dcfce7 !important;
+      color: #166534 !important;
+      font-weight: 700;
+    }
+
+    [data-theme="dark"] .mcq-option.is-correct {
+      background: #064e3b !important;
+      color: #a7f3d0 !important;
+    }
+
+    .mcq-option.is-wrong {
+      border-color: var(--danger) !important;
+      background: #fee2e2 !important;
+      color: #991b1b !important;
+    }
+
+    [data-theme="dark"] .mcq-option.is-wrong {
+      background: #7f1d1d !important;
+      color: #fecaca !important;
+    }
+
+    .opt-key {
+      width: 24px;
+      height: 24px;
+      border-radius: var(--radius-full);
+      background: var(--bg-subtle);
+      border: 1px solid var(--border);
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 0.75rem;
+      font-weight: 700;
+      flex-shrink: 0;
+    }
+
+    .mcq-option.selected .opt-key {
+      background: var(--primary);
+      color: white;
+      border-color: var(--primary);
+    }
+
+    /* Word Box for Fill in blanks */
+    .word-box-container {
+      background: var(--bg-surface);
+      border: 1px dashed var(--primary);
+      border-radius: var(--radius-md);
+      padding: 14px 18px;
+      margin-bottom: 20px;
+    }
+
+    .word-box-title {
+      font-size: 0.8rem;
+      font-weight: 700;
+      color: var(--primary);
+      text-transform: uppercase;
+      margin-bottom: 8px;
+    }
+
+    .word-box-chips {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+    }
+
+    .wb-chip {
+      background: var(--bg-subtle);
+      border: 1px solid var(--border);
+      padding: 5px 12px;
+      border-radius: var(--radius-full);
+      font-size: 0.85rem;
+      font-weight: 600;
+      cursor: pointer;
+      color: var(--text-main);
+    }
+
+    .wb-chip:hover {
+      background: var(--primary-light);
+      border-color: var(--primary);
+      color: var(--primary);
+    }
+
+    .wb-chip.used {
+      opacity: 0.45;
+      text-decoration: line-through;
+      background: var(--bg-subtle);
+    }
+
+    /* Inputs */
+    .text-input-field {
+      background: var(--bg-surface);
+      border: 1px solid var(--border);
+      border-radius: var(--radius-sm);
+      padding: 8px 12px;
+      font-size: 0.95rem;
+      color: var(--text-main);
+      outline: none;
+      width: 100%;
+      max-width: 400px;
+    }
+
+    .text-input-field:focus {
+      border-color: var(--primary);
+      box-shadow: 0 0 0 3px var(--primary-light);
+    }
+
+    .answer-key-reveal {
+      margin-top: 8px;
+      font-size: 0.85rem;
+      color: var(--success);
+      font-weight: 600;
+      display: flex;
+      align-items: center;
+      gap: 6px;
+    }
+
+    /* Conversation dialogue */
+    .dialogue-box {
+      background: var(--bg-surface);
+      border: 1px solid var(--border);
+      border-radius: var(--radius-md);
+      padding: 12px 16px;
+      margin-bottom: 12px;
+      display: flex;
+      flex-direction: column;
+      gap: 6px;
+    }
+
+    .dialogue-line {
+      font-size: 0.95rem;
+    }
+
+    .dialogue-speaker {
+      font-weight: 700;
+      color: var(--primary);
+      margin-right: 6px;
+    }
+
+    /* Dictionary Card */
+    .dict-card {
+      background: var(--bg-surface);
+      border: 1px solid var(--border);
+      border-radius: var(--radius-lg);
+      padding: 20px;
+      margin-bottom: 20px;
+    }
+
+    .dict-word-head {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      margin-bottom: 10px;
+      flex-wrap: wrap;
+    }
+
+    .dict-word {
+      font-family: var(--font-heading);
+      font-size: 1.5rem;
+      font-weight: 800;
+      color: var(--primary);
+    }
+
+    .dict-def {
+      font-size: 0.95rem;
+      color: var(--text-secondary);
+      background: var(--bg-subtle);
+      padding: 10px 14px;
+      border-radius: var(--radius-md);
+      margin-bottom: 14px;
+    }
+
+    .dict-bullets {
+      list-style: none;
+      margin-bottom: 16px;
+      display: flex;
+      flex-direction: column;
+      gap: 6px;
+    }
+
+    .dict-bullets li {
+      position: relative;
+      padding-left: 20px;
+      font-size: 0.9rem;
+      color: var(--text-secondary);
+    }
+
+    .dict-bullets li::before {
+      content: "•";
+      position: absolute;
+      left: 6px;
+      color: var(--primary);
+      font-weight: bold;
+    }
+
+    /* Signs and notices */
+    .sign-visual-wrap {
+      display: flex;
+      gap: 16px;
+      align-items: center;
+      margin-bottom: 14px;
+      flex-wrap: wrap;
+    }
+
+    .sign-card-box {
+      width: 140px;
+      height: 140px;
+      border-radius: var(--radius-md);
+      border: 2px solid var(--border);
+      background: var(--bg-surface);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      padding: 10px;
+      text-align: center;
+      box-shadow: var(--shadow-sm);
+    }
+
+    .sign-card-box img {
+      max-width: 100%;
+      max-height: 100%;
+      object-fit: contain;
+    }
+
+    .sign-desc-box {
+      flex: 1;
+      font-size: 0.85rem;
+      color: var(--text-secondary);
+      background: var(--bg-subtle);
+      padding: 12px 16px;
+      border-radius: var(--radius-md);
+      border-left: 3px solid var(--warning);
+    }
+
+    /* Word Families Table */
+    .wf-table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 14px;
+      background: var(--bg-surface);
+      border-radius: var(--radius-md);
+      overflow: hidden;
+    }
+
+    .wf-table th, .wf-table td {
+      border: 1px solid var(--border);
+      padding: 10px 14px;
+      text-align: left;
+      font-size: 0.9rem;
+    }
+
+    .wf-table th {
+      background: var(--bg-subtle);
+      font-weight: 700;
+      color: var(--text-secondary);
+    }
+
+    /* Paragraph fill inline blanks */
+    .paragraph-read-box {
+      background: var(--bg-surface);
+      border: 1px solid var(--border);
+      border-radius: var(--radius-md);
+      padding: 20px 24px;
+      line-height: 2.2;
+      font-size: 1.05rem;
+      color: var(--text-main);
+      margin-bottom: 20px;
+    }
+
+    .inline-blank-input {
+      display: inline-block;
+      vertical-align: middle;
+      width: 140px;
+      padding: 4px 8px;
+      font-size: 0.95rem;
+      border: 1px solid var(--border);
+      border-radius: var(--radius-sm);
+      background: var(--bg-subtle);
+      color: var(--text-main);
+      text-align: center;
+      font-weight: 600;
+    }
+
+    .inline-blank-input:focus {
+      border-color: var(--primary);
+      background: var(--bg-surface);
+    }
+
+    .inline-blank-input.correct {
+      border-color: var(--success);
+      background: #dcfce7;
+      color: #166534;
+    }
+
+    .inline-blank-input.incorrect {
+      border-color: var(--danger);
+      background: #fee2e2;
+      color: #991b1b;
+    }
+
+    /* Image Prompts Tab */
+    .prompts-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(360px, 1fr));
+      gap: 20px;
+    }
+
+    .prompt-card {
+      background: var(--bg-surface);
+      border: 1px solid var(--border);
+      border-radius: var(--radius-lg);
+      padding: 20px;
+      box-shadow: var(--shadow);
+    }
+
+    .prompt-word {
+      font-family: var(--font-heading);
+      font-size: 1.25rem;
+      font-weight: 700;
+      color: var(--primary);
+      margin-bottom: 8px;
+    }
+
+    .prompt-body {
+      font-size: 0.88rem;
+      color: var(--text-secondary);
+      line-height: 1.5;
+      background: var(--bg-subtle);
+      padding: 12px;
+      border-radius: var(--radius-md);
+      font-family: monospace;
+      margin-bottom: 12px;
+    }
+
+    /* Lightbox Modal */
+    .lightbox-modal {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100vw;
+      height: 100vh;
+      background: rgba(0, 0, 0, 0.8);
+      backdrop-filter: blur(8px);
+      display: none;
+      align-items: center;
+      justify-content: center;
+      z-index: 1000;
+      padding: 20px;
+    }
+
+    .lightbox-modal.open {
+      display: flex;
+    }
+
+    .lightbox-content {
+      background: var(--bg-surface);
+      border-radius: var(--radius-lg);
+      max-width: 800px;
+      max-height: 90vh;
+      overflow: hidden;
+      display: flex;
+      flex-direction: column;
+      box-shadow: var(--shadow-lg);
+      position: relative;
+    }
+
+    .lightbox-content img {
+      max-width: 100%;
+      max-height: 70vh;
+      object-fit: contain;
+    }
+
+    .lightbox-caption {
+      padding: 16px 20px;
+      font-size: 0.95rem;
+      color: var(--text-main);
+      font-weight: 600;
+    }
+
+    .lightbox-close {
+      position: absolute;
+      top: 12px;
+      right: 12px;
+      background: rgba(0, 0, 0, 0.6);
+      color: white;
+      border: none;
+      width: 32px;
+      height: 32px;
+      border-radius: var(--radius-full);
+      font-size: 16px;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    /* Print Stylesheet */
+    @media print {
+      header.app-header, .nav-bar, .ex-sidebar, .ex-toolbar, .mode-banner, .btn-action, .search-box, .filter-chip {
+        display: none !important;
+      }
+      body {
+        background: white !important;
+        color: black !important;
+        padding: 0 !important;
+      }
+      .exercises-wrapper {
+        display: block !important;
+      }
+      .ex-content-card {
+        border: none !important;
+        box-shadow: none !important;
+        padding: 0 !important;
+      }
+      .question-card {
+        page-break-inside: avoid;
+        border: 1px solid #ccc !important;
+        background: transparent !important;
+        margin-bottom: 16px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <!-- Lightbox Modal -->
+  <div id="lightbox" class="lightbox-modal" onclick="closeLightbox(event)">
+    <div class="lightbox-content" onclick="event.stopPropagation()">
+      <button class="lightbox-close" onclick="closeLightbox()">&times;</button>
+      <img id="lightbox-img" src="" alt="">
+      <div id="lightbox-caption" class="lightbox-caption"></div>
+    </div>
+  </div>
+
+  <!-- Header -->
+  <header class="app-header">
+    <div class="header-inner">
+      <div class="brand-section">
+        <div class="brand-logo">📚</div>
+        <div class="brand-text">
+          <h1 id="header-unit-title">Unit Vocabulary & Practice</h1>
+          <p id="header-unit-sub">Interactive Review & Practice Suite</p>
+        </div>
+      </div>
+      <div class="header-actions">
+        <div class="search-box">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg>
+          <input type="text" id="global-search" placeholder="Tìm kiếm từ vựng, câu hỏi..." oninput="onSearchInput(this.value)">
+        </div>
+        <button id="mode-toggle-btn" class="btn-action btn-mode-toggle" onclick="toggleMode()">
+          <span id="mode-icon">🎓</span>
+          <span id="mode-label">Chế độ Học sinh</span>
+        </button>
+        <button class="btn-action" onclick="toggleTheme()">
+          <span id="theme-icon">🌙</span>
+        </button>
+        <button class="btn-action" onclick="window.print()" title="In / Xuất PDF">
+          <span>🖨️ In</span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Nav Tabs -->
+  <nav class="nav-bar">
+    <div class="nav-inner">
+      <a class="nav-tab active" id="tab-btn-vocab" onclick="switchMainTab('vocab')">
+        <span>📖 Từ vựng (Vocabulary)</span>
+        <span class="badge" id="vocab-total-count">0</span>
+      </a>
+      <a class="nav-tab" id="tab-btn-exercises" onclick="switchMainTab('exercises')">
+        <span>📝 Bài tập (Exercises)</span>
+        <span class="badge" id="exercises-total-count">16</span>
+      </a>
+      <a class="nav-tab" id="tab-btn-prompts" onclick="switchMainTab('prompts')">
+        <span>🎨 Image Prompts</span>
+        <span class="badge" id="prompts-total-count">0</span>
+      </a>
+    </div>
+  </nav>
+
+  <!-- Main Container -->
+  <main class="app-container">
+    <!-- Mode Alert Banner -->
+    <div id="mode-banner" class="mode-banner">
+      <div>
+        <strong>🎓 Đang ở Chế độ Học sinh (Practice Mode):</strong> Bạn có thể làm bài tương tác, chọn đáp án hoặc nhập từ, sau đó nhấn "Kiểm tra đáp án" để tự chấm điểm.
+      </div>
+      <button class="btn-action" onclick="toggleMode()" style="background: white; color: var(--text-main); font-size: 0.8rem;">
+        Chuyển sang Giáo viên 👨‍🏫
+      </button>
+    </div>
+
+    <!-- Section: Vocabulary -->
+    <section id="section-vocab">
+      <div class="vocab-controls" id="vocab-group-filters">
+        <button class="filter-chip active" onclick="filterVocabGroup('all')">Tất cả nhóm</button>
+      </div>
+      <div class="vocab-grid" id="vocab-grid"></div>
+    </section>
+
+    <!-- Section: Exercises -->
+    <section id="section-exercises" style="display: none;">
+      <div class="exercises-wrapper">
+        <!-- Sidebar with 16 exercises list -->
+        <aside class="ex-sidebar">
+          <div class="ex-sidebar-title">Danh sách bài tập</div>
+          <div class="ex-list" id="exercise-nav-list"></div>
+        </aside>
+
+        <!-- Active Exercise Card -->
+        <div class="ex-content-card">
+          <div class="ex-header">
+            <div class="ex-title-wrap">
+              <h2 id="current-ex-title">Loading...</h2>
+              <p id="current-ex-desc">Instruction</p>
+            </div>
+            <div class="ex-toolbar">
+              <div class="score-badge" id="current-ex-score" style="display: none;">0/0 đúng</div>
+              <button class="btn-check" onclick="checkCurrentExercise()">Kiểm tra đáp án</button>
+              <button class="btn-reset" onclick="resetCurrentExercise()">Làm lại</button>
+            </div>
+          </div>
+
+          <div id="current-ex-body"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Section: Image Prompts -->
+    <section id="section-prompts" style="display: none;">
+      <div class="prompts-grid" id="prompts-grid"></div>
+    </section>
+  </main>
+
+  <script>
+    /* =========================================================
+       DATA INJECTION PLACEHOLDERS
+       These will be populated by generate_preview script
+       ========================================================= */
+    const VOCAB_DATA = [
+  {
+    "id": "1",
+    "group": "TV Programmes and Media",
+    "words": [
+      {
+        "id": "1",
+        "english_word": "programme",
+        "pronunciation_british": "/ˈprəʊɡræm/",
+        "pronunciation_american": "/ˈproʊɡræm/",
+        "vietnamese_meaning": "(n): chương trình (truyền hình/phát thanh)",
+        "example_sentence_en": "My family usually watches an interesting programme together after dinner.",
+        "example_sentence_vi": "Gia đình tôi thường cùng nhau xem một chương trình thú vị sau bữa tối.",
+        "audio_word": "/lessons/media/gs6/unit-7/audio/programme.mp3",
+        "audio_sentence": "/lessons/media/gs6/unit-7/audio/programme-sentence.mp3",
+        "image": "/lessons/media/gs6/unit-7/images/programme.webp",
+        "alt": "A family watching a television programme together"
+      },
+      {
+        "id": "2",
+        "english_word": "animated film",
+        "pronunciation_british": "/ˈænɪmeɪtɪd fɪlm/",
+        "pronunciation_american": "/ˈænəmeɪtɪd fɪlm/",
+        "vietnamese_meaning": "(n): phim hoạt hình",
+        "example_sentence_en": "Children love this animated film because the animal characters are very lovely.",
+        "example_sentence_vi": "Trẻ em rất thích bộ phim hoạt hình này vì các nhân vật động vật rất đáng yêu.",
+        "audio_word": "/lessons/media/gs6/unit-7/audio/animated-film.mp3",
+        "audio_sentence": "/lessons/media/gs6/unit-7/audio/animated-film-sentence.mp3",
+        "image": "/lessons/media/gs6/unit-7/images/animated-film.webp",
+        "alt": "Colorful characters in an animated film"
+      },
+      {
+        "id": "3",
+        "english_word": "cartoon",
+        "pronunciation_british": "/kɑːˈtuːn/",
+        "pronunciation_american": "/kɑːrˈtuːn/",
+        "vietnamese_meaning": "(n): phim hoạt hình",
+        "example_sentence_en": "My younger brother laughs a lot when he watches funny cartoons on Sunday morning.",
+        "example_sentence_vi": "Em trai tôi cười rất nhiều khi xem những bộ phim hoạt hình vui nhộn vào sáng Chủ nhật.",
+        "audio_word": "/lessons/media/gs6/unit-7/audio/cartoon.mp3",
+        "audio_sentence": "/lessons/media/gs6/unit-7/audio/cartoon-sentence.mp3",
+        "image": "/lessons/media/gs6/unit-7/images/cartoon.webp",
+        "alt": "A funny cartoon with playful characters on screen"
+      },
+      {
+        "id": "4",
+        "english_word": "comedy",
+        "pronunciation_british": "/ˈkɒmədi/",
+        "pronunciation_american": "/ˈkɑːmədi/",
+        "vietnamese_meaning": "(n): phim hài, kịch hài",
+        "example_sentence_en": "We enjoy watching a good comedy on the weekend to relax after school.",
+        "example_sentence_vi": "Chúng tôi thích xem một bộ phim hài hay vào cuối tuần để thư giãn sau giờ học.",
+        "audio_word": "/lessons/media/gs6/unit-7/audio/comedy.mp3",
+        "audio_sentence": "/lessons/media/gs6/unit-7/audio/comedy-sentence.mp3",
+        "image": "/lessons/media/gs6/unit-7/images/comedy.webp",
+        "alt": "People laughing while watching a comedy show"
+      },
+      {
+        "id": "5",
+        "english_word": "talent show",
+        "pronunciation_british": "/ˈtælənt ʃəʊ/",
+        "pronunciation_american": "/ˈtælənt ʃoʊ/",
+        "vietnamese_meaning": "(n): cuộc thi tài năng, chương trình tìm kiếm tài năng",
+        "example_sentence_en": "Many young singers become famous after taking part in this music talent show.",
+        "example_sentence_vi": "Nhiều ca sĩ trẻ trở nên nổi tiếng sau khi tham gia cuộc thi tài năng âm nhạc này.",
+        "audio_word": "/lessons/media/gs6/unit-7/audio/talent-show.mp3",
+        "audio_sentence": "/lessons/media/gs6/unit-7/audio/talent-show-sentence.mp3",
+        "image": "/lessons/media/gs6/unit-7/images/talent-show.webp",
+        "alt": "A young singer performing on a talent show stage"
+      },
+      {
+        "id": "6",
+        "english_word": "game show",
+        "pronunciation_british": "/ˈɡeɪm ʃəʊ/",
+        "pronunciation_american": "/ˈɡeɪm ʃoʊ/",
+        "vietnamese_meaning": "(n): trò chơi truyền hình, chương trình trò chơi",
+        "example_sentence_en": "The contestants answered all the quiz questions correctly and won the game show.",
+        "example_sentence_vi": "Các thí sinh đã trả lời đúng tất cả các câu hỏi đố và chiến thắng trò chơi truyền hình.",
+        "audio_word": "/lessons/media/gs6/unit-7/audio/game-show.mp3",
+        "audio_sentence": "/lessons/media/gs6/unit-7/audio/game-show-sentence.mp3",
+        "image": "/lessons/media/gs6/unit-7/images/game-show.webp",
+        "alt": "Contestants participating in an exciting television game show"
+      },
+      {
+        "id": "7",
+        "english_word": "educational programme",
+        "pronunciation_british": "/ˌedʒuˈkeɪʃənl ˈprəʊɡræm/",
+        "pronunciation_american": "/ˌedʒuˈkeɪʃənl ˈproʊɡræm/",
+        "vietnamese_meaning": "(n): chương trình giáo dục",
+        "example_sentence_en": "This educational programme teaches primary students basic science and English words.",
+        "example_sentence_vi": "Chương trình giáo dục này dạy học sinh tiểu học khoa học cơ bản và từ vựng tiếng Anh.",
+        "audio_word": "/lessons/media/gs6/unit-7/audio/educational-programme.mp3",
+        "audio_sentence": "/lessons/media/gs6/unit-7/audio/educational-programme-sentence.mp3",
+        "image": "/lessons/media/gs6/unit-7/images/educational-programme.webp",
+        "alt": "Children learning science from an educational television programme"
+      },
+      {
+        "id": "8",
+        "english_word": "wildlife programme",
+        "pronunciation_british": "/ˈwaɪldlaɪf ˈprəʊɡræm/",
+        "pronunciation_american": "/ˈwaɪldlaɪf ˈproʊɡræm/",
+        "vietnamese_meaning": "(n): chương trình thế giới hoang dã",
+        "example_sentence_en": "I learned many amazing facts about lions and elephants from that wildlife programme.",
+        "example_sentence_vi": "Tôi đã học được nhiều điều kỳ thú về sư tử và voi từ chương trình thế giới hoang dã đó.",
+        "audio_word": "/lessons/media/gs6/unit-7/audio/wildlife-programme.mp3",
+        "audio_sentence": "/lessons/media/gs6/unit-7/audio/wildlife-programme-sentence.mp3",
+        "image": "/lessons/media/gs6/unit-7/images/wildlife-programme.webp",
+        "alt": "Wild animals in nature featured on a wildlife television programme"
+      },
+      {
+        "id": "9",
+        "english_word": "sports programme",
+        "pronunciation_british": "/ˈspɔːts ˈprəʊɡræm/",
+        "pronunciation_american": "/ˈspɔːrts ˈproʊɡræm/",
+        "vietnamese_meaning": "(n): chương trình thể thao",
+        "example_sentence_en": "My father turns on the sports programme every evening to see football highlights.",
+        "example_sentence_vi": "Bố tôi bật chương trình thể thao mỗi tối để xem các pha bóng đá nổi bật.",
+        "audio_word": "/lessons/media/gs6/unit-7/audio/sports-programme.mp3",
+        "audio_sentence": "/lessons/media/gs6/unit-7/audio/sports-programme-sentence.mp3",
+        "image": "/lessons/media/gs6/unit-7/images/sports-programme.webp",
+        "alt": "Athletes competing shown during a sports programme"
+      },
+      {
+        "id": "10",
+        "english_word": "science programme",
+        "pronunciation_british": "/ˈsaɪəns ˈprəʊɡræm/",
+        "pronunciation_american": "/ˈsaɪəns ˈproʊɡræm/",
+        "vietnamese_meaning": "(n): chương trình khoa học",
+        "example_sentence_en": "We watched a science programme explaining how planets travel around the sun.",
+        "example_sentence_vi": "Chúng tôi đã xem một chương trình khoa học giải thích cách các hành tinh quay quanh mặt trời.",
+        "audio_word": "/lessons/media/gs6/unit-7/audio/science-programme.mp3",
+        "audio_sentence": "/lessons/media/gs6/unit-7/audio/science-programme-sentence.mp3",
+        "image": "/lessons/media/gs6/unit-7/images/science-programme.webp",
+        "alt": "A scientist demonstrating an experiment on a science television programme"
+      },
+      {
+        "id": "11",
+        "english_word": "TV series",
+        "pronunciation_british": "/ˌtiː ˈviː ˈsɪəriːz/",
+        "pronunciation_american": "/ˌtiː ˈviː ˈsɪriːz/",
+        "vietnamese_meaning": "(n): phim truyền hình nhiều tập",
+        "example_sentence_en": "That new TV series has twenty exciting episodes about school life.",
+        "example_sentence_vi": "Bộ phim truyền hình nhiều tập mới đó có hai mươi tập hào hứng về đời sống học đường.",
+        "audio_word": "/lessons/media/gs6/unit-7/audio/tv-series.mp3",
+        "audio_sentence": "/lessons/media/gs6/unit-7/audio/tv-series-sentence.mp3",
+        "image": "/lessons/media/gs6/unit-7/images/tv-series.webp",
+        "alt": "Cast members in an episode of a TV drama series"
+      },
+      {
+        "id": "12",
+        "english_word": "channel",
+        "pronunciation_british": "/ˈtʃænl/",
+        "pronunciation_american": "/ˈtʃænl/",
+        "vietnamese_meaning": "(n): kênh truyền hình",
+        "example_sentence_en": "Can you switch to channel five so we can check the weather report?",
+        "example_sentence_vi": "Bạn có thể chuyển sang kênh số năm để chúng ta xem bản tin thời tiết được không?",
+        "audio_word": "/lessons/media/gs6/unit-7/audio/channel.mp3",
+        "audio_sentence": "/lessons/media/gs6/unit-7/audio/channel-sentence.mp3",
+        "image": "/lessons/media/gs6/unit-7/images/channel.webp",
+        "alt": "Television remote pointing at the screen changing the channel"
+      },
+      {
+        "id": "13",
+        "english_word": "TV guide",
+        "pronunciation_british": "/ˌtiː ˈviː ˈɡaɪd/",
+        "pronunciation_american": "/ˌtiː ˈviː ˈɡaɪd/",
+        "vietnamese_meaning": "(n): lịch phát sóng truyền hình, sổ tay hướng dẫn xem TV",
+        "example_sentence_en": "Let's look at the TV guide to see what time the football match begins.",
+        "example_sentence_vi": "Chúng ta hãy xem lịch phát sóng truyền hình để biết trận bóng đá bắt đầu lúc mấy giờ.",
+        "audio_word": "/lessons/media/gs6/unit-7/audio/tv-guide.mp3",
+        "audio_sentence": "/lessons/media/gs6/unit-7/audio/tv-guide-sentence.mp3",
+        "image": "/lessons/media/gs6/unit-7/images/tv-guide.webp",
+        "alt": "A printed television schedule and programme guide table"
+      },
+      {
+        "id": "14",
+        "english_word": "film",
+        "pronunciation_british": "/fɪlm/",
+        "pronunciation_american": "/fɪlm/",
+        "vietnamese_meaning": "(n): phim, bộ phim điện ảnh",
+        "example_sentence_en": "We bought popcorn and watched a fantastic film at the cinema yesterday.",
+        "example_sentence_vi": "Hôm qua chúng tôi đã mua bỏng ngô và xem một bộ phim tuyệt vời ở rạp chiếu phim.",
+        "audio_word": "/lessons/media/gs6/unit-7/audio/film.mp3",
+        "audio_sentence": "/lessons/media/gs6/unit-7/audio/film-sentence.mp3",
+        "image": "/lessons/media/gs6/unit-7/images/film.webp",
+        "alt": "Cinema screen playing an exciting movie film"
+      },
+      {
+        "id": "15",
+        "english_word": "clip",
+        "pronunciation_british": "/klɪp/",
+        "pronunciation_american": "/klɪp/",
+        "vietnamese_meaning": "(n): đoạn phim ngắn, đoạn clip ngắn",
+        "example_sentence_en": "The teacher showed a short video clip of dolphins swimming in the ocean.",
+        "example_sentence_vi": "Giáo viên đã cho xem một đoạn clip ngắn về những chú cá heo đang bơi ở đại dương.",
+        "audio_word": "/lessons/media/gs6/unit-7/audio/clip.mp3",
+        "audio_sentence": "/lessons/media/gs6/unit-7/audio/clip-sentence.mp3",
+        "image": "/lessons/media/gs6/unit-7/images/clip.webp",
+        "alt": "A short video clip playing on a monitor screen"
+      }
+    ]
+  },
+  {
+    "id": "2",
+    "group": "People and Characters",
+    "words": [
+      {
+        "id": "16",
+        "english_word": "viewer",
+        "pronunciation_british": "/ˈvjuːə/",
+        "pronunciation_american": "/ˈvjuːər/",
+        "vietnamese_meaning": "(n): người xem truyền hình, khán giả truyền hình",
+        "example_sentence_en": "Millions of television viewers voted for their favourite singer last night.",
+        "example_sentence_vi": "Hàng triệu khán giả truyền hình đã bình chọn cho ca sĩ yêu thích của họ vào tối qua.",
+        "audio_word": "/lessons/media/gs6/unit-7/audio/viewer.mp3",
+        "audio_sentence": "/lessons/media/gs6/unit-7/audio/viewer-sentence.mp3",
+        "image": "/lessons/media/gs6/unit-7/images/viewer.webp",
+        "alt": "An engaged television viewer watching a favourite broadcast"
+      },
+      {
+        "id": "17",
+        "english_word": "character",
+        "pronunciation_british": "/ˈkærəktə/",
+        "pronunciation_american": "/ˈkærəktər/",
+        "vietnamese_meaning": "(n): nhân vật (trong phim, truyện)",
+        "example_sentence_en": "Mickey Mouse is a famous cartoon character known by children all over the world.",
+        "example_sentence_vi": "Chuột Mickey là một nhân vật hoạt hình nổi tiếng được trẻ em khắp thế giới biết đến.",
+        "audio_word": "/lessons/media/gs6/unit-7/audio/character.mp3",
+        "audio_sentence": "/lessons/media/gs6/unit-7/audio/character-sentence.mp3",
+        "image": "/lessons/media/gs6/unit-7/images/character.webp",
+        "alt": "A friendly and recognizable cartoon character"
+      },
+      {
+        "id": "18",
+        "english_word": "performer",
+        "pronunciation_british": "/pəˈfɔːmə/",
+        "pronunciation_american": "/pərˈfɔːrmər/",
+        "vietnamese_meaning": "(n): người biểu diễn, nghệ sĩ trình diễn",
+        "example_sentence_en": "Each talented performer gave a brilliant music show on the stage.",
+        "example_sentence_vi": "Mỗi người biểu diễn tài năng đã cống hiến một tiết mục âm nhạc xuất sắc trên sân khấu.",
+        "audio_word": "/lessons/media/gs6/unit-7/audio/performer.mp3",
+        "audio_sentence": "/lessons/media/gs6/unit-7/audio/performer-sentence.mp3",
+        "image": "/lessons/media/gs6/unit-7/images/performer.webp",
+        "alt": "A music performer on stage under stage lights"
+      }
+    ]
+  },
+  {
+    "id": "3",
+    "group": "Adjectives Describing Programmes and Characters",
+    "words": [
+      {
+        "id": "19",
+        "english_word": "educational",
+        "pronunciation_british": "/ˌedʒuˈkeɪʃənl/",
+        "pronunciation_american": "/ˌedʒuˈkeɪʃənl/",
+        "vietnamese_meaning": "(adj): mang tính giáo dục, có tính giáo dục",
+        "example_sentence_en": "Watching documentaries about nature can be both fun and educational for young students.",
+        "example_sentence_vi": "Xem phim tài liệu về thiên nhiên có thể vừa thú vị vừa mang tính giáo dục cho học sinh nhỏ tuổi.",
+        "audio_word": "/lessons/media/gs6/unit-7/audio/educational.mp3",
+        "audio_sentence": "/lessons/media/gs6/unit-7/audio/educational-sentence.mp3",
+        "image": "/lessons/media/gs6/unit-7/images/educational.webp",
+        "alt": "Students engaging with educational media content"
+      },
+      {
+        "id": "20",
+        "english_word": "interesting",
+        "pronunciation_british": "/ˈɪntrəstɪŋ/",
+        "pronunciation_american": "/ˈɪntrəstɪŋ/",
+        "vietnamese_meaning": "(adj): thú vị, hấp dẫn",
+        "example_sentence_en": "This history quiz show is very interesting and full of surprising facts.",
+        "example_sentence_vi": "Chương trình đố vui lịch sử này rất thú vị và có đầy những sự thật bất ngờ.",
+        "audio_word": "/lessons/media/gs6/unit-7/audio/interesting.mp3",
+        "audio_sentence": "/lessons/media/gs6/unit-7/audio/interesting-sentence.mp3",
+        "image": "/lessons/media/gs6/unit-7/images/interesting.webp",
+        "alt": "Curious students enjoying an interesting television presentation"
+      },
+      {
+        "id": "21",
+        "english_word": "funny",
+        "pronunciation_british": "/ˈfʌni/",
+        "pronunciation_american": "/ˈfʌni/",
+        "vietnamese_meaning": "(adj): hài hước, buồn cười",
+        "example_sentence_en": "The playful puppy in the video does funny tricks that make everyone smile.",
+        "example_sentence_vi": "Chú cún tinh nghịch trong video làm những trò buồn cười khiến mọi người đều mỉm cười.",
+        "audio_word": "/lessons/media/gs6/unit-7/audio/funny.mp3",
+        "audio_sentence": "/lessons/media/gs6/unit-7/audio/funny-sentence.mp3",
+        "image": "/lessons/media/gs6/unit-7/images/funny.webp",
+        "alt": "A funny and cheerful clown making people laugh"
+      },
+      {
+        "id": "22",
+        "english_word": "clever",
+        "pronunciation_british": "/ˈklevə/",
+        "pronunciation_american": "/ˈklevər/",
+        "vietnamese_meaning": "(adj): thông minh, khôn ngoan",
+        "example_sentence_en": "The little fox is clever enough to solve tricky puzzles in the story.",
+        "example_sentence_vi": "Chú cáo nhỏ đủ khôn ngoan để giải những câu đố hóc búa trong câu chuyện.",
+        "audio_word": "/lessons/media/gs6/unit-7/audio/clever.mp3",
+        "audio_sentence": "/lessons/media/gs6/unit-7/audio/clever-sentence.mp3",
+        "image": "/lessons/media/gs6/unit-7/images/clever.webp",
+        "alt": "A clever animal character solving a puzzle"
+      },
+      {
+        "id": "23",
+        "english_word": "popular",
+        "pronunciation_british": "/ˈpɒpjələ/",
+        "pronunciation_american": "/ˈpɑːpjələr/",
+        "vietnamese_meaning": "(adj): phổ biến, được yêu thích rộng rãi",
+        "example_sentence_en": "Football is the most popular sport broadcast on weekend television.",
+        "example_sentence_vi": "Bóng đá là môn thể thao phổ biến nhất được phát sóng trên truyền hình cuối tuần.",
+        "audio_word": "/lessons/media/gs6/unit-7/audio/popular.mp3",
+        "audio_sentence": "/lessons/media/gs6/unit-7/audio/popular-sentence.mp3",
+        "image": "/lessons/media/gs6/unit-7/images/popular.webp",
+        "alt": "A popular television broadcast watched by many people"
+      },
+      {
+        "id": "24",
+        "english_word": "cute",
+        "pronunciation_british": "/kjuːt/",
+        "pronunciation_american": "/kjuːt/",
+        "vietnamese_meaning": "(adj): dễ thương, đáng yêu",
+        "example_sentence_en": "The animation features a cute baby panda exploring the bamboo forest.",
+        "example_sentence_vi": "Bộ phim hoạt hình có một chú gấu trúc con dễ thương đang khám phá rừng trúc.",
+        "audio_word": "/lessons/media/gs6/unit-7/audio/cute.mp3",
+        "audio_sentence": "/lessons/media/gs6/unit-7/audio/cute-sentence.mp3",
+        "image": "/lessons/media/gs6/unit-7/images/cute.webp",
+        "alt": "A cute baby panda playing cheerfully"
+      },
+      {
+        "id": "25",
+        "english_word": "live",
+        "pronunciation_british": "/laɪv/",
+        "pronunciation_american": "/laɪv/",
+        "vietnamese_meaning": "(adj): trực tiếp (phát sóng trực tiếp)",
+        "example_sentence_en": "We watched the live music concert broadcast straight from the national stadium.",
+        "example_sentence_vi": "Chúng tôi đã xem buổi hòa nhạc trực tiếp được phát sóng thẳng từ sân vận động quốc gia.",
+        "audio_word": "/lessons/media/gs6/unit-7/audio/live.mp3",
+        "audio_sentence": "/lessons/media/gs6/unit-7/audio/live-sentence.mp3",
+        "image": "/lessons/media/gs6/unit-7/images/live.webp",
+        "alt": "A live concert broadcast badge shown on a television screen"
+      },
+      {
+        "id": "26",
+        "english_word": "boring",
+        "pronunciation_british": "/ˈbɔːrɪŋ/",
+        "pronunciation_american": "/ˈbɔːrɪŋ/",
+        "vietnamese_meaning": "(adj): nhàm chán, buồn tẻ",
+        "example_sentence_en": "The lecture was so boring that several people fell asleep in their chairs.",
+        "example_sentence_vi": "Bài giảng quá nhàm chán đến mức vài người đã ngủ gật trên ghế của họ.",
+        "audio_word": "/lessons/media/gs6/unit-7/audio/boring.mp3",
+        "audio_sentence": "/lessons/media/gs6/unit-7/audio/boring-sentence.mp3",
+        "image": "/lessons/media/gs6/unit-7/images/boring.webp",
+        "alt": "A person looking bored while sitting in front of a dull lecture"
+      },
+      {
+        "id": "27",
+        "english_word": "wonderful",
+        "pronunciation_british": "/ˈwʌndəfl/",
+        "pronunciation_american": "/ˈwʌndərfl/",
+        "vietnamese_meaning": "(adj): tuyệt vời, kỳ diệu",
+        "example_sentence_en": "The visual effects in that fantasy film gave viewers a wonderful experience.",
+        "example_sentence_vi": "Hiệu ứng hình ảnh trong bộ phim giả tưởng đó đã mang lại cho khán giả một trải nghiệm tuyệt vời.",
+        "audio_word": "/lessons/media/gs6/unit-7/audio/wonderful.mp3",
+        "audio_sentence": "/lessons/media/gs6/unit-7/audio/wonderful-sentence.mp3",
+        "image": "/lessons/media/gs6/unit-7/images/wonderful.webp",
+        "alt": "A wonderful scenic visual landscape displayed on screen"
+      }
+    ]
+  }
+]
+;
+    const EXERCISES_DATA = [{
+    "id":  "1",
+    "type":  "multiple_choice",
+    "title":  "Multiple Choice - Direct Questions",
+    "description":  "Choose the best answer for each question.",
+    "questions":  [
+                      {
+                          "id":  "1",
+                          "text":  "Which type of TV programme makes people laugh with humorous stories?",
+                          "options":  [
+                                          "weather forecast",
+                                          "comedy",
+                                          "science programme",
+                                          "news report"
+                                      ],
+                          "correct_answer":  "comedy"
+                      },
+                      {
+                          "id":  "2",
+                          "text":  "What do we call a person who watches a television show or broadcast?",
+                          "options":  [
+                                          "performer",
+                                          "doctor",
+                                          "writer",
+                                          "viewer"
+                                      ],
+                          "correct_answer":  "viewer"
+                      },
+                      {
+                          "id":  "3",
+                          "text":  "Which show usually invites contestants to answer quiz questions or play games for prizes?",
+                          "options":  [
+                                          "music video",
+                                          "wildlife programme",
+                                          "game show",
+                                          "action movie"
+                                      ],
+                          "correct_answer":  "game show"
+                      },
+                      {
+                          "id":  "4",
+                          "text":  "What do we look at when we want to check the broadcasting schedule and times of TV programmes?",
+                          "options":  [
+                                          "ticket machine",
+                                          "story book",
+                                          "TV guide",
+                                          "station map"
+                                      ],
+                          "correct_answer":  "TV guide"
+                      },
+                      {
+                          "id":  "5",
+                          "text":  "Which type of programme teaches students useful knowledge about nature, languages, or science?",
+                          "options":  [
+                                          "detective story",
+                                          "educational programme",
+                                          "horror film",
+                                          "shopping channel"
+                                      ],
+                          "correct_answer":  "educational programme"
+                      },
+                      {
+                          "id":  "6",
+                          "text":  "What kind of show features people displaying special abilities like dancing, singing, or magic?",
+                          "options":  [
+                                          "weather report",
+                                          "talent show",
+                                          "sports programme",
+                                          "news broadcast"
+                                      ],
+                          "correct_answer":  "talent show"
+                      },
+                      {
+                          "id":  "7",
+                          "text":  "Which broadcast shows wild animals in their natural habitats like forests and savannas?",
+                          "options":  [
+                                          "cartoon",
+                                          "comedy",
+                                          "wildlife programme",
+                                          "game show"
+                                      ],
+                          "correct_answer":  "wildlife programme"
+                      },
+                      {
+                          "id":  "8",
+                          "text":  "What do you call an imaginary animal or person in a movie or story?",
+                          "options":  [
+                                          "reporter",
+                                          "viewer",
+                                          "director",
+                                          "character"
+                                      ],
+                          "correct_answer":  "character"
+                      },
+                      {
+                          "id":  "9",
+                          "text":  "Which word describes a TV show that is being broadcast at the exact moment it happens?",
+                          "options":  [
+                                          "live",
+                                          "boring",
+                                          "tasty",
+                                          "clever"
+                                      ],
+                          "correct_answer":  "live"
+                      },
+                      {
+                          "id":  "10",
+                          "text":  "What term describes a television story with many continuous episodes over several weeks?",
+                          "options":  [
+                                          "TV series",
+                                          "short clip",
+                                          "paper notice",
+                                          "single photo"
+                                      ],
+                          "correct_answer":  "TV series"
+                      }
+                  ]
+},{
+    "id":  "2",
+    "type":  "multiple_choice",
+    "title":  "Multiple Choice - Sentence Completion",
+    "description":  "Choose the correct word to complete the sentence.",
+    "questions":  [
+                      {
+                          "id":  "1",
+                          "text":  "The children love that __________ because the drawings of the talking rabbit are very cute.",
+                          "options":  [
+                                          "sports programme",
+                                          "weather report",
+                                          "news interview",
+                                          "animated film"
+                                      ],
+                          "correct_answer":  "animated film"
+                      },
+                      {
+                          "id":  "2",
+                          "text":  "My older sister never watches that show because she thinks it is extremely __________.",
+                          "options":  [
+                                          "clever",
+                                          "boring",
+                                          "popular",
+                                          "wonderful"
+                                      ],
+                          "correct_answer":  "boring"
+                      },
+                      {
+                          "id":  "3",
+                          "text":  "Can you switch to another television __________? I want to see the cartoon on channel nine.",
+                          "options":  [
+                                          "hospital",
+                                          "channel",
+                                          "cinema",
+                                          "stadium"
+                                      ],
+                          "correct_answer":  "channel"
+                      },
+                      {
+                          "id":  "4",
+                          "text":  "The magician on the stage is a very skillful __________ and everyone claps happily.",
+                          "options":  [
+                                          "viewer",
+                                          "performer",
+                                          "farmer",
+                                          "doctor"
+                                      ],
+                          "correct_answer":  "performer"
+                      },
+                      {
+                          "id":  "5",
+                          "text":  "Our teacher shares a short video __________ of sea turtles swimming around coral reefs.",
+                          "options":  [
+                                          "clip",
+                                          "channel",
+                                          "guide",
+                                          "series"
+                                      ],
+                          "correct_answer":  "clip"
+                      },
+                      {
+                          "id":  "6",
+                          "text":  "Mr. David likes watching the weekend __________ because he loves football and tennis.",
+                          "options":  [
+                                          "bedtime story",
+                                          "animated film",
+                                          "cooking lesson",
+                                          "sports programme"
+                                      ],
+                          "correct_answer":  "sports programme"
+                      },
+                      {
+                          "id":  "7",
+                          "text":  "This mystery detective is a very __________ character who solves hard puzzles easily.",
+                          "options":  [
+                                          "clever",
+                                          "slow",
+                                          "boring",
+                                          "sleepy"
+                                      ],
+                          "correct_answer":  "clever"
+                      },
+                      {
+                          "id":  "8",
+                          "text":  "The football final is a __________ broadcast, so millions of fans are watching it right now.",
+                          "options":  [
+                                          "past",
+                                          "quiet",
+                                          "live",
+                                          "cold"
+                                      ],
+                          "correct_answer":  "live"
+                      },
+                      {
+                          "id":  "9",
+                          "text":  "That science quiz show is very __________ among school students in our country.",
+                          "options":  [
+                                          "dark",
+                                          "lonely",
+                                          "popular",
+                                          "terrible"
+                                      ],
+                          "correct_answer":  "popular"
+                      },
+                      {
+                          "id":  "10",
+                          "text":  "We learn many useful things about space and stars from this weekly __________.",
+                          "options":  [
+                                          "comedy",
+                                          "game show",
+                                          "science programme",
+                                          "cartoon"
+                                      ],
+                          "correct_answer":  "science programme"
+                      }
+                  ]
+},{
+    "id":  "3",
+    "type":  "multiple_choice",
+    "title":  "Multiple Choice - Conversation Completion",
+    "description":  "Choose the correct response to complete the conversation.",
+    "questions":  [
+                      {
+                          "id":  "1",
+                          "text":  "Tom: \u0027What kind of TV show should we watch tonight?\u0027\nMary: \u0027______________________________\u0027",
+                          "options":  [
+                                          "I want to cook some hot soup for dinner.",
+                                          "Please wash your green school shirt now.",
+                                          "We should walk to the sports club today.",
+                                          "Let\u0027s watch that funny comedy to relax."
+                                      ],
+                          "correct_answer":  "Let\u0027s watch that funny comedy to relax."
+                      },
+                      {
+                          "id":  "2",
+                          "text":  "Peter: \u0027Why do you love watching this cartoon every Sunday?\u0027\nLinda: \u0027______________________________\u0027",
+                          "options":  [
+                                          "Because my brother walks to the city library.",
+                                          "Because the little puppy character is so cute.",
+                                          "Because our father buys a big brown table now.",
+                                          "Because the math homework is very hard for me."
+                                      ],
+                          "correct_answer":  "Because the little puppy character is so cute."
+                      },
+                      {
+                          "id":  "3",
+                          "text":  "Kevin: \u0027That singer on the talent show sings wonderfully!\u0027\nAnna: \u0027______________________________\u0027",
+                          "options":  [
+                                          "Yes, she is a truly brilliant performer.",
+                                          "No, our school begins at seven on Monday.",
+                                          "Yes, the kitchen floor is very clean now.",
+                                          "No, we must buy a new soccer ball today."
+                                      ],
+                          "correct_answer":  "Yes, she is a truly brilliant performer."
+                      },
+                      {
+                          "id":  "4",
+                          "text":  "David: \u0027Do you know when the wildlife programme starts?\u0027\nSarah: \u0027______________________________\u0027",
+                          "options":  [
+                                          "Check the TV guide on the living room table.",
+                                          "Wash your dirty sports shoes after the match.",
+                                          "Buy two train tickets at the railway station.",
+                                          "Close the bedroom window because of the rain."
+                                      ],
+                          "correct_answer":  "Check the TV guide on the living room table."
+                      },
+                      {
+                          "id":  "5",
+                          "text":  "Jack: \u0027Would you like to watch an animated film with me?\u0027\nEmma: \u0027______________________________\u0027",
+                          "options":  [
+                                          "No, the bus arrives at the station now.",
+                                          "Yes, my sister has three white rabbits.",
+                                          "Yes, I would love to watch it with you.",
+                                          "No, I do not like eating sweet apples."
+                                      ],
+                          "correct_answer":  "Yes, I would love to watch it with you."
+                      },
+                      {
+                          "id":  "6",
+                          "text":  "Mark: \u0027What do you think of this English channel?\u0027\nLucy: \u0027______________________________\u0027",
+                          "options":  [
+                                          "It costs too much money to buy a computer.",
+                                          "It has many educational programmes for kids.",
+                                          "It has four large wooden chairs in the room.",
+                                          "It is raining heavily outside on the street."
+                                      ],
+                          "correct_answer":  "It has many educational programmes for kids."
+                      },
+                      {
+                          "id":  "7",
+                          "text":  "Grandpa: \u0027Why do you turn off the TV series, Nick?\u0027\nNick: \u0027______________________________\u0027",
+                          "options":  [
+                                          "Because my friends are swimming in the lake.",
+                                          "Because the hot tea is very sweet and tasty.",
+                                          "Because it is so boring and nothing happens.",
+                                          "Because our dog is sleeping under the table."
+                                      ],
+                          "correct_answer":  "Because it is so boring and nothing happens."
+                      },
+                      {
+                          "id":  "8",
+                          "text":  "Alex: \u0027Do you want to watch the sports programme with us?\u0027\nBen: \u0027______________________________\u0027",
+                          "options":  [
+                                          "No, because my new bicycle has bright wheels.",
+                                          "No, because the library is very quiet today.",
+                                          "Yes, because I really love watching football.",
+                                          "Yes, because our bus goes to school at eight."
+                                      ],
+                          "correct_answer":  "Yes, because I really love watching football."
+                      },
+                      {
+                          "id":  "9",
+                          "text":  "Teacher: \u0027Did you see that clever student on the game show?\u0027\nStudent: \u0027______________________________\u0027",
+                          "options":  [
+                                          "No, we should buy fresh bread for breakfast.",
+                                          "No, the weather is very cold in the morning.",
+                                          "Yes, my little brother can ride his bicycle.",
+                                          "Yes, he answers every question very quickly."
+                                      ],
+                          "correct_answer":  "Yes, he answers every question very quickly."
+                      },
+                      {
+                          "id":  "10",
+                          "text":  "Sam: \u0027Is this music concert a live broadcast?\u0027\nKelly: \u0027______________________________\u0027",
+                          "options":  [
+                                          "Yes, my mother makes delicious apple pies.",
+                                          "Yes, the band is playing right on the stage.",
+                                          "No, we must borrow some storybooks at school.",
+                                          "No, the train leaves the station at ten a.m."
+                                      ],
+                          "correct_answer":  "Yes, the band is playing right on the stage."
+                      }
+                  ]
+},{
+    "id":  "4",
+    "type":  "pic_to_word",
+    "title":  "Write the English Words for the Pictures",
+    "description":  "Look at each picture and write the correct English word in the blank.",
+    "questions":  [
+                      {
+                          "id":  "1",
+                          "image":  "/lessons/media/gs6/unit-7/images/programme.webp",
+                          "correct_answer":  "programme"
+                      },
+                      {
+                          "id":  "2",
+                          "image":  "/lessons/media/gs6/unit-7/images/animated-film.webp",
+                          "correct_answer":  "animated film"
+                      },
+                      {
+                          "id":  "3",
+                          "image":  "/lessons/media/gs6/unit-7/images/cartoon.webp",
+                          "correct_answer":  "cartoon"
+                      },
+                      {
+                          "id":  "4",
+                          "image":  "/lessons/media/gs6/unit-7/images/comedy.webp",
+                          "correct_answer":  "comedy"
+                      },
+                      {
+                          "id":  "5",
+                          "image":  "/lessons/media/gs6/unit-7/images/talent-show.webp",
+                          "correct_answer":  "talent show"
+                      },
+                      {
+                          "id":  "6",
+                          "image":  "/lessons/media/gs6/unit-7/images/game-show.webp",
+                          "correct_answer":  "game show"
+                      },
+                      {
+                          "id":  "7",
+                          "image":  "/lessons/media/gs6/unit-7/images/educational-programme.webp",
+                          "correct_answer":  "educational programme"
+                      },
+                      {
+                          "id":  "8",
+                          "image":  "/lessons/media/gs6/unit-7/images/wildlife-programme.webp",
+                          "correct_answer":  "wildlife programme"
+                      },
+                      {
+                          "id":  "9",
+                          "image":  "/lessons/media/gs6/unit-7/images/sports-programme.webp",
+                          "correct_answer":  "sports programme"
+                      },
+                      {
+                          "id":  "10",
+                          "image":  "/lessons/media/gs6/unit-7/images/science-programme.webp",
+                          "correct_answer":  "science programme"
+                      },
+                      {
+                          "id":  "11",
+                          "image":  "/lessons/media/gs6/unit-7/images/tv-series.webp",
+                          "correct_answer":  "TV series"
+                      },
+                      {
+                          "id":  "12",
+                          "image":  "/lessons/media/gs6/unit-7/images/channel.webp",
+                          "correct_answer":  "channel"
+                      },
+                      {
+                          "id":  "13",
+                          "image":  "/lessons/media/gs6/unit-7/images/tv-guide.webp",
+                          "correct_answer":  "TV guide"
+                      },
+                      {
+                          "id":  "14",
+                          "image":  "/lessons/media/gs6/unit-7/images/film.webp",
+                          "correct_answer":  "film"
+                      },
+                      {
+                          "id":  "15",
+                          "image":  "/lessons/media/gs6/unit-7/images/clip.webp",
+                          "correct_answer":  "clip"
+                      },
+                      {
+                          "id":  "16",
+                          "image":  "/lessons/media/gs6/unit-7/images/viewer.webp",
+                          "correct_answer":  "viewer"
+                      },
+                      {
+                          "id":  "17",
+                          "image":  "/lessons/media/gs6/unit-7/images/character.webp",
+                          "correct_answer":  "character"
+                      },
+                      {
+                          "id":  "18",
+                          "image":  "/lessons/media/gs6/unit-7/images/performer.webp",
+                          "correct_answer":  "performer"
+                      },
+                      {
+                          "id":  "19",
+                          "image":  "/lessons/media/gs6/unit-7/images/cute.webp",
+                          "correct_answer":  "cute"
+                      },
+                      {
+                          "id":  "20",
+                          "image":  "/lessons/media/gs6/unit-7/images/boring.webp",
+                          "correct_answer":  "boring"
+                      }
+                  ]
+},{
+    "id":  "5",
+    "type":  "write_english_words",
+    "title":  "Write English words",
+    "description":  "Write the English word for each Vietnamese meaning below.",
+    "questions":  [
+                      {
+                          "id":  "1",
+                          "parts":  [
+                                        {
+                                            "vietnamese":  "chương trình (truyền hình/phát thanh)",
+                                            "correct_answer":  "programme"
+                                        },
+                                        {
+                                            "vietnamese":  "phim hoạt hình (đồ họa động)",
+                                            "correct_answer":  "animated film"
+                                        }
+                                    ]
+                      },
+                      {
+                          "id":  "2",
+                          "parts":  [
+                                        {
+                                            "vietnamese":  "phim hoạt hình",
+                                            "correct_answer":  "cartoon"
+                                        },
+                                        {
+                                            "vietnamese":  "phim hài, kịch hài",
+                                            "correct_answer":  "comedy"
+                                        }
+                                    ]
+                      },
+                      {
+                          "id":  "3",
+                          "parts":  [
+                                        {
+                                            "vietnamese":  "cuộc thi tài năng",
+                                            "correct_answer":  "talent show"
+                                        },
+                                        {
+                                            "vietnamese":  "trò chơi truyền hình",
+                                            "correct_answer":  "game show"
+                                        }
+                                    ]
+                      },
+                      {
+                          "id":  "4",
+                          "parts":  [
+                                        {
+                                            "vietnamese":  "chương trình giáo dục",
+                                            "correct_answer":  "educational programme"
+                                        },
+                                        {
+                                            "vietnamese":  "chương trình thế giới hoang dã",
+                                            "correct_answer":  "wildlife programme"
+                                        }
+                                    ]
+                      },
+                      {
+                          "id":  "5",
+                          "parts":  [
+                                        {
+                                            "vietnamese":  "chương trình thể thao",
+                                            "correct_answer":  "sports programme"
+                                        },
+                                        {
+                                            "vietnamese":  "chương trình khoa học",
+                                            "correct_answer":  "science programme"
+                                        }
+                                    ]
+                      },
+                      {
+                          "id":  "6",
+                          "parts":  [
+                                        {
+                                            "vietnamese":  "phim truyền hình nhiều tập",
+                                            "correct_answer":  "TV series"
+                                        },
+                                        {
+                                            "vietnamese":  "kênh truyền hình",
+                                            "correct_answer":  "channel"
+                                        }
+                                    ]
+                      },
+                      {
+                          "id":  "7",
+                          "parts":  [
+                                        {
+                                            "vietnamese":  "lịch phát sóng truyền hình",
+                                            "correct_answer":  "TV guide"
+                                        },
+                                        {
+                                            "vietnamese":  "người xem truyền hình, khán giả",
+                                            "correct_answer":  "viewer"
+                                        }
+                                    ]
+                      },
+                      {
+                          "id":  "8",
+                          "parts":  [
+                                        {
+                                            "vietnamese":  "nhân vật (trong phim, truyện)",
+                                            "correct_answer":  "character"
+                                        },
+                                        {
+                                            "vietnamese":  "người biểu diễn, nghệ sĩ trình diễn",
+                                            "correct_answer":  "performer"
+                                        }
+                                    ]
+                      },
+                      {
+                          "id":  "9",
+                          "parts":  [
+                                        {
+                                            "vietnamese":  "mang tính giáo dục",
+                                            "correct_answer":  "educational"
+                                        },
+                                        {
+                                            "vietnamese":  "thú vị, hấp dẫn",
+                                            "correct_answer":  "interesting"
+                                        }
+                                    ]
+                      },
+                      {
+                          "id":  "10",
+                          "parts":  [
+                                        {
+                                            "vietnamese":  "hài hước, buồn cười",
+                                            "correct_answer":  "funny"
+                                        },
+                                        {
+                                            "vietnamese":  "thông minh, khôn ngoan",
+                                            "correct_answer":  "clever"
+                                        }
+                                    ]
+                      }
+                  ]
+},{
+    "id":  "6",
+    "type":  "fill_in_blanks",
+    "title":  "Fill in the Blanks",
+    "description":  "Complete each sentence with the correct word from the box.",
+    "word_box":  [
+                     "sports programme",
+                     "viewer",
+                     "educational",
+                     "comedy",
+                     "talent show",
+                     "character",
+                     "boring",
+                     "cartoon",
+                     "clever",
+                     "channel"
+                 ],
+    "questions":  [
+                      {
+                          "id":  "1",
+                          "text":  "An active __________ always pays close attention to the details on the screen.",
+                          "correct_answer":  "viewer"
+                      },
+                      {
+                          "id":  "2",
+                          "text":  "Young musicians from across the country sing on the __________ to win first prize.",
+                          "correct_answer":  "talent show"
+                      },
+                      {
+                          "id":  "3",
+                          "text":  "Please turn to this local news __________ so we can check the weather report.",
+                          "correct_answer":  "channel"
+                      },
+                      {
+                          "id":  "4",
+                          "text":  "The friendly blue dolphin is my favorite cartoon __________ in the whole story.",
+                          "correct_answer":  "character"
+                      },
+                      {
+                          "id":  "5",
+                          "text":  "We love watching that funny __________ on Friday evening because it makes us laugh.",
+                          "correct_answer":  "comedy"
+                      },
+                      {
+                          "id":  "6",
+                          "text":  "Teachers recommend this science channel because its shows are very __________.",
+                          "correct_answer":  "educational"
+                      },
+                      {
+                          "id":  "7",
+                          "text":  "My younger sister watches a colourful __________ about two talking mice every morning.",
+                          "correct_answer":  "cartoon"
+                      },
+                      {
+                          "id":  "8",
+                          "text":  "The lecture is so __________ that half of the students are almost falling asleep.",
+                          "correct_answer":  "boring"
+                      },
+                      {
+                          "id":  "9",
+                          "text":  "My father watches the evening __________ to see the latest tennis results.",
+                          "correct_answer":  "sports programme"
+                      },
+                      {
+                          "id":  "10",
+                          "text":  "The detective in the book is very __________ and always solves every mystery.",
+                          "correct_answer":  "clever"
+                      }
+                  ]
+},{
+    "id":  "7",
+    "type":  "paragraph_fill",
+    "title":  "Fill in the Blanks in the Paragraph",
+    "description":  "Complete the paragraph below using words from the box.",
+    "word_box":  [
+                     "programme",
+                     "animated film",
+                     "TV guide",
+                     "interesting",
+                     "performer",
+                     "science programme",
+                     "wildlife programme",
+                     "wonderful",
+                     "game show",
+                     "cute"
+                 ],
+    "paragraph_parts":  [
+                            "Television is a popular entertainment medium in many homes. Every morning, my family checks the ",
+                            {
+                                "id":  "1",
+                                "type":  "blank",
+                                "correct_answer":  "TV guide"
+                            },
+                            " to choose a good ",
+                            {
+                                "id":  "2",
+                                "type":  "blank",
+                                "correct_answer":  "programme"
+                            },
+                            " for the evening. In the afternoon, my sister enjoys watching an ",
+                            {
+                                "id":  "3",
+                                "type":  "blank",
+                                "correct_answer":  "animated film"
+                            },
+                            " because the baby animal characters are very ",
+                            {
+                                "id":  "4",
+                                "type":  "blank",
+                                "correct_answer":  "cute"
+                            },
+                            ". At seven o\u0027clock, we usually watch a ",
+                            {
+                                "id":  "5",
+                                "type":  "blank",
+                                "correct_answer":  "science programme"
+                            },
+                            " to learn ",
+                            {
+                                "id":  "6",
+                                "type":  "blank",
+                                "correct_answer":  "interesting"
+                            },
+                            " facts about our solar system. Sometimes we switch over to a ",
+                            {
+                                "id":  "7",
+                                "type":  "blank",
+                                "correct_answer":  "wildlife programme"
+                            },
+                            " to explore African lions and elephants in nature. On Saturday night, my parents like watching an exciting ",
+                            {
+                                "id":  "8",
+                                "type":  "blank",
+                                "correct_answer":  "game show"
+                            },
+                            " where contestants answer quiz questions. A talented ",
+                            {
+                                "id":  "9",
+                                "type":  "blank",
+                                "correct_answer":  "performer"
+                            },
+                            " also sings between the quiz rounds. Watching these high-quality shows together gives us a ",
+                            {
+                                "id":  "10",
+                                "type":  "blank",
+                                "correct_answer":  "wonderful"
+                            },
+                            " time with our family."
+                        ]
+},{
+    "id":  "8",
+    "type":  "sentence_ordering_multiple_choice",
+    "title":  "Put the sentences in the correct order",
+    "description":  "Read the sentences and choose the correct order to form a logical paragraph or conversation.",
+    "questions":  [
+                      {
+                          "id":  "1",
+                          "sentences":  [
+                                            "a. These amazing animals travel across long savannas in search of clean water.",
+                                            "b. Our grandfather often invites us to watch nature documentaries on television.",
+                                            "c. He turns on the screen every Sunday afternoon to watch African wildlife.",
+                                            "d. We always learn so much about their survival habits from these weekly broadcasts."
+                                        ],
+                          "options":  [
+                                          "c-a-d-b",
+                                          "b-c-a-d",
+                                          "c-b-a-d",
+                                          "b-a-c-d"
+                                      ],
+                          "correct_answer":  "b-c-a-d"
+                      },
+                      {
+                          "id":  "2",
+                          "sentences":  [
+                                            "a. Peter: \u0027Yes, she has a wonderful voice and sings with great energy.\u0027",
+                                            "b. Mary: \u0027I like the young girl from Da Nang. Do you think she can win?\u0027",
+                                            "c. Mary: \u0027I agree, and millions of viewers are voting for her right now.\u0027",
+                                            "d. Peter: \u0027Which performer do you like best on the music talent show tonight?\u0027"
+                                        ],
+                          "options":  [
+                                          "b-a-c-d",
+                                          "b-d-a-c",
+                                          "d-a-b-c",
+                                          "d-b-a-c"
+                                      ],
+                          "correct_answer":  "d-b-a-c"
+                      },
+                      {
+                          "id":  "3",
+                          "sentences":  [
+                                            "a. Phong: \u0027That sounds great, but do you know what channel it is on?\u0027",
+                                            "b. Lan: \u0027Let\u0027s check the TV guide on the coffee table to find the schedule.\u0027",
+                                            "c. Lan: \u0027Why don\u0027t we turn on a funny comedy after finishing our homework?\u0027",
+                                            "d. Phong: \u0027It says the humorous show begins on channel seven at eight o\u0027clock.\u0027"
+                                        ],
+                          "options":  [
+                                          "c-a-b-d",
+                                          "c-b-a-d",
+                                          "a-c-b-d",
+                                          "a-b-d-c"
+                                      ],
+                          "correct_answer":  "c-a-b-d"
+                      },
+                      {
+                          "id":  "4",
+                          "sentences":  [
+                                            "a. The story production starts with creative artists designing a clever character.",
+                                            "b. Modern computers then combine these drawings into smooth moving scenes.",
+                                            "c. Artists draw thousands of colorful pictures to give the cute animals life.",
+                                            "d. Young viewers around the world fall in love with the finished animated film."
+                                        ],
+                          "options":  [
+                                          "a-c-b-d",
+                                          "c-b-a-d",
+                                          "a-c-d-b",
+                                          "c-a-b-d"
+                                      ],
+                          "correct_answer":  "a-c-b-d"
+                      },
+                      {
+                          "id":  "5",
+                          "sentences":  [
+                                            "a. They prepare by studying science facts and practicing with tricky puzzles.",
+                                            "b. The top winner receives a shiny golden trophy and a new computer for their school.",
+                                            "c. During the live broadcast, each contestant answers difficult questions under pressure.",
+                                            "d. Smart students from different secondary schools gather for the annual game show."
+                                        ],
+                          "options":  [
+                                          "d-a-b-c",
+                                          "d-c-a-b",
+                                          "d-a-c-b",
+                                          "a-d-c-b"
+                                      ],
+                          "correct_answer":  "d-a-c-b"
+                      }
+                  ]
+},{
+    "id":  "9",
+    "type":  "multiple_choice",
+    "title":  "Multiple Choice - Closest in Meaning",
+    "description":  "Choose the word or phrase CLOSEST in meaning to the underlined part.",
+    "questions":  [
+                      {
+                          "id":  "1",
+                          "text":  "The film on channel three is very [funny], so my whole family laughs out loud.",
+                          "options":  [
+                                          "serious",
+                                          "scary",
+                                          "heavy",
+                                          "humorous"
+                                      ],
+                          "correct_answer":  "humorous"
+                      },
+                      {
+                          "id":  "2",
+                          "text":  "The little mouse in the cartoon is very [clever] and escapes from the cat every time.",
+                          "options":  [
+                                          "slow",
+                                          "lazy",
+                                          "smart",
+                                          "foolish"
+                                      ],
+                          "correct_answer":  "smart"
+                      },
+                      {
+                          "id":  "3",
+                          "text":  "Millions of [viewers] watch the final singing competition every Sunday evening.",
+                          "options":  [
+                                          "audiences",
+                                          "actors",
+                                          "directors",
+                                          "singers"
+                                      ],
+                          "correct_answer":  "audiences"
+                      },
+                      {
+                          "id":  "4",
+                          "text":  "The special effects in this fantasy movie are truly [wonderful] and breathtaking.",
+                          "options":  [
+                                          "terrible",
+                                          "fantastic",
+                                          "ordinary",
+                                          "ugly"
+                                      ],
+                          "correct_answer":  "fantastic"
+                      },
+                      {
+                          "id":  "5",
+                          "text":  "Football is the most [popular] sport in Viet Nam, and many people play it after work.",
+                          "options":  [
+                                          "rare",
+                                          "hidden",
+                                          "well-known",
+                                          "boring"
+                                      ],
+                          "correct_answer":  "well-known"
+                      }
+                  ]
+},{
+    "id":  "10",
+    "type":  "multiple_choice",
+    "title":  "Multiple Choice - Opposite in Meaning",
+    "description":  "Choose the word or phrase OPPOSITE in meaning to the underlined part.",
+    "questions":  [
+                      {
+                          "id":  "1",
+                          "text":  "The children do not want to watch that documentary because it is so [boring].",
+                          "options":  [
+                                          "exciting",
+                                          "tiring",
+                                          "quiet",
+                                          "sleepy"
+                                      ],
+                          "correct_answer":  "exciting"
+                      },
+                      {
+                          "id":  "2",
+                          "text":  "This cartoon features an extremely [cute] kitten that makes everyone smile.",
+                          "options":  [
+                                          "sweet",
+                                          "clever",
+                                          "ugly",
+                                          "tiny"
+                                      ],
+                          "correct_answer":  "ugly"
+                      },
+                      {
+                          "id":  "3",
+                          "text":  "The comedian tells very [funny] jokes and makes the audience laugh all night.",
+                          "options":  [
+                                          "bright",
+                                          "humorous",
+                                          "serious",
+                                          "playful"
+                                      ],
+                          "correct_answer":  "serious"
+                      },
+                      {
+                          "id":  "4",
+                          "text":  "The main hero in this animated film is very [clever] and outsmarts all the traps.",
+                          "options":  [
+                                          "quick",
+                                          "foolish",
+                                          "active",
+                                          "talented"
+                                      ],
+                          "correct_answer":  "foolish"
+                      },
+                      {
+                          "id":  "5",
+                          "text":  "The nature documentary gives viewers a [wonderful] view of high mountains.",
+                          "options":  [
+                                          "peaceful",
+                                          "grand",
+                                          "beautiful",
+                                          "terrible"
+                                      ],
+                          "correct_answer":  "terrible"
+                      }
+                  ]
+},{
+    "id":  "11",
+    "type":  "dictionary_entry",
+    "title":  "Dictionary Entries",
+    "description":  "Look at the dictionary entries below. Use the information provided to complete the sentences.",
+    "entries":  [
+                    {
+                        "id":  "1",
+                        "word":  "programme",
+                        "part_of_speech":  "noun",
+                        "pronunciation":  "/ˈprəʊɡræm/",
+                        "definition":  "a broadcast on television or radio",
+                        "bullet_points":  [
+                                              "Families often sit together on the sofa to [watch a programme] in the evening.",
+                                              "She turns on the television right at seven to catch her [favourite programme].",
+                                              "The weekly magazine contains a detailed [programme schedule] for all channels.",
+                                              "Many morning commuters [listen to a programme] on their car radio."
+                                          ],
+                        "questions":  [
+                                          {
+                                              "id":  "1",
+                                              "text":  "After dinner, the children usually gather around the TV screen to __________ about wild animals.",
+                                              "correct_answer":  "watch a programme"
+                                          },
+                                          {
+                                              "id":  "2",
+                                              "text":  "Our school newspaper prints the daily __________ so students can plan their viewing time.",
+                                              "correct_answer":  "programme schedule"
+                                          }
+                                      ]
+                    },
+                    {
+                        "id":  "2",
+                        "word":  "character",
+                        "part_of_speech":  "noun",
+                        "pronunciation":  "/ˈkærəktə/",
+                        "definition":  "a person or an animal represented in a film, play, or story",
+                        "bullet_points":  [
+                                              "Children love the funny yellow sponge [cartoon character] living under the ocean.",
+                                              "Costume fans like to [dress as a character] from popular fantasy comics.",
+                                              "Novelists spend months thinking of interesting traits to [create a character].",
+                                              "The brave young princess is the [main character] of this animated story."
+                                          ],
+                        "questions":  [
+                                          {
+                                              "id":  "3",
+                                              "text":  "Art students learn how to sketch expressive faces to __________ for their comic books.",
+                                              "correct_answer":  "create a character"
+                                          },
+                                          {
+                                              "id":  "4",
+                                              "text":  "In this adventure tale, the clever detective is the __________ who discovers the missing treasure.",
+                                              "correct_answer":  "main character"
+                                          }
+                                      ]
+                    },
+                    {
+                        "id":  "3",
+                        "word":  "channel",
+                        "part_of_speech":  "noun",
+                        "pronunciation":  "/ˈtʃænl/",
+                        "definition":  "a television station and its broadcast programmes",
+                        "bullet_points":  [
+                                              "Viewers can find many high-quality cooking lessons [on this channel].",
+                                              "Please check the [channel number] in the guide before entering it on the remote.",
+                                              "My uncle subscribes to a dedicated [sports channel] for weekend matches.",
+                                              "Press the red button on the remote to [change the channel] quickly."
+                                          ],
+                        "questions":  [
+                                          {
+                                              "id":  "5",
+                                              "text":  "Football fans always tune into the popular __________ to follow live tennis and athletic tournaments.",
+                                              "correct_answer":  "sports channel"
+                                          },
+                                          {
+                                              "id":  "6",
+                                              "text":  "If you do not like this boring news broadcast, you can use the remote control to __________.",
+                                              "correct_answer":  "change the channel"
+                                          }
+                                      ]
+                    },
+                    {
+                        "id":  "4",
+                        "word":  "viewer",
+                        "part_of_speech":  "noun",
+                        "pronunciation":  "/ˈvjuːə/",
+                        "definition":  "a person who watches television",
+                        "bullet_points":  [
+                                              "Colourful animations are designed specifically to entertain [young viewers].",
+                                              "Humorous jokes and bright costumes help the comedy [appeal to viewers].",
+                                              "High [viewer ratings] show that the singing contest is very successful.",
+                                              "Action movies usually [attract viewers] with exciting special effects."
+                                          ],
+                        "questions":  [
+                                          {
+                                              "id":  "7",
+                                              "text":  "The educational broadcast uses cheerful animal songs so that __________ can easily remember English words.",
+                                              "correct_answer":  "young viewers"
+                                          },
+                                          {
+                                              "id":  "8",
+                                              "text":  "Clever quiz questions and generous cash prizes help the game show __________ from all over the country.",
+                                              "correct_answer":  "attract viewers"
+                                          }
+                                      ]
+                    },
+                    {
+                        "id":  "5",
+                        "word":  "comedy",
+                        "part_of_speech":  "noun",
+                        "pronunciation":  "/ˈkɒmədi/",
+                        "definition":  "a film, play, or show with humorous characters and a happy ending",
+                        "bullet_points":  [
+                                              "That weekly [comedy series] has six episodes full of funny school situations.",
+                                              "Amateur comedians perform their funniest stand-up jokes at the downtown [comedy club].",
+                                              "People gather in the living room to [enjoy a comedy] after a long workday.",
+                                              "Couples often choose a lighthearted [romantic comedy] for date night at the cinema."
+                                          ],
+                        "questions":  [
+                                          {
+                                              "id":  "9",
+                                              "text":  "Tired workers like to sit back on the couch and __________ to forget their daily stress.",
+                                              "correct_answer":  "enjoy a comedy"
+                                          },
+                                          {
+                                              "id":  "10",
+                                              "text":  "The television network is airing a delightful new __________ about the adventures of four college roommates.",
+                                              "correct_answer":  "comedy series"
+                                          }
+                                      ]
+                    }
+                ]
+},{
+    "id":  "12",
+    "type":  "signs_and_notices",
+    "title":  "Signs and Notices",
+    "description":  "Read the sign or notice and choose the correct meaning.",
+    "questions":  [
+                      {
+                          "id":  "1",
+                          "sign_type":  "image",
+                          "sign_image":  "images/sign_1.png",
+                          "sign_text":  "A standard circular prohibition sign with a thick red border and diagonal slash over a black camera icon with a flash on a plain white background, centered and filling 90% of the square canvas, NO outer border frame, NO inner border box, NO text or words of any kind.",
+                          "question":  "What does the sign mean?",
+                          "options":  [
+                                          "Visitors can borrow cameras from the studio media room now.",
+                                          "Please buy camera batteries at the studio reception office.",
+                                          "Taking pictures with cameras is allowed in the studio room.",
+                                          "Flash photography is not permitted in the live studio room."
+                                      ],
+                          "correct_answer":  "Flash photography is not permitted in the live studio room."
+                      },
+                      {
+                          "id":  "2",
+                          "sign_type":  "image",
+                          "sign_image":  "images/sign_2.png",
+                          "sign_text":  "A standard circular prohibition sign with a thick red border and diagonal slash over a black smartphone icon displaying sound waves on a plain white background, centered and filling 90% of the square canvas, NO outer border frame, NO inner border box, NO text or words of any kind.",
+                          "question":  "What does the sign mean?",
+                          "options":  [
+                                          "Staff members can use mobile phones anywhere inside.",
+                                          "You must not use your mobile phone during recording.",
+                                          "Free phone chargers are provided inside this studio.",
+                                          "Please answer all mobile phone calls in the hallway."
+                                      ],
+                          "correct_answer":  "You must not use your mobile phone during recording."
+                      },
+                      {
+                          "id":  "3",
+                          "sign_type":  "image",
+                          "sign_image":  "images/sign_3.png",
+                          "sign_text":  "A circular mandatory action sign with a deep blue background and a crisp white symbol of over-ear studio headphones centered, filling 90% of the square canvas, NO outer border frame, NO inner border box, NO text or words of any kind.",
+                          "question":  "What does the sign mean?",
+                          "options":  [
+                                          "Do not touch any headphones in this TV sound room.",
+                                          "You can buy stereo headphones in this studio shop.",
+                                          "You must wear audio headphones in this sound room.",
+                                          "Please return headphones to the main control desk."
+                                      ],
+                          "correct_answer":  "You must wear audio headphones in this sound room."
+                      },
+                      {
+                          "id":  "4",
+                          "sign_type":  "image",
+                          "sign_image":  "images/sign_4.png",
+                          "sign_text":  "A triangular hazard warning sign with a bold yellow background, thick black triangular border, and a black symbol of a tripping figure over tangled electric cables, centered and filling 90% of the square canvas, NO outer border frame, NO inner border box, NO text or words of any kind.",
+                          "question":  "What does the sign say?",
+                          "options":  [
+                                          "You must not bring any cables onto this stage.",
+                                          "Electric cables are on sale in the media room.",
+                                          "Watch out for loose cables on the stage floor.",
+                                          "Studio workers will repair all damaged cables."
+                                      ],
+                          "correct_answer":  "Watch out for loose cables on the stage floor."
+                      },
+                      {
+                          "id":  "5",
+                          "sign_type":  "image",
+                          "sign_image":  "images/sign_5.png",
+                          "sign_text":  "A triangular warning hazard sign with a bright yellow background, bold black border, and a black silhouette symbol of heavy stage lights falling from above, centered and filling 90% of the square canvas, NO outer border frame, NO inner border box, NO text or words of any kind.",
+                          "question":  "What does the sign say?",
+                          "options":  [
+                                          "Be careful because stage lights hang overhead.",
+                                          "Stage lights are not allowed inside this room.",
+                                          "Please turn off all bright stage lights today.",
+                                          "You can buy spare stage lights in this studio."
+                                      ],
+                          "correct_answer":  "Be careful because stage lights hang overhead."
+                      },
+                      {
+                          "id":  "6",
+                          "sign_type":  "image",
+                          "sign_image":  "images/sign_6.png",
+                          "sign_text":  "Full-bleed square graphic design, 100% edge-to-edge layout filling the entire square image canvas with zero outer background margins, showing a studio door warning sign with a glowing red illuminated box that says \u0027ON AIR - RECORDING IN PROGRESS\u0027 with text below: \u0027Do Not Enter When Lit\u0027, sleek metallic and illuminated texture, large bold typography.",
+                          "question":  "What does the sign tell us?",
+                          "options":  [
+                                          "Recording is active, so you must not enter.",
+                                          "You should turn on the studio lights today.",
+                                          "Visitors can enter the studio to watch now.",
+                                          "The TV studio is open for all visitors now."
+                                      ],
+                          "correct_answer":  "Recording is active, so you must not enter."
+                      },
+                      {
+                          "id":  "7",
+                          "sign_type":  "image",
+                          "sign_image":  "images/sign_7.png",
+                          "sign_text":  "Full-bleed square graphic design, 100% edge-to-edge layout filling the entire square image canvas with zero outer background margins, showing a yellow sticky note texture with realistic handwritten text: \u0027Minh, our favourite cartoon starts at 5:30 p.m. on Channel 7. Please record it because I have extra maths class! - Duy\u0027, clear legible handwriting.",
+                          "question":  "What does the note say?",
+                          "options":  [
+                                          "Minh and Duy will watch television at five now.",
+                                          "Minh should record the cartoon for Duy at home.",
+                                          "Duy wants Minh to attend the maths class today.",
+                                          "The cartoon on Channel 7 is cancelled tonight."
+                                      ],
+                          "correct_answer":  "Minh should record the cartoon for Duy at home."
+                      },
+                      {
+                          "id":  "8",
+                          "sign_type":  "image",
+                          "sign_image":  "images/sign_8.png",
+                          "sign_text":  "Full-bleed square graphic design, 100% edge-to-edge layout filling the entire square image canvas with zero outer background margins, showing an email client interface card with clean typography: \u0027From: Media Club \u003cmedia@school.edu\u003e\nTo: Grade 6 Students\nSubject: Auditions for Student News Host\nDate: Thursday, 3 PM\nRoom: Studio B\nPrepare a 1-minute speech about your favourite school activity.\u0027",
+                          "question":  "What does the email say?",
+                          "options":  [
+                                          "The media club meeting moves to next week.",
+                                          "Grade 6 students must write a long report.",
+                                          "Studio B is closed for students this week.",
+                                          "Students can audition to host school news."
+                                      ],
+                          "correct_answer":  "Students can audition to host school news."
+                      },
+                      {
+                          "id":  "9",
+                          "sign_type":  "image",
+                          "sign_image":  "images/sign_9.png",
+                          "sign_text":  "Full-bleed square graphic design, 100% edge-to-edge layout filling the entire square image canvas with zero outer background margins, showing a modern advertisement poster: \u0027KIDS TV STREAM - Annual Subscription Special! Pay for 6 months and get 6 months FREE! Unlimited access to 50+ educational channels and cartoons. Offer ends Sunday!\u0027",
+                          "question":  "What does the notice tell us?",
+                          "options":  [
+                                          "All educational TV channels are free forever.",
+                                          "Only fifty lucky children can join this week.",
+                                          "You pay for six months and get one full year.",
+                                          "The subscription discount ends in two months."
+                                      ],
+                          "correct_answer":  "You pay for six months and get one full year."
+                      },
+                      {
+                          "id":  "10",
+                          "sign_type":  "image",
+                          "sign_image":  "images/sign_10.png",
+                          "sign_text":  "Full-bleed square graphic design, 100% edge-to-edge layout filling the entire square image canvas with zero outer background margins, showing an event flyer poster: \u0027Junior TV Quiz Championship! Teams of 3 students. Date: Saturday, October 15 at 9:00 AM. Venue: Main School Auditorium. Grand Prize: School Trip to National TV Station! Free entry for all students.\u0027",
+                          "question":  "What does the flyer tell us?",
+                          "options":  [
+                                          "The winners will get free tickets to the cinema.",
+                                          "Only individual players can enter this quiz now.",
+                                          "The quiz takes place at the national TV station.",
+                                          "Teams of three students can enter the quiz free."
+                                      ],
+                          "correct_answer":  "Teams of three students can enter the quiz free."
+                      }
+                  ]
+},{
+    "id":  "13",
+    "type":  "word_families_table",
+    "title":  "Word Families",
+    "description":  "Complete the table below with different forms of each word. Some forms may not exist.",
+    "questions":  [
+                      {
+                          "id":  "1",
+                          "base_word":  "educational",
+                          "base_word_type":  "adjective",
+                          "verb":  [
+                                       "educate"
+                                   ],
+                          "noun":  [
+                                       "education"
+                                   ],
+                          "adjective":  [
+                                            "educational"
+                                        ],
+                          "adverb":  [
+
+                                     ]
+                      },
+                      {
+                          "id":  "2",
+                          "base_word":  "performer",
+                          "base_word_type":  "noun",
+                          "verb":  [
+                                       "perform"
+                                   ],
+                          "noun":  [
+                                       "performer",
+                                       "performance"
+                                   ],
+                          "adjective":  [
+
+                                        ],
+                          "adverb":  [
+
+                                     ]
+                      },
+                      {
+                          "id":  "3",
+                          "base_word":  "viewer",
+                          "base_word_type":  "noun",
+                          "verb":  [
+                                       "view"
+                                   ],
+                          "noun":  [
+                                       "viewer",
+                                       "view"
+                                   ],
+                          "adjective":  [
+
+                                        ],
+                          "adverb":  [
+
+                                     ]
+                      },
+                      {
+                          "id":  "4",
+                          "base_word":  "interesting",
+                          "base_word_type":  "adjective",
+                          "verb":  [
+                                       "interest"
+                                   ],
+                          "noun":  [
+                                       "interest"
+                                   ],
+                          "adjective":  [
+                                            "interested",
+                                            "interesting"
+                                        ],
+                          "adverb":  [
+
+                                     ]
+                      },
+                      {
+                          "id":  "5",
+                          "base_word":  "funny",
+                          "base_word_type":  "adjective",
+                          "verb":  [
+
+                                   ],
+                          "noun":  [
+                                       "fun"
+                                   ],
+                          "adjective":  [
+                                            "funny"
+                                        ],
+                          "adverb":  [
+
+                                     ]
+                      },
+                      {
+                          "id":  "6",
+                          "base_word":  "boring",
+                          "base_word_type":  "adjective",
+                          "verb":  [
+                                       "bore"
+                                   ],
+                          "noun":  [
+                                       "boredom"
+                                   ],
+                          "adjective":  [
+                                            "bored",
+                                            "boring"
+                                        ],
+                          "adverb":  [
+
+                                     ]
+                      },
+                      {
+                          "id":  "7",
+                          "base_word":  "popular",
+                          "base_word_type":  "adjective",
+                          "verb":  [
+
+                                   ],
+                          "noun":  [
+                                       "popularity"
+                                   ],
+                          "adjective":  [
+                                            "popular"
+                                        ],
+                          "adverb":  [
+
+                                     ]
+                      },
+                      {
+                          "id":  "8",
+                          "base_word":  "wonderful",
+                          "base_word_type":  "adjective",
+                          "verb":  [
+                                       "wonder"
+                                   ],
+                          "noun":  [
+                                       "wonder"
+                                   ],
+                          "adjective":  [
+                                            "wonderful"
+                                        ],
+                          "adverb":  [
+                                         "wonderfully"
+                                     ]
+                      },
+                      {
+                          "id":  "9",
+                          "base_word":  "live",
+                          "base_word_type":  "adjective",
+                          "verb":  [
+                                       "live"
+                                   ],
+                          "noun":  [
+                                       "life"
+                                   ],
+                          "adjective":  [
+                                            "live",
+                                            "alive"
+                                        ],
+                          "adverb":  [
+
+                                     ]
+                      }
+                  ]
+},{
+    "id":  "14",
+    "type":  "word_families_mcq",
+    "title":  "Multiple Choice – Word Families",
+    "description":  "Choose the correct word to complete each sentence.",
+    "questions":  [
+                      {
+                          "id":  "1",
+                          "text":  "Good television programmes provide children with useful __________.",
+                          "options":  [
+                                          "educate",
+                                          "educational",
+                                          "educating",
+                                          "education"
+                                      ],
+                          "correct_answer":  "education"
+                      },
+                      {
+                          "id":  "2",
+                          "text":  "The young singer gives a great __________ on the music stage tonight.",
+                          "options":  [
+                                          "performance",
+                                          "performer",
+                                          "performing",
+                                          "perform"
+                                      ],
+                          "correct_answer":  "performance"
+                      },
+                      {
+                          "id":  "3",
+                          "text":  "Each active __________ can vote for their favourite contestant by phone.",
+                          "options":  [
+                                          "viewed",
+                                          "view",
+                                          "viewer",
+                                          "viewing"
+                                      ],
+                          "correct_answer":  "viewer"
+                      },
+                      {
+                          "id":  "4",
+                          "text":  "My brother is very __________ in watching science documentaries about animals.",
+                          "options":  [
+                                          "interested",
+                                          "interesting",
+                                          "interest",
+                                          "interests"
+                                      ],
+                          "correct_answer":  "interested"
+                      },
+                      {
+                          "id":  "5",
+                          "text":  "The children have a lot of __________ watching the silly puppy on TV.",
+                          "options":  [
+                                          "funny",
+                                          "funnier",
+                                          "fun",
+                                          "funniest"
+                                      ],
+                          "correct_answer":  "fun"
+                      },
+                      {
+                          "id":  "6",
+                          "text":  "I feel very __________ when the actors talk for too long without action.",
+                          "options":  [
+                                          "boring",
+                                          "boredom",
+                                          "bored",
+                                          "bore"
+                                      ],
+                          "correct_answer":  "bored"
+                      },
+                      {
+                          "id":  "7",
+                          "text":  "The game show enjoys great __________ among teenagers across the city.",
+                          "options":  [
+                                          "popularity",
+                                          "popularize",
+                                          "popularly",
+                                          "popular"
+                                      ],
+                          "correct_answer":  "popularity"
+                      },
+                      {
+                          "id":  "8",
+                          "text":  "The talented gymnast performs __________ on the balance beam tonight.",
+                          "options":  [
+                                          "wonderful",
+                                          "wonderfully",
+                                          "wonders",
+                                          "wonder"
+                                      ],
+                          "correct_answer":  "wonderfully"
+                      },
+                      {
+                          "id":  "9",
+                          "text":  "Documentaries about nature show the daily __________ of wild elephants.",
+                          "options":  [
+                                          "alive",
+                                          "live",
+                                          "living",
+                                          "life"
+                                      ],
+                          "correct_answer":  "life"
+                      },
+                      {
+                          "id":  "10",
+                          "text":  "Famous musicians always __________ with passion on the national stage.",
+                          "options":  [
+                                          "performances",
+                                          "perform",
+                                          "performer",
+                                          "performance"
+                                      ],
+                          "correct_answer":  "perform"
+                      }
+                  ]
+},{
+    "id":  "15",
+    "type":  "word_formation",
+    "title":  "Supply the correct form of the word given in each sentence.",
+    "description":  "Read the sentence and provide the correct form of the word in brackets.",
+    "questions":  [
+                      {
+                          "id":  "1",
+                          "text":  "Discovery Channel produces many __________ programmes for students.",
+                          "correct_answer":  "educational",
+                          "base_word":  "EDUCATE"
+                      },
+                      {
+                          "id":  "2",
+                          "text":  "The comedy show is full of __________ and laughter.",
+                          "correct_answer":  "fun",
+                          "base_word":  "FUNNY"
+                      },
+                      {
+                          "id":  "3",
+                          "text":  "Each skilled __________ sings with great confidence on the stage.",
+                          "correct_answer":  "performer",
+                          "base_word":  "PERFORM"
+                      },
+                      {
+                          "id":  "4",
+                          "text":  "The magic show on television is truly __________ and surprising.",
+                          "correct_answer":  "wonderful",
+                          "base_word":  "WONDER"
+                      },
+                      {
+                          "id":  "5",
+                          "text":  "Football matches enjoy huge __________ among sports fans everywhere.",
+                          "correct_answer":  "popularity",
+                          "base_word":  "POPULAR"
+                      }
+                  ]
+},{
+    "id":  "16",
+    "type":  "translate_sentences",
+    "title":  "Translation",
+    "description":  "Translate the following sentences into English, using the vocabulary you have learned.",
+    "questions":  [
+                      {
+                          "id":  "1",
+                          "vietnamese":  "Gia đình tôi thường cùng nhau xem một chương trình truyền hình thú vị sau bữa tối.",
+                          "correct_answer":  "My family often watches an interesting TV programme together after dinner."
+                      },
+                      {
+                          "id":  "2",
+                          "vietnamese":  "Em trai tôi thích xem phim hoạt hình vì các nhân vật rất dễ thương.",
+                          "correct_answer":  "My little brother likes watching animated films because the characters are very cute."
+                      },
+                      {
+                          "id":  "3",
+                          "vietnamese":  "Bộ phim hài này rất buồn cười, vì vậy mọi người đều cười rất to.",
+                          "correct_answer":  "This comedy is very funny, so everyone laughs out loud."
+                      },
+                      {
+                          "id":  "4",
+                          "vietnamese":  "Nhiều ca sĩ trẻ tham gia cuộc thi tài năng âm nhạc trên kênh này.",
+                          "correct_answer":  "Many young singers join the music talent show on this channel."
+                      },
+                      {
+                          "id":  "5",
+                          "vietnamese":  "Các thí sinh trả lời những câu hỏi đố khó trong trò chơi truyền hình.",
+                          "correct_answer":  "The contestants answer difficult quiz questions in the game show."
+                      },
+                      {
+                          "id":  "6",
+                          "vietnamese":  "Chương trình giáo dục này giúp học sinh học tiếng Anh và khoa học.",
+                          "correct_answer":  "This educational programme helps students learn English and science."
+                      },
+                      {
+                          "id":  "7",
+                          "vietnamese":  "Bố tôi thích chương trình thể thao, nhưng mẹ tôi thích chương trình thế giới hoang dã.",
+                          "correct_answer":  "My father likes sports programmes, but my mother likes wildlife programmes."
+                      },
+                      {
+                          "id":  "8",
+                          "vietnamese":  "Hãy xem lịch phát sóng truyền hình để biết phim truyện bắt đầu lúc mấy giờ.",
+                          "correct_answer":  "Check the TV guide to know what time the film starts."
+                      },
+                      {
+                          "id":  "9",
+                          "vietnamese":  "Hàng triệu khán giả đang xem buổi hòa nhạc trực tiếp tối nay.",
+                          "correct_answer":  "Millions of viewers are watching the live concert tonight."
+                      },
+                      {
+                          "id":  "10",
+                          "vietnamese":  "Bộ phim truyền hình nhiều tập này rất nổi tiếng và có nhiều tình tiết bất ngờ.",
+                          "correct_answer":  "This TV series is very popular and has many surprising events."
+                      }
+                  ]
+}];
+    const IMAGE_PROMPTS = [
+  {
+    "object": "programme",
+    "prompt": "A photo of a television screen prominently centered in a modern living room showing a colorful nature documentary broadcast, with a cozy sofa in front, highly detailed, photorealistic, 8k, cinematic lighting, don't add any text to the image",
+    "filename": "programme.webp"
+  },
+  {
+    "object": "animated film",
+    "prompt": "A digital 3D animated illustration of a cute animal adventurer in a magical forest surrounded by glowing plants and magical creatures, full cinematic animation movie style, vibrant colors, highly detailed, 8k, don't add any text to the image",
+    "filename": "animated-film.webp"
+  },
+  {
+    "object": "cartoon",
+    "prompt": "A classic 2D cartoon illustration of an energetic, playful cat chasing a witty little mouse across a bright kitchen floor, expressive cartoon art style, dynamic action, colorful and cheerful, highly detailed, 8k, don't add any text to the image",
+    "filename": "cartoon.webp"
+  },
+  {
+    "object": "comedy",
+    "prompt": "A photo of a family sitting together on a living room couch laughing joyfully with wide smiles and tears of laughter while looking at the television screen, warm ambient lighting, candid emotional moment, highly detailed, photorealistic, 8k, don't add any text to the image",
+    "filename": "comedy.webp"
+  },
+  {
+    "object": "talent show",
+    "prompt": "A photo of a talented young contestant singing passionately into a microphone on a large television talent show stage under vibrant spotlights, with judges sitting in front, highly detailed, photorealistic, 8k, cinematic lighting, don't add any text to the image",
+    "filename": "talent-show.webp"
+  },
+  {
+    "object": "game show",
+    "prompt": "A photo of a brightly lit television game show studio with two enthusiastic contestants standing behind colorful podiums with buzzers, excited studio audience in the background, highly detailed, photorealistic, 8k, don't add any text to the image",
+    "filename": "game-show.webp"
+  },
+  {
+    "object": "educational programme",
+    "prompt": "A photo of a young school student watching an educational television broadcast about science on a TV screen, showing a teacher demonstrating the solar system with globe and planets, highly detailed, photorealistic, 8k, don't add any text to the image",
+    "filename": "educational-programme.webp"
+  },
+  {
+    "object": "wildlife programme",
+    "prompt": "A photo of a large television screen displaying a breathtaking wildlife documentary of lions walking across the African savanna during sunset, highly detailed, photorealistic, 8k, cinematic nature photography, don't add any text to the image",
+    "filename": "wildlife-programme.webp"
+  },
+  {
+    "object": "sports programme",
+    "prompt": "A photo of a wide flat-screen TV broadcasting an intense live football match in a packed green stadium with stadium floodlights, highly detailed, photorealistic, 8k, cinematic sports broadcast, don't add any text to the image",
+    "filename": "sports-programme.webp"
+  },
+  {
+    "object": "science programme",
+    "prompt": "A photo of a television screen showing an engaging science show with a friendly scientist in a lab coat demonstrating a bubbling colorful chemistry experiment in a high-tech laboratory, highly detailed, photorealistic, 8k, don't add any text to the image",
+    "filename": "science-programme.webp"
+  },
+  {
+    "object": "TV series",
+    "prompt": "A photo of a group of actors in a television drama series filming a dramatic scene on a film set with professional studio cameras and boom microphones visible around them, highly detailed, photorealistic, 8k, don't add any text to the image",
+    "filename": "tv-series.webp"
+  },
+  {
+    "object": "channel",
+    "prompt": "A close-up photo of a person's hand holding a modern television remote control pointing directly at a TV screen, switching between different broadcast channels, highly detailed, photorealistic, 8k, don't add any text to the image",
+    "filename": "channel.webp"
+  },
+  {
+    "object": "TV guide",
+    "prompt": "A photo of an open printed TV guide magazine and weekly programme schedule booklet resting on a wooden coffee table next to a cup of tea, showing organized columns and grids, highly detailed, photorealistic, 8k, don't add any text to the image",
+    "filename": "tv-guide.webp"
+  },
+  {
+    "object": "film",
+    "prompt": "A photo inside a modern cinema theatre with red velvet seats, looking towards a massive glowing movie screen displaying an epic cinematic landscape scene, highly detailed, photorealistic, 8k, cinematic atmosphere, don't add any text to the image",
+    "filename": "film.webp"
+  },
+  {
+    "object": "clip",
+    "prompt": "A photo of a modern tablet screen placed on a desk, paused on a short video clip of two playful dolphins jumping out of the ocean water, scrubber bar visible at the bottom, highly detailed, photorealistic, 8k, don't add any text to the image",
+    "filename": "clip.webp"
+  },
+  {
+    "object": "viewer",
+    "prompt": "A photo of an attentive young viewer sitting comfortably on a beanbag chair in a dimly lit room, with eyes fixed on the television screen and holding a bowl of popcorn, warm television glow reflecting on face, highly detailed, photorealistic, 8k, don't add any text to the image",
+    "filename": "viewer.webp"
+  },
+  {
+    "object": "character",
+    "prompt": "A colorful 3D digital illustration of a charming, expressive fictional fox character wearing a little blue jacket and carrying a school backpack, centered and prominent, character concept art, highly detailed, 8k, don't add any text to the image",
+    "filename": "character.webp"
+  },
+  {
+    "object": "performer",
+    "prompt": "A photo of a talented musical performer holding a guitar and singing into a microphone on a vibrant concert stage under colorful stage lights and soft smoke effect, highly detailed, photorealistic, 8k, cinematic concert photography, don't add any text to the image",
+    "filename": "performer.webp"
+  },
+  {
+    "object": "educational",
+    "prompt": "A photo of curious children in a bright classroom looking excitedly at an interactive digital display showing the anatomy of a green plant with roots and leaves, hands-on learning environment, highly detailed, photorealistic, 8k, don't add any text to the image",
+    "filename": "educational.webp"
+  },
+  {
+    "object": "interesting",
+    "prompt": "A close-up photo of a young student with wide, engaged eyes and an open, fascinated facial expression while observing a glowing miniature planetarium model, curiosity and wonder, highly detailed, photorealistic, 8k, don't add any text to the image",
+    "filename": "interesting.webp"
+  },
+  {
+    "object": "funny",
+    "prompt": "A photo of a cheerful clown with a colorful costume and round red nose making comical silly faces with oversized colorful glasses, evoking spontaneous laughter, highly detailed, photorealistic, 8k, vibrant colors, don't add any text to the image",
+    "filename": "funny.webp"
+  },
+  {
+    "object": "clever",
+    "prompt": "A digital illustration of a smart, clever little owl wearing small round spectacles, skillfully piecing together the final glowing jigsaw puzzle piece with a confident smile, metaphor for intelligence, highly detailed, 8k, don't add any text to the image",
+    "filename": "clever.webp"
+  },
+  {
+    "object": "popular",
+    "prompt": "A photo of an excited crowd of diverse young fans cheering and clapping enthusiastically together in front of a giant outdoor television broadcast screen in a public square, highly detailed, photorealistic, 8k, don't add any text to the image",
+    "filename": "popular.webp"
+  },
+  {
+    "object": "cute",
+    "prompt": "A close-up photo of an adorably cute fluffy kitten with giant round blue eyes peeking playfully out from a soft woolen blanket, irresistible cuteness, highly detailed, photorealistic, 8k, soft warm lighting, don't add any text to the image",
+    "filename": "cute.webp"
+  },
+  {
+    "object": "live",
+    "prompt": "A photo of a professional television broadcast studio control room with multiple glowing monitors showing an ongoing live on-air news broadcast with anchors, camera operators active on the studio floor, highly detailed, photorealistic, 8k, don't add any text to the image",
+    "filename": "live.webp"
+  },
+  {
+    "object": "boring",
+    "prompt": "A photo of a bored teenager sitting in an armchair resting chin heavily in one hand with half-closed eyes and a sleepy, disinterested expression, remote control dangling from fingers in front of a dull screen, highly detailed, photorealistic, 8k, don't add any text to the image",
+    "filename": "boring.webp"
+  },
+  {
+    "object": "wonderful",
+    "prompt": "A photo of a breathtaking and magical natural landscape with majestic green mountains, cascading waterfalls, and a vibrant double rainbow arching across a golden sunset sky, inspiring awe and wonder, highly detailed, photorealistic, 8k, cinematic lighting, don't add any text to the image",
+    "filename": "wonderful.webp"
+  }
+]
+;
+    const UNIT_METADATA = {"title":"GS6 - UNIT-7","unit":"UNIT-7","generatedAt":"2026-09-21 00:23:07","grade":"GS6","subtitle":"Review \u0026 Practice Suite for GS6 UNIT-7"} //
+      title: "Unit Preview",
+      grade: "Grade",
+      unit: "Unit"
+    };
+
+    /* =========================================================
+       APPLICATION STATE
+       ========================================================= */
+    const state = {
+      theme: 'light',
+      mode: 'practice', // 'practice' or 'review'
+      activeMainTab: 'vocab',
+      activeExIndex: 0,
+      activeVocabGroup: 'all',
+      searchQuery: '',
+      userAnswers: {}, // key: exIndex -> questionId -> answer
+      checkedExercises: {} // key: exIndex -> boolean
+    };
+
+    /* Initialize app */
+    document.addEventListener('DOMContentLoaded', () => {
+      initTheme();
+      initMetadata();
+      renderVocabFilters();
+      renderVocabGrid();
+      renderExerciseNav();
+      renderCurrentExercise();
+      renderPrompts();
+    });
+
+    /* Theme Management */
+    function initTheme() {
+      const savedTheme = localStorage.getItem('vocab_preview_theme') || 
+        (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light');
+      setTheme(savedTheme);
+    }
+
+    function setTheme(theme) {
+      state.theme = theme;
+      document.documentElement.setAttribute('data-theme', theme);
+      document.getElementById('theme-icon').textContent = theme === 'dark' ? '☀️' : '🌙';
+      localStorage.setItem('vocab_preview_theme', theme);
+    }
+
+    function toggleTheme() {
+      setTheme(state.theme === 'dark' ? 'light' : 'dark');
+    }
+
+    /* Mode Management (Student Practice vs Teacher Review) */
+    function toggleMode() {
+      state.mode = state.mode === 'practice' ? 'review' : 'practice';
+      const btn = document.getElementById('mode-toggle-btn');
+      const icon = document.getElementById('mode-icon');
+      const label = document.getElementById('mode-label');
+      const banner = document.getElementById('mode-banner');
+
+      if (state.mode === 'review') {
+        btn.classList.add('teacher-active');
+        icon.textContent = '👨‍🏫';
+        label.textContent = 'Chế độ Giáo viên';
+        banner.className = 'mode-banner teacher-mode';
+        banner.innerHTML = `
+          <div>
+            <strong>👨‍🏫 Đang ở Chế độ Giáo viên (Review Mode):</strong> Toàn bộ đáp án đúng, gợi ý từ loại và giải thích được hiển thị nổi bật màu xanh lá để tiện duyệt nội dung.
+          </div>
+          <button class="btn-action" onclick="toggleMode()" style="background: white; color: var(--text-main); font-size: 0.8rem;">
+            Chuyển sang Học sinh 🎓
+          </button>
+        `;
+      } else {
+        btn.classList.remove('teacher-active');
+        icon.textContent = '🎓';
+        label.textContent = 'Chế độ Học sinh';
+        banner.className = 'mode-banner';
+        banner.innerHTML = `
+          <div>
+            <strong>🎓 Đang ở Chế độ Học sinh (Practice Mode):</strong> Bạn có thể làm bài tương tác, chọn đáp án hoặc nhập từ, sau đó nhấn "Kiểm tra đáp án" để tự chấm điểm.
+          </div>
+          <button class="btn-action" onclick="toggleMode()" style="background: white; color: var(--text-main); font-size: 0.8rem;">
+            Chuyển sang Giáo viên 👨‍🏫
+          </button>
+        `;
+      }
+
+      // Re-render active exercise to reflect mode changes
+      renderCurrentExercise();
+    }
+
+    /* Metadata */
+    function initMetadata() {
+      if (UNIT_METADATA.title) {
+        document.getElementById('header-unit-title').textContent = UNIT_METADATA.title.toUpperCase();
+        document.title = `${UNIT_METADATA.title} - Vocab Preview`;
+      }
+      if (UNIT_METADATA.subtitle) {
+        document.getElementById('header-unit-sub').textContent = UNIT_METADATA.subtitle;
+      }
+      
+      // Calculate total words
+      let totalWords = 0;
+      VOCAB_DATA.forEach(g => {
+        if (g.words) totalWords += g.words.length;
+      });
+      document.getElementById('vocab-total-count').textContent = totalWords;
+      document.getElementById('exercises-total-count').textContent = EXERCISES_DATA.length;
+      document.getElementById('prompts-total-count').textContent = IMAGE_PROMPTS.length;
+
+      if (!IMAGE_PROMPTS || IMAGE_PROMPTS.length === 0) {
+        document.getElementById('tab-btn-prompts').style.display = 'none';
+      }
+    }
+
+    /* Tab Switching */
+    function switchMainTab(tabName) {
+      state.activeMainTab = tabName;
+      document.querySelectorAll('.nav-tab').forEach(t => t.classList.remove('active'));
+      document.getElementById(`tab-btn-${tabName}`).classList.add('active');
+
+      document.getElementById('section-vocab').style.display = tabName === 'vocab' ? 'block' : 'none';
+      document.getElementById('section-exercises').style.display = tabName === 'exercises' ? 'block' : 'none';
+      document.getElementById('section-prompts').style.display = tabName === 'prompts' ? 'block' : 'none';
+    }
+
+    /* =========================================================
+       AUDIO PLAYER & WEB SPEECH SYNTHESIS FALLBACK
+       ========================================================= */
+    function playAudio(audioUrl, fallbackText, btnElement) {
+      if (btnElement) {
+        btnElement.classList.add('playing');
+        setTimeout(() => btnElement.classList.remove('playing'), 1500);
+      }
+
+      let audioPlayed = false;
+      if (audioUrl) {
+        const audio = new Audio(audioUrl);
+        audio.play().then(() => {
+          audioPlayed = true;
+        }).catch(() => {
+          // If file not found or blocked, fall back to Web Speech API
+          speakWithWebSpeech(fallbackText);
+        });
+      } else {
+        speakWithWebSpeech(fallbackText);
+      }
+    }
+
+    function speakWithWebSpeech(text) {
+      if (!window.speechSynthesis || !text) return;
+      window.speechSynthesis.cancel();
+      const utterance = new SpeechSynthesisUtterance(text);
+      utterance.lang = 'en-US';
+      utterance.rate = 0.9;
+      window.speechSynthesis.speak(utterance);
+    }
+
+    /* =========================================================
+       LIGHTBOX MODAL
+       ========================================================= */
+    function openLightbox(imgSrc, captionText) {
+      const modal = document.getElementById('lightbox');
+      const img = document.getElementById('lightbox-img');
+      const cap = document.getElementById('lightbox-caption');
+      img.src = imgSrc;
+      cap.textContent = captionText || '';
+      modal.classList.add('open');
+    }
+
+    function closeLightbox() {
+      document.getElementById('lightbox').classList.remove('open');
+    }
+
+    document.addEventListener('keydown', (e) => {
+      if (e.key === 'Escape') closeLightbox();
+    });
+
+    /* =========================================================
+       VOCABULARY RENDERING
+       ========================================================= */
+    function renderVocabFilters() {
+      const container = document.getElementById('vocab-group-filters');
+      container.innerHTML = `<button class="filter-chip ${state.activeVocabGroup === 'all' ? 'active' : ''}" onclick="filterVocabGroup('all')">Tất cả nhóm</button>`;
+
+      VOCAB_DATA.forEach((grp, idx) => {
+        const grpName = grp.group || `Nhóm ${idx + 1}`;
+        const chip = document.createElement('button');
+        chip.className = `filter-chip ${state.activeVocabGroup === grpName ? 'active' : ''}`;
+        chip.textContent = grpName;
+        chip.onclick = () => filterVocabGroup(grpName);
+        container.appendChild(chip);
+      });
+    }
+
+    function filterVocabGroup(groupName) {
+      state.activeVocabGroup = groupName;
+      renderVocabFilters();
+      renderVocabGrid();
+    }
+
+    function renderVocabGrid() {
+      const grid = document.getElementById('vocab-grid');
+      grid.innerHTML = '';
+
+      const query = state.searchQuery.toLowerCase().trim();
+
+      VOCAB_DATA.forEach(grp => {
+        if (state.activeVocabGroup !== 'all' && grp.group !== state.activeVocabGroup) return;
+
+        (grp.words || []).forEach(w => {
+          // Search filter match
+          if (query) {
+            const matchEn = (w.english_word || '').toLowerCase().includes(query);
+            const matchVi = (w.vietnamese_meaning || '').toLowerCase().includes(query);
+            const matchEx = (w.example_sentence_en || '').toLowerCase().includes(query);
+            if (!matchEn && !matchVi && !matchEx) return;
+          }
+
+          const card = document.createElement('div');
+          card.className = 'vocab-card';
+
+          // Extract POS from vietnamese meaning if possible e.g. "(n): ..."
+          let pos = '';
+          const posMatch = (w.vietnamese_meaning || '').match(/^\(([a-zA-Z\s,]+)\)/);
+          if (posMatch) pos = posMatch[1];
+
+          // Highlight target word in example sentence
+          let exampleEn = w.example_sentence_en || '';
+          if (w.english_word) {
+            const escapedWord = w.english_word.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
+            const regex = new RegExp(`(${escapedWord})`, 'gi');
+            exampleEn = exampleEn.replace(regex, '<mark>$1</mark>');
+          }
+
+          const imgSrc = resolveRelativePath(w.image);
+
+          card.innerHTML = `
+            <div class="vocab-card-header">
+              <div>
+                <div class="vocab-word-title">${escapeHtml(w.english_word || '')}</div>
+                ${pos ? `<span class="vocab-badge">${escapeHtml(pos)}</span>` : ''}
+              </div>
+              ${imgSrc ? `
+                <div class="vocab-thumb-wrap" onclick="openLightbox('${imgSrc}', '${escapeHtml(w.english_word)}')">
+                  <img src="${imgSrc}" alt="${escapeHtml(w.alt || w.english_word)}" onerror="this.parentElement.style.display='none'">
+                </div>
+              ` : ''}
+            </div>
+
+            <div class="vocab-ipa">
+              ${w.pronunciation_british ? `<span>🇬🇧 ${escapeHtml(w.pronunciation_british)}</span>` : ''}
+              ${w.pronunciation_american ? `<span>🇺🇸 ${escapeHtml(w.pronunciation_american)}</span>` : ''}
+            </div>
+
+            <div class="vocab-meaning">
+              ${escapeHtml(w.vietnamese_meaning || '')}
+            </div>
+
+            ${w.example_sentence_en ? `
+              <div class="vocab-examples">
+                <div class="en">${exampleEn}</div>
+                ${w.example_sentence_vi ? `<div class="vi">${escapeHtml(w.example_sentence_vi)}</div>` : ''}
+              </div>
+            ` : ''}
+
+            <div class="vocab-media">
+              <div class="audio-btns">
+                <button class="btn-audio" onclick="playAudio('${resolveRelativePath(w.audio_word)}', '${escapeJs(w.english_word)}', this)" title="Nghe từ vựng">
+                  🔊 Từ
+                </button>
+                ${w.example_sentence_en ? `
+                  <button class="btn-audio" onclick="playAudio('${resolveRelativePath(w.audio_sentence)}', '${escapeJs(w.example_sentence_en)}', this)" title="Nghe câu ví dụ">
+                    🗣️ Câu
+                  </button>
+                ` : ''}
+              </div>
+              <span style="font-size: 0.75rem; color: var(--text-muted);">${escapeHtml(grp.group || '')}</span>
+            </div>
+          `;
+
+          grid.appendChild(card);
+        });
+      });
+
+      if (grid.children.length === 0) {
+        grid.innerHTML = `<div style="grid-column: 1/-1; text-align: center; padding: 40px; color: var(--text-muted);">Không tìm thấy từ vựng nào khớp với từ khóa tìm kiếm.</div>`;
+      }
+    }
+
+    /* Search Handler */
+    function onSearchInput(val) {
+      state.searchQuery = val;
+      if (state.activeMainTab === 'vocab') {
+        renderVocabGrid();
+      } else {
+        renderCurrentExercise();
+      }
+    }
+
+    /* =========================================================
+       EXERCISES RENDERING
+       ========================================================= */
+    function renderExerciseNav() {
+      const nav = document.getElementById('exercise-nav-list');
+      nav.innerHTML = '';
+
+      EXERCISES_DATA.forEach((ex, idx) => {
+        const item = document.createElement('a');
+        item.className = `ex-nav-item ${state.activeExIndex === idx ? 'active' : ''}`;
+        
+        const qCount = getQuestionCount(ex);
+        item.innerHTML = `
+          <div style="display: flex; align-items: center;">
+            <span class="ex-num">${idx + 1}</span>
+            <span style="overflow: hidden; text-overflow: ellipsis; white-space: nowrap; max-width: 170px;">
+              ${escapeHtml(formatExShortTitle(ex, idx))}
+            </span>
+          </div>
+          <span class="ex-score" id="ex-nav-badge-${idx}">${qCount}q</span>
+        `;
+        item.onclick = (e) => {
+          e.preventDefault();
+          state.activeExIndex = idx;
+          renderExerciseNav();
+          renderCurrentExercise();
+        };
+        nav.appendChild(item);
+      });
+    }
+
+    function formatExShortTitle(ex, idx) {
+      if (ex.title) {
+        // Strip prefix numbers or "Multiple Choice - "
+        return ex.title.replace(/^(Multiple Choice\s*-\s*|\d+[\._\s]*)/i, '');
+      }
+      return `Exercise ${idx + 1}`;
+    }
+
+    function getQuestionCount(ex) {
+      if (ex.questions) return ex.questions.length;
+      if (ex.entries) return ex.entries.reduce((acc, cur) => acc + (cur.questions ? cur.questions.length : 1), 0);
+      if (ex.paragraph_parts) {
+        return ex.paragraph_parts.filter(p => typeof p === 'object' && p.type === 'blank').length;
+      }
+      return 0;
+    }
+
+    function renderCurrentExercise() {
+      const ex = EXERCISES_DATA[state.activeExIndex];
+      if (!ex) return;
+
+      document.getElementById('current-ex-title').textContent = `${state.activeExIndex + 1}. ${ex.title || 'Bài tập'}`;
+      document.getElementById('current-ex-desc').textContent = ex.description || '';
+
+      const body = document.getElementById('current-ex-body');
+      body.innerHTML = '';
+
+      // Score badge visibility
+      const scoreBadge = document.getElementById('current-ex-score');
+      if (state.checkedExercises[state.activeExIndex]) {
+        scoreBadge.style.display = 'inline-flex';
+      } else {
+        scoreBadge.style.display = 'none';
+      }
+
+      // Render based on exercise type
+      const type = ex.type || '';
+      if (type === 'multiple_choice' || type === 'word_families_mcq') {
+        renderMCQExercise(ex, body);
+      } else if (type === 'pic_to_word') {
+        renderPicToWordExercise(ex, body);
+      } else if (type === 'write_english_words') {
+        renderWriteWordsExercise(ex, body);
+      } else if (type === 'fill_in_blanks') {
+        renderFillBlanksExercise(ex, body);
+      } else if (type === 'paragraph_fill') {
+        renderParagraphFillExercise(ex, body);
+      } else if (type === 'sentence_ordering_multiple_choice') {
+        renderSentenceOrderingExercise(ex, body);
+      } else if (type === 'dictionary_entry') {
+        renderDictionaryEntryExercise(ex, body);
+      } else if (type === 'signs_and_notices') {
+        renderSignsExercise(ex, body);
+      } else if (type === 'word_families_table') {
+        renderWordFamiliesTableExercise(ex, body);
+      } else if (type === 'word_formation') {
+        renderWordFormationExercise(ex, body);
+      } else if (type === 'translate_sentences') {
+        renderTranslateSentencesExercise(ex, body);
+      } else {
+        // Fallback default renderer
+        renderGenericExercise(ex, body);
+      }
+    }
+
+    /* MCQ Renderer (01, 02, 03, 09, 10, 14) */
+    function renderMCQExercise(ex, container) {
+      const list = document.createElement('div');
+      list.className = 'question-list';
+
+      (ex.questions || []).forEach((q, qIdx) => {
+        const card = document.createElement('div');
+        card.className = 'question-card';
+        card.id = `q-card-${state.activeExIndex}-${q.id}`;
+
+        let textHtml = escapeHtml(q.text || '');
+        // Highlight bracketed words [word]
+        textHtml = textHtml.replace(/\[([^\]]+)\]/g, '<span class="target-highlight">$1</span>');
+
+        // Check if dialogue
+        let dialogueHtml = '';
+        if (textHtml.includes('\n')) {
+          const lines = textHtml.split('\n');
+          dialogueHtml = `
+            <div class="dialogue-box">
+              ${lines.map(l => {
+                const parts = l.split(':');
+                if (parts.length > 1) {
+                  return `<div class="dialogue-line"><span class="dialogue-speaker">${escapeHtml(parts[0])}:</span>${escapeHtml(parts.slice(1).join(':'))}</div>`;
+                }
+                return `<div class="dialogue-line">${escapeHtml(l)}</div>`;
+              }).join('')}
+            </div>
+          `;
+          textHtml = '';
+        }
+
+        const selectedAns = getUserAnswer(state.activeExIndex, q.id);
+        const isChecked = state.checkedExercises[state.activeExIndex] || state.mode === 'review';
+
+        let optionsHtml = '<div class="mcq-options">';
+        (q.options || []).forEach((opt, optIdx) => {
+          const optLetter = String.fromCharCode(65 + optIdx);
+          const isSelected = selectedAns === opt;
+          const isCorrectAnswer = (opt.trim().toLowerCase() === (q.correct_answer || '').trim().toLowerCase());
+
+          let optClass = 'mcq-option';
+          if (isSelected) optClass += ' selected';
+          if (isChecked) {
+            if (isCorrectAnswer) optClass += ' is-correct';
+            else if (isSelected && !isCorrectAnswer) optClass += ' is-wrong';
+          }
+
+          optionsHtml += `
+            <button type="button" class="${optClass}" onclick="selectMCQOption(${state.activeExIndex}, '${q.id}', '${escapeJs(opt)}')">
+              <span class="opt-key">${optLetter}</span>
+              <span>${escapeHtml(opt)}</span>
+              ${isChecked && isCorrectAnswer ? '<span style="margin-left:auto; font-size: 0.8rem;">✓</span>' : ''}
+            </button>
+          `;
+        });
+        optionsHtml += '</div>';
+
+        card.innerHTML = `
+          <div class="q-text"><span class="q-number">${qIdx + 1}.</span> ${textHtml}</div>
+          ${dialogueHtml}
+          ${optionsHtml}
+          ${isChecked ? `
+            <div class="answer-key-reveal">
+              ✓ Đáp án đúng: <strong>${escapeHtml(q.correct_answer || '')}</strong>
+            </div>
+          ` : ''}
+        `;
+        list.appendChild(card);
+      });
+
+      container.appendChild(list);
+    }
+
+    function selectMCQOption(exIdx, qId, value) {
+      if (state.mode === 'review') return;
+      setUserAnswer(exIdx, qId, value);
+      renderCurrentExercise();
+    }
+
+    /* Pic to Word (04) */
+    function renderPicToWordExercise(ex, container) {
+      const list = document.createElement('div');
+      list.className = 'question-list';
+
+      (ex.questions || []).forEach((q, qIdx) => {
+        const card = document.createElement('div');
+        card.className = 'question-card';
+        card.id = `q-card-${state.activeExIndex}-${q.id}`;
+
+        const userVal = getUserAnswer(state.activeExIndex, q.id) || '';
+        const isChecked = state.checkedExercises[state.activeExIndex] || state.mode === 'review';
+        const isCorrect = userVal.trim().toLowerCase() === (q.correct_answer || '').trim().toLowerCase();
+
+        const imgSrc = resolveRelativePath(q.image);
+
+        card.innerHTML = `
+          <div style="display: flex; gap: 20px; align-items: center; flex-wrap: wrap;">
+            <div class="vocab-thumb-wrap" style="width: 110px; height: 110px;" onclick="openLightbox('${imgSrc}', 'Question ${qIdx + 1}')">
+              <img src="${imgSrc}" alt="Picture ${qIdx + 1}" onerror="this.src='data:image/svg+xml;utf8,<svg xmlns=\\'http://www.w3.org/2000/svg\\' width=\\'100\\' height=\\'100\\'><rect fill=\\'%23eee\\' width=\\'100\\' height=\\'100\\'/><text x=\\'50%\\' y=\\'50%\\' dominant-baseline=\\'middle\\' text-anchor=\\'middle\\' fill=\\'%23999\\'>Picture</text></svg>'">
+            </div>
+            <div style="flex: 1; min-width: 240px;">
+              <div class="q-text"><span class="q-number">${qIdx + 1}.</span> Nhìn hình và viết từ tiếng Anh:</div>
+              <input type="text" class="text-input-field" placeholder="Nhập từ..." 
+                value="${state.mode === 'review' ? escapeHtml(q.correct_answer || '') : escapeHtml(userVal)}" 
+                ${state.mode === 'review' ? 'readonly' : ''}
+                oninput="setUserAnswer(${state.activeExIndex}, '${q.id}', this.value)">
+              ${isChecked ? `
+                <div class="answer-key-reveal" style="color: ${isCorrect ? 'var(--success)' : 'var(--danger)'};">
+                  ${isCorrect ? '✓ Chính xác!' : `✗ Đáp án đúng: <strong>${escapeHtml(q.correct_answer || '')}</strong>`}
+                </div>
+              ` : ''}
+            </div>
+          </div>
+        `;
+        list.appendChild(card);
+      });
+
+      container.appendChild(list);
+    }
+
+    /* Write English Words (05) */
+    function renderWriteWordsExercise(ex, container) {
+      const list = document.createElement('div');
+      list.className = 'question-list';
+
+      let count = 1;
+      (ex.questions || []).forEach(q => {
+        (q.parts || []).forEach((part, pIdx) => {
+          const partKey = `${q.id}_${pIdx}`;
+          const card = document.createElement('div');
+          card.className = 'question-card';
+
+          const userVal = getUserAnswer(state.activeExIndex, partKey) || '';
+          const isChecked = state.checkedExercises[state.activeExIndex] || state.mode === 'review';
+          const isCorrect = userVal.trim().toLowerCase() === (part.correct_answer || '').trim().toLowerCase();
+
+          card.innerHTML = `
+            <div class="q-text">
+              <span class="q-number">${count++}.</span> 
+              <strong>${escapeHtml(part.vietnamese || '')}</strong>
+            </div>
+            <input type="text" class="text-input-field" placeholder="Viết từ tiếng Anh tương ứng..." 
+              value="${state.mode === 'review' ? escapeHtml(part.correct_answer || '') : escapeHtml(userVal)}" 
+              ${state.mode === 'review' ? 'readonly' : ''}
+              oninput="setUserAnswer(${state.activeExIndex}, '${partKey}', this.value)">
+            ${isChecked ? `
+              <div class="answer-key-reveal" style="color: ${isCorrect ? 'var(--success)' : 'var(--danger)'};">
+                ${isCorrect ? '✓ Chính xác!' : `✗ Đáp án đúng: <strong>${escapeHtml(part.correct_answer || '')}</strong>`}
+              </div>
+            ` : ''}
+          `;
+          list.appendChild(card);
+        });
+      });
+
+      container.appendChild(list);
+    }
+
+    /* Fill in Blanks (06) */
+    function renderFillBlanksExercise(ex, container) {
+      // Word Box
+      if (ex.word_box && ex.word_box.length > 0) {
+        const wb = document.createElement('div');
+        wb.className = 'word-box-container';
+        wb.innerHTML = `
+          <div class="word-box-title">Khung từ gợi ý (Word Box) - Click vào từ để chèn vào ô trống</div>
+          <div class="word-box-chips">
+            ${ex.word_box.map(w => `<button type="button" class="wb-chip" onclick="insertWordIntoActiveBlank('${escapeJs(w)}')">${escapeHtml(w)}</button>`).join('')}
+          </div>
+        `;
+        container.appendChild(wb);
+      }
+
+      const list = document.createElement('div');
+      list.className = 'question-list';
+
+      (ex.questions || []).forEach((q, qIdx) => {
+        const card = document.createElement('div');
+        card.className = 'question-card';
+
+        const userVal = getUserAnswer(state.activeExIndex, q.id) || '';
+        const isChecked = state.checkedExercises[state.activeExIndex] || state.mode === 'review';
+        const isCorrect = userVal.trim().toLowerCase() === (q.correct_answer || '').trim().toLowerCase();
+
+        card.innerHTML = `
+          <div class="q-text"><span class="q-number">${qIdx + 1}.</span> ${escapeHtml(q.text || '')}</div>
+          <input type="text" class="text-input-field" id="blank-input-${q.id}" placeholder="Điền từ vào đây..." 
+            value="${state.mode === 'review' ? escapeHtml(q.correct_answer || '') : escapeHtml(userVal)}" 
+            ${state.mode === 'review' ? 'readonly' : ''}
+            onfocus="window.lastFocusedBlank = this"
+            oninput="setUserAnswer(${state.activeExIndex}, '${q.id}', this.value)">
+          ${isChecked ? `
+            <div class="answer-key-reveal" style="color: ${isCorrect ? 'var(--success)' : 'var(--danger)'};">
+              ${isCorrect ? '✓ Chính xác!' : `✗ Đáp án đúng: <strong>${escapeHtml(q.correct_answer || '')}</strong>`}
+            </div>
+          ` : ''}
+        `;
+        list.appendChild(card);
+      });
+
+      container.appendChild(list);
+    }
+
+    function insertWordIntoActiveBlank(word) {
+      if (window.lastFocusedBlank) {
+        window.lastFocusedBlank.value = word;
+        window.lastFocusedBlank.dispatchEvent(new Event('input'));
+      }
+    }
+
+    /* Paragraph Fill (07) */
+    function renderParagraphFillExercise(ex, container) {
+      // Word Box
+      if (ex.word_box && ex.word_box.length > 0) {
+        const wb = document.createElement('div');
+        wb.className = 'word-box-container';
+        wb.innerHTML = `
+          <div class="word-box-title">Khung từ gợi ý (Word Box)</div>
+          <div class="word-box-chips">
+            ${ex.word_box.map(w => `<span class="wb-chip" onclick="insertWordIntoActiveBlank('${escapeJs(w)}')">${escapeHtml(w)}</span>`).join('')}
+          </div>
+        `;
+        container.appendChild(wb);
+      }
+
+      const pBox = document.createElement('div');
+      pBox.className = 'paragraph-read-box';
+
+      const isChecked = state.checkedExercises[state.activeExIndex] || state.mode === 'review';
+
+      let paragraphHtml = '';
+      (ex.paragraph_parts || []).forEach(part => {
+        if (typeof part === 'string') {
+          paragraphHtml += escapeHtml(part);
+        } else if (part && part.type === 'blank') {
+          const userVal = getUserAnswer(state.activeExIndex, part.id) || '';
+          const isCorrect = userVal.trim().toLowerCase() === (part.correct_answer || '').trim().toLowerCase();
+          
+          let inputClass = 'inline-blank-input';
+          if (isChecked) {
+            inputClass += isCorrect ? ' correct' : ' incorrect';
+          }
+
+          paragraphHtml += `
+            <input type="text" class="${inputClass}" title="Ô số (${part.id})"
+              placeholder="(${part.id})" 
+              value="${state.mode === 'review' ? escapeHtml(part.correct_answer || '') : escapeHtml(userVal)}"
+              ${state.mode === 'review' ? 'readonly' : ''}
+              onfocus="window.lastFocusedBlank = this"
+              oninput="setUserAnswer(${state.activeExIndex}, '${part.id}', this.value)">
+            ${isChecked && !isCorrect ? `<span style="color: var(--success); font-weight: bold; font-size: 0.85rem;">[${escapeHtml(part.correct_answer)}]</span>` : ''}
+          `;
+        }
+      });
+
+      pBox.innerHTML = paragraphHtml;
+      container.appendChild(pBox);
+    }
+
+    /* Sentence Ordering (08) */
+    function renderSentenceOrderingExercise(ex, container) {
+      const list = document.createElement('div');
+      list.className = 'question-list';
+
+      (ex.questions || []).forEach((q, qIdx) => {
+        const card = document.createElement('div');
+        card.className = 'question-card';
+
+        const selectedAns = getUserAnswer(state.activeExIndex, q.id);
+        const isChecked = state.checkedExercises[state.activeExIndex] || state.mode === 'review';
+
+        let sentencesHtml = '<div style="background: var(--bg-surface); padding: 14px; border-radius: var(--radius-md); margin-bottom: 12px; display: flex; flex-direction: column; gap: 6px;">';
+        (q.sentences || []).forEach(s => {
+          sentencesHtml += `<div style="font-size: 0.92rem;">${escapeHtml(s)}</div>`;
+        });
+        sentencesHtml += '</div>';
+
+        let optionsHtml = '<div class="mcq-options">';
+        (q.options || []).forEach((opt, optIdx) => {
+          const isSelected = selectedAns === opt;
+          const isCorrectAnswer = (opt.trim().toLowerCase() === (q.correct_answer || '').trim().toLowerCase());
+
+          let optClass = 'mcq-option';
+          if (isSelected) optClass += ' selected';
+          if (isChecked) {
+            if (isCorrectAnswer) optClass += ' is-correct';
+            else if (isSelected && !isCorrectAnswer) optClass += ' is-wrong';
+          }
+
+          optionsHtml += `
+            <button type="button" class="${optClass}" onclick="selectMCQOption(${state.activeExIndex}, '${q.id}', '${escapeJs(opt)}')">
+              <span class="opt-key">${String.fromCharCode(65 + optIdx)}</span>
+              <span>${escapeHtml(opt)}</span>
+            </button>
+          `;
+        });
+        optionsHtml += '</div>';
+
+        card.innerHTML = `
+          <div class="q-text"><span class="q-number">${qIdx + 1}.</span> Đọc các câu sau và chọn trật tự đúng:</div>
+          ${sentencesHtml}
+          ${optionsHtml}
+          ${isChecked ? `
+            <div class="answer-key-reveal">
+              ✓ Thứ tự đúng: <strong>${escapeHtml(q.correct_answer || '')}</strong>
+            </div>
+          ` : ''}
+        `;
+        list.appendChild(card);
+      });
+
+      container.appendChild(list);
+    }
+
+    /* Dictionary Entry (11) */
+    function renderDictionaryEntryExercise(ex, container) {
+      (ex.entries || []).forEach(entry => {
+        const card = document.createElement('div');
+        card.className = 'dict-card';
+
+        card.innerHTML = `
+          <div class="dict-word-head">
+            <span class="dict-word">${escapeHtml(entry.word || '')}</span>
+            ${entry.part_of_speech ? `<span class="vocab-badge">${escapeHtml(entry.part_of_speech)}</span>` : ''}
+            ${entry.pronunciation ? `<span style="font-family: monospace; color: var(--text-secondary);">${escapeHtml(entry.pronunciation)}</span>` : ''}
+          </div>
+          <div class="dict-def">
+            <strong>Định nghĩa:</strong> ${escapeHtml(entry.definition || '')}
+          </div>
+          <div style="font-size: 0.85rem; font-weight: 700; color: var(--primary); margin-bottom: 6px;">Cụm từ & Ví dụ thường gặp:</div>
+          <ul class="dict-bullets">
+            ${(entry.bullet_points || []).map(bp => `<li>${escapeHtml(bp)}</li>`).join('')}
+          </ul>
+          <div style="font-size: 0.88rem; font-weight: 700; color: var(--text-main); margin-bottom: 10px; border-top: 1px dashed var(--border); padding-top: 12px;">
+            Áp dụng hoàn thành câu:
+          </div>
+        `;
+
+        const qList = document.createElement('div');
+        qList.className = 'question-list';
+
+        (entry.questions || []).forEach(q => {
+          const qCard = document.createElement('div');
+          qCard.className = 'question-card';
+
+          const userVal = getUserAnswer(state.activeExIndex, q.id) || '';
+          const isChecked = state.checkedExercises[state.activeExIndex] || state.mode === 'review';
+          const isCorrect = userVal.trim().toLowerCase() === (q.correct_answer || '').trim().toLowerCase();
+
+          qCard.innerHTML = `
+            <div class="q-text">${escapeHtml(q.text || '')}</div>
+            <input type="text" class="text-input-field" placeholder="Điền cụm từ..." 
+              value="${state.mode === 'review' ? escapeHtml(q.correct_answer || '') : escapeHtml(userVal)}" 
+              ${state.mode === 'review' ? 'readonly' : ''}
+              oninput="setUserAnswer(${state.activeExIndex}, '${q.id}', this.value)">
+            ${isChecked ? `
+              <div class="answer-key-reveal" style="color: ${isCorrect ? 'var(--success)' : 'var(--danger)'};">
+                ${isCorrect ? '✓ Chính xác!' : `✗ Đáp án đúng: <strong>${escapeHtml(q.correct_answer || '')}</strong>`}
+              </div>
+            ` : ''}
+          `;
+          qList.appendChild(qCard);
+        });
+
+        card.appendChild(qList);
+        container.appendChild(card);
+      });
+    }
+
+    /* Signs and Notices (12) */
+    function renderSignsExercise(ex, container) {
+      const list = document.createElement('div');
+      list.className = 'question-list';
+
+      (ex.questions || []).forEach((q, qIdx) => {
+        const card = document.createElement('div');
+        card.className = 'question-card';
+
+        const selectedAns = getUserAnswer(state.activeExIndex, q.id);
+        const isChecked = state.checkedExercises[state.activeExIndex] || state.mode === 'review';
+
+        const signImg = resolveRelativePath(q.sign_image);
+
+        let optionsHtml = '<div class="mcq-options">';
+        (q.options || []).forEach((opt, optIdx) => {
+          const isSelected = selectedAns === opt;
+          const isCorrectAnswer = (opt.trim().toLowerCase() === (q.correct_answer || '').trim().toLowerCase());
+
+          let optClass = 'mcq-option';
+          if (isSelected) optClass += ' selected';
+          if (isChecked) {
+            if (isCorrectAnswer) optClass += ' is-correct';
+            else if (isSelected && !isCorrectAnswer) optClass += ' is-wrong';
+          }
+
+          optionsHtml += `
+            <button type="button" class="${optClass}" onclick="selectMCQOption(${state.activeExIndex}, '${q.id}', '${escapeJs(opt)}')">
+              <span class="opt-key">${String.fromCharCode(65 + optIdx)}</span>
+              <span>${escapeHtml(opt)}</span>
+            </button>
+          `;
+        });
+        optionsHtml += '</div>';
+
+        card.innerHTML = `
+          <div class="q-text"><span class="q-number">${qIdx + 1}.</span> ${escapeHtml(q.question || 'What does the sign mean?')}</div>
+          <div class="sign-visual-wrap">
+            <div class="sign-card-box">
+              ${signImg ? `<img src="${signImg}" alt="Sign" onerror="this.style.display='none'; this.nextElementSibling.style.display='block';">` : ''}
+              <div style="font-size: 2rem; ${signImg ? 'display:none;' : ''}">🚸</div>
+            </div>
+            <div class="sign-desc-box">
+              <strong>Mô tả biển báo:</strong> ${escapeHtml(q.sign_text || '')}
+            </div>
+          </div>
+          ${optionsHtml}
+          ${isChecked ? `
+            <div class="answer-key-reveal">
+              ✓ Ý nghĩa đúng: <strong>${escapeHtml(q.correct_answer || '')}</strong>
+            </div>
+          ` : ''}
+        `;
+        list.appendChild(card);
+      });
+
+      container.appendChild(list);
+    }
+
+    /* Word Families Table (13) */
+    function renderWordFamiliesTableExercise(ex, container) {
+      const tableWrap = document.createElement('div');
+      tableWrap.style.overflowX = 'auto';
+
+      let tableRows = '';
+      (ex.questions || []).forEach((q, idx) => {
+        tableRows += `
+          <tr>
+            <td style="font-weight: 700; color: var(--primary);">${idx + 1}. ${escapeHtml(q.base_word || '')}</td>
+            <td><span class="vocab-badge">${escapeHtml(q.base_word_type || '')}</span></td>
+            <td>${escapeHtml((q.verb || []).join(', ') || '—')}</td>
+            <td>${escapeHtml((q.noun || []).join(', ') || '—')}</td>
+            <td>${escapeHtml((q.adjective || []).join(', ') || '—')}</td>
+            <td>${escapeHtml((q.adverb || []).join(', ') || '—')}</td>
+          </tr>
+        `;
+      });
+
+      tableWrap.innerHTML = `
+        <table class="wf-table">
+          <thead>
+            <tr>
+              <th>Base Word</th>
+              <th>Word Type</th>
+              <th>Verb</th>
+              <th>Noun</th>
+              <th>Adjective</th>
+              <th>Adverb</th>
+            </tr>
+          </thead>
+          <tbody>
+            ${tableRows}
+          </tbody>
+        </table>
+      `;
+
+      container.appendChild(tableWrap);
+    }
+
+    /* Word Formation (15) */
+    function renderWordFormationExercise(ex, container) {
+      const list = document.createElement('div');
+      list.className = 'question-list';
+
+      (ex.questions || []).forEach((q, qIdx) => {
+        const card = document.createElement('div');
+        card.className = 'question-card';
+
+        const userVal = getUserAnswer(state.activeExIndex, q.id) || '';
+        const isChecked = state.checkedExercises[state.activeExIndex] || state.mode === 'review';
+        const isCorrect = userVal.trim().toLowerCase() === (q.correct_answer || '').trim().toLowerCase();
+
+        card.innerHTML = `
+          <div class="q-text">
+            <span class="q-number">${qIdx + 1}.</span> ${escapeHtml(q.text || '')} 
+            <span class="vocab-badge" style="background: var(--warning-light); color: #b45309; font-size: 0.85rem; padding: 3px 8px;">
+              [${escapeHtml(q.base_word || '')}]
+            </span>
+          </div>
+          <input type="text" class="text-input-field" placeholder="Điền dạng đúng của từ..." 
+            value="${state.mode === 'review' ? escapeHtml(q.correct_answer || '') : escapeHtml(userVal)}" 
+            ${state.mode === 'review' ? 'readonly' : ''}
+            oninput="setUserAnswer(${state.activeExIndex}, '${q.id}', this.value)">
+          ${isChecked ? `
+            <div class="answer-key-reveal" style="color: ${isCorrect ? 'var(--success)' : 'var(--danger)'};">
+              ${isCorrect ? '✓ Chính xác!' : `✗ Đáp án đúng: <strong>${escapeHtml(q.correct_answer || '')}</strong>`}
+            </div>
+          ` : ''}
+        `;
+        list.appendChild(card);
+      });
+
+      container.appendChild(list);
+    }
+
+    /* Translation (16) */
+    function renderTranslateSentencesExercise(ex, container) {
+      const list = document.createElement('div');
+      list.className = 'question-list';
+
+      (ex.questions || []).forEach((q, qIdx) => {
+        const card = document.createElement('div');
+        card.className = 'question-card';
+
+        const userVal = getUserAnswer(state.activeExIndex, q.id) || '';
+        const isChecked = state.checkedExercises[state.activeExIndex] || state.mode === 'review';
+
+        card.innerHTML = `
+          <div class="q-text">
+            <span class="q-number">${qIdx + 1}.</span> 
+            <strong>${escapeHtml(q.vietnamese || '')}</strong>
+          </div>
+          <input type="text" class="text-input-field" style="max-width: 100%;" placeholder="Dịch câu sang tiếng Anh..." 
+            value="${state.mode === 'review' ? escapeHtml(q.correct_answer || '') : escapeHtml(userVal)}" 
+            ${state.mode === 'review' ? 'readonly' : ''}
+            oninput="setUserAnswer(${state.activeExIndex}, '${q.id}', this.value)">
+          ${isChecked ? `
+            <div class="answer-key-reveal" style="color: var(--primary);">
+              ✓ Bản dịch mẫu: <strong>${escapeHtml(q.correct_answer || '')}</strong>
+            </div>
+          ` : ''}
+        `;
+        list.appendChild(card);
+      });
+
+      container.appendChild(list);
+    }
+
+    /* Generic Fallback */
+    function renderGenericExercise(ex, container) {
+      const pre = document.createElement('pre');
+      pre.style.background = 'var(--bg-subtle)';
+      pre.style.padding = '16px';
+      pre.style.borderRadius = 'var(--radius-md)';
+      pre.style.overflowX = 'auto';
+      pre.textContent = JSON.stringify(ex, null, 2);
+      container.appendChild(pre);
+    }
+
+    /* =========================================================
+       ANSWER MANAGEMENT & SCORING
+       ========================================================= */
+    function getUserAnswer(exIdx, qId) {
+      if (!state.userAnswers[exIdx]) return null;
+      return state.userAnswers[exIdx][qId] || null;
+    }
+
+    function setUserAnswer(exIdx, qId, value) {
+      if (!state.userAnswers[exIdx]) state.userAnswers[exIdx] = {};
+      state.userAnswers[exIdx][qId] = value;
+    }
+
+    function checkCurrentExercise() {
+      state.checkedExercises[state.activeExIndex] = true;
+      const ex = EXERCISES_DATA[state.activeExIndex];
+      let correct = 0;
+      let total = 0;
+
+      if (ex.questions) {
+        ex.questions.forEach(q => {
+          if (q.parts) {
+            q.parts.forEach((p, pIdx) => {
+              total++;
+              const userVal = getUserAnswer(state.activeExIndex, `${q.id}_${pIdx}`) || '';
+              if (userVal.trim().toLowerCase() === (p.correct_answer || '').trim().toLowerCase()) {
+                correct++;
+              }
+            });
+          } else {
+            total++;
+            const userVal = getUserAnswer(state.activeExIndex, q.id) || '';
+            if (userVal.trim().toLowerCase() === (q.correct_answer || '').trim().toLowerCase()) {
+              correct++;
+            }
+          }
+        });
+      } else if (ex.paragraph_parts) {
+        ex.paragraph_parts.forEach(p => {
+          if (typeof p === 'object' && p.type === 'blank') {
+            total++;
+            const userVal = getUserAnswer(state.activeExIndex, p.id) || '';
+            if (userVal.trim().toLowerCase() === (p.correct_answer || '').trim().toLowerCase()) {
+              correct++;
+            }
+          }
+        });
+      } else if (ex.entries) {
+        ex.entries.forEach(entry => {
+          (entry.questions || []).forEach(q => {
+            total++;
+            const userVal = getUserAnswer(state.activeExIndex, q.id) || '';
+            if (userVal.trim().toLowerCase() === (q.correct_answer || '').trim().toLowerCase()) {
+              correct++;
+            }
+          });
+        });
+      }
+
+      const scoreBadge = document.getElementById('current-ex-score');
+      scoreBadge.style.display = 'inline-flex';
+      const pct = total > 0 ? Math.round((correct / total) * 100) : 0;
+      scoreBadge.textContent = `${correct}/${total} đúng (${pct}%)`;
+      if (pct >= 80) scoreBadge.className = 'score-badge good';
+      else scoreBadge.className = 'score-badge';
+
+      renderCurrentExercise();
+    }
+
+    function resetCurrentExercise() {
+      state.checkedExercises[state.activeExIndex] = false;
+      if (state.userAnswers[state.activeExIndex]) {
+        state.userAnswers[state.activeExIndex] = {};
+      }
+      renderCurrentExercise();
+    }
+
+    /* =========================================================
+       IMAGE PROMPTS RENDERING
+       ========================================================= */
+    function renderPrompts() {
+      const container = document.getElementById('prompts-grid');
+      container.innerHTML = '';
+
+      IMAGE_PROMPTS.forEach(item => {
+        const card = document.createElement('div');
+        card.className = 'prompt-card';
+        card.innerHTML = `
+          <div class="prompt-word">${escapeHtml(item.word || item.english_word || 'Prompt')}</div>
+          <div class="prompt-body">${escapeHtml(item.prompt || item.prompt_en || JSON.stringify(item))}</div>
+          ${item.notes ? `<div style="font-size: 0.8rem; color: var(--text-muted);">Ghi chú: ${escapeHtml(item.notes)}</div>` : ''}
+        `;
+        container.appendChild(card);
+      });
+    }
+
+    /* =========================================================
+       UTILITIES
+       ========================================================= */
+    function resolveRelativePath(path) {
+      if (!path) return '';
+      if (path.startsWith('http://') || path.startsWith('https://') || path.startsWith('data:')) {
+        return path;
+      }
+      // If absolute web path starting with '/', compute relative path from HTML file to workspace root
+      // Target HTML is placed at data/gs6/unit-X/vocab/preview.html (4 levels deep)
+      // So /lessons/media/... becomes ../../../../lessons/media/...
+      if (path.startsWith('/')) {
+        return '../../../../' + path.substring(1);
+      }
+      return path;
+    }
+
+    function escapeHtml(str) {
+      if (typeof str !== 'string') return '';
+      return str.replace(/&/g, '&amp;')
+                .replace(/</g, '&lt;')
+                .replace(/>/g, '&gt;')
+                .replace(/"/g, '&quot;')
+                .replace(/'/g, '&#039;');
+    }
+
+    function escapeJs(str) {
+      if (typeof str !== 'string') return '';
+      return str.replace(/\\/g, '\\\\').replace(/'/g, "\\'").replace(/\n/g, '\\n');
+    }
+  </script>
+</body>
+</html>

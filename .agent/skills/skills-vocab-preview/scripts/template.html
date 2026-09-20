@@ -1,0 +1,2383 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Unit Vocab & Exercises Preview</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Outfit:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --bg-primary: #f8fafc;
+      --bg-surface: #ffffff;
+      --bg-surface-elevated: #ffffff;
+      --bg-subtle: #f1f5f9;
+      --border: #e2e8f0;
+      --border-focus: #6366f1;
+      --text-main: #0f172a;
+      --text-secondary: #475569;
+      --text-muted: #64748b;
+      --text-inverse: #ffffff;
+      --primary: #4f46e5;
+      --primary-hover: #4338ca;
+      --primary-light: #eef2ff;
+      --success: #10b981;
+      --success-light: #ecfdf5;
+      --danger: #ef4444;
+      --danger-light: #fef2f2;
+      --warning: #f59e0b;
+      --warning-light: #fffbeb;
+      --info: #0284c7;
+      --info-light: #f0f9ff;
+      --shadow-sm: 0 1px 2px 0 rgb(0 0 0 / 0.05);
+      --shadow: 0 4px 6px -1px rgb(0 0 0 / 0.08), 0 2px 4px -2px rgb(0 0 0 / 0.05);
+      --shadow-lg: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
+      --radius-sm: 6px;
+      --radius-md: 10px;
+      --radius-lg: 16px;
+      --radius-full: 9999px;
+      --font-main: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+      --font-heading: 'Outfit', 'Inter', sans-serif;
+    }
+
+    [data-theme="dark"] {
+      --bg-primary: #0b0f19;
+      --bg-surface: #131b2e;
+      --bg-surface-elevated: #1a243b;
+      --bg-subtle: #1e293b;
+      --border: #2e3c59;
+      --border-focus: #818cf8;
+      --text-main: #f8fafc;
+      --text-secondary: #cbd5e1;
+      --text-muted: #8493a8;
+      --text-inverse: #0b0f19;
+      --primary: #6366f1;
+      --primary-hover: #4f46e5;
+      --primary-light: rgba(99, 102, 241, 0.15);
+      --success: #10b981;
+      --success-light: rgba(16, 185, 129, 0.15);
+      --danger: #f87171;
+      --danger-light: rgba(239, 68, 68, 0.15);
+      --warning: #fbbf24;
+      --warning-light: rgba(245, 158, 11, 0.15);
+      --info: #38bdf8;
+      --info-light: rgba(56, 189, 248, 0.15);
+      --shadow-sm: 0 1px 2px 0 rgb(0 0 0 / 0.3);
+      --shadow: 0 4px 6px -1px rgb(0 0 0 / 0.3);
+      --shadow-lg: 0 10px 20px -3px rgb(0 0 0 / 0.4);
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      transition: background-color 0.2s ease, border-color 0.2s ease, color 0.2s ease;
+    }
+
+    body {
+      font-family: var(--font-main);
+      background-color: var(--bg-primary);
+      color: var(--text-main);
+      line-height: 1.6;
+      -webkit-font-smoothing: antialiased;
+      padding-bottom: 80px;
+    }
+
+    /* Top Sticky Header */
+    header.app-header {
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      background: rgba(255, 255, 255, 0.85);
+      backdrop-filter: blur(12px);
+      -webkit-backdrop-filter: blur(12px);
+      border-bottom: 1px solid var(--border);
+    }
+
+    [data-theme="dark"] header.app-header {
+      background: rgba(19, 27, 46, 0.85);
+    }
+
+    .header-inner {
+      max-width: 1400px;
+      margin: 0 auto;
+      padding: 12px 24px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 16px;
+      flex-wrap: wrap;
+    }
+
+    .brand-section {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+    }
+
+    .brand-logo {
+      width: 42px;
+      height: 42px;
+      border-radius: var(--radius-md);
+      background: linear-gradient(135deg, var(--primary), #8b5cf6);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: white;
+      font-size: 20px;
+      box-shadow: 0 4px 10px rgba(99, 102, 241, 0.35);
+    }
+
+    .brand-text h1 {
+      font-family: var(--font-heading);
+      font-size: 1.15rem;
+      font-weight: 700;
+      line-height: 1.2;
+      color: var(--text-main);
+    }
+
+    .brand-text p {
+      font-size: 0.8rem;
+      color: var(--text-muted);
+    }
+
+    .header-actions {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      flex-wrap: wrap;
+    }
+
+    .search-box {
+      position: relative;
+    }
+
+    .search-box input {
+      background: var(--bg-subtle);
+      border: 1px solid var(--border);
+      border-radius: var(--radius-full);
+      padding: 8px 16px 8px 36px;
+      font-size: 0.85rem;
+      color: var(--text-main);
+      width: 220px;
+      outline: none;
+      transition: width 0.3s ease, border-color 0.2s;
+    }
+
+    .search-box input:focus {
+      width: 280px;
+      border-color: var(--primary);
+      background: var(--bg-surface);
+    }
+
+    .search-box svg {
+      position: absolute;
+      left: 12px;
+      top: 50%;
+      transform: translateY(-50%);
+      width: 15px;
+      height: 15px;
+      stroke: var(--text-muted);
+    }
+
+    .btn-action {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      padding: 8px 14px;
+      border-radius: var(--radius-full);
+      border: 1px solid var(--border);
+      background: var(--bg-surface);
+      color: var(--text-main);
+      font-size: 0.85rem;
+      font-weight: 600;
+      cursor: pointer;
+      box-shadow: var(--shadow-sm);
+    }
+
+    .btn-action:hover {
+      background: var(--bg-subtle);
+      border-color: var(--text-muted);
+    }
+
+    .btn-mode-toggle {
+      background: var(--primary-light);
+      color: var(--primary);
+      border-color: var(--primary);
+    }
+
+    .btn-mode-toggle.teacher-active {
+      background: var(--warning-light);
+      color: #b45309;
+      border-color: var(--warning);
+    }
+
+    [data-theme="dark"] .btn-mode-toggle.teacher-active {
+      color: #fde68a;
+    }
+
+    /* Navigation Bar (Tabs) */
+    .nav-bar {
+      background: var(--bg-surface);
+      border-bottom: 1px solid var(--border);
+    }
+
+    .nav-inner {
+      max-width: 1400px;
+      margin: 0 auto;
+      padding: 0 24px;
+      display: flex;
+      gap: 8px;
+      overflow-x: auto;
+      scrollbar-width: thin;
+    }
+
+    .nav-tab {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      padding: 14px 18px;
+      color: var(--text-secondary);
+      font-weight: 600;
+      font-size: 0.9rem;
+      border-bottom: 2px solid transparent;
+      cursor: pointer;
+      white-space: nowrap;
+      text-decoration: none;
+    }
+
+    .nav-tab:hover {
+      color: var(--primary);
+    }
+
+    .nav-tab.active {
+      color: var(--primary);
+      border-bottom-color: var(--primary);
+      background: var(--primary-light);
+    }
+
+    .nav-tab .badge {
+      background: var(--bg-subtle);
+      color: var(--text-secondary);
+      padding: 2px 8px;
+      border-radius: var(--radius-full);
+      font-size: 0.75rem;
+    }
+
+    .nav-tab.active .badge {
+      background: var(--primary);
+      color: white;
+    }
+
+    /* Main Container */
+    main.app-container {
+      max-width: 1400px;
+      margin: 24px auto;
+      padding: 0 24px;
+    }
+
+    /* Mode Banner Alert */
+    .mode-banner {
+      background: var(--info-light);
+      border: 1px solid var(--info);
+      border-radius: var(--radius-md);
+      padding: 12px 18px;
+      margin-bottom: 24px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 12px;
+      font-size: 0.9rem;
+    }
+
+    .mode-banner.teacher-mode {
+      background: var(--warning-light);
+      border-color: var(--warning);
+      color: var(--text-main);
+    }
+
+    /* Vocabulary Styles */
+    .vocab-controls {
+      display: flex;
+      gap: 8px;
+      margin-bottom: 20px;
+      flex-wrap: wrap;
+      align-items: center;
+    }
+
+    .filter-chip {
+      padding: 6px 14px;
+      border-radius: var(--radius-full);
+      background: var(--bg-surface);
+      border: 1px solid var(--border);
+      font-size: 0.85rem;
+      color: var(--text-secondary);
+      cursor: pointer;
+      font-weight: 500;
+    }
+
+    .filter-chip:hover {
+      border-color: var(--primary);
+      color: var(--primary);
+    }
+
+    .filter-chip.active {
+      background: var(--primary);
+      color: white;
+      border-color: var(--primary);
+    }
+
+    .vocab-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(340px, 1fr));
+      gap: 20px;
+    }
+
+    .vocab-card {
+      background: var(--bg-surface);
+      border: 1px solid var(--border);
+      border-radius: var(--radius-lg);
+      padding: 20px;
+      box-shadow: var(--shadow);
+      display: flex;
+      flex-direction: column;
+      gap: 14px;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .vocab-card:hover {
+      box-shadow: var(--shadow-lg);
+      border-color: var(--border-focus);
+      transform: translateY(-2px);
+    }
+
+    .vocab-card-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+      gap: 10px;
+    }
+
+    .vocab-word-title {
+      font-family: var(--font-heading);
+      font-size: 1.4rem;
+      font-weight: 700;
+      color: var(--text-main);
+    }
+
+    .vocab-badge {
+      display: inline-block;
+      padding: 2px 8px;
+      border-radius: var(--radius-sm);
+      font-size: 0.75rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      background: var(--primary-light);
+      color: var(--primary);
+    }
+
+    .vocab-ipa {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px;
+      font-size: 0.85rem;
+      color: var(--text-secondary);
+      font-family: monospace;
+    }
+
+    .vocab-ipa span {
+      display: inline-flex;
+      align-items: center;
+      gap: 4px;
+    }
+
+    .vocab-meaning {
+      font-size: 1rem;
+      font-weight: 600;
+      color: #0284c7;
+      background: var(--info-light);
+      padding: 8px 12px;
+      border-radius: var(--radius-md);
+      border-left: 3px solid #0284c7;
+    }
+
+    [data-theme="dark"] .vocab-meaning {
+      color: #38bdf8;
+    }
+
+    .vocab-examples {
+      font-size: 0.9rem;
+      color: var(--text-secondary);
+      background: var(--bg-subtle);
+      padding: 10px 14px;
+      border-radius: var(--radius-md);
+      display: flex;
+      flex-direction: column;
+      gap: 6px;
+    }
+
+    .vocab-examples .en {
+      color: var(--text-main);
+      font-weight: 500;
+    }
+
+    .vocab-examples .en mark {
+      background: #fef08a;
+      color: #713f12;
+      padding: 0 4px;
+      border-radius: 3px;
+    }
+
+    [data-theme="dark"] .vocab-examples .en mark {
+      background: #854d0e;
+      color: #fef08a;
+    }
+
+    .vocab-examples .vi {
+      font-size: 0.85rem;
+      color: var(--text-muted);
+      font-style: italic;
+    }
+
+    .vocab-media {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 12px;
+      padding-top: 6px;
+      border-top: 1px solid var(--border);
+    }
+
+    .audio-btns {
+      display: flex;
+      gap: 8px;
+    }
+
+    .btn-audio {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      padding: 6px 12px;
+      background: var(--bg-subtle);
+      border: 1px solid var(--border);
+      border-radius: var(--radius-full);
+      font-size: 0.8rem;
+      font-weight: 600;
+      color: var(--text-secondary);
+      cursor: pointer;
+    }
+
+    .btn-audio:hover {
+      background: var(--primary-light);
+      color: var(--primary);
+      border-color: var(--primary);
+    }
+
+    .btn-audio.playing {
+      background: var(--primary);
+      color: white;
+      border-color: var(--primary);
+    }
+
+    .vocab-thumb-wrap {
+      width: 70px;
+      height: 70px;
+      border-radius: var(--radius-md);
+      overflow: hidden;
+      border: 1px solid var(--border);
+      flex-shrink: 0;
+      background: var(--bg-subtle);
+      cursor: pointer;
+    }
+
+    .vocab-thumb-wrap img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      transition: transform 0.3s ease;
+    }
+
+    .vocab-thumb-wrap:hover img {
+      transform: scale(1.08);
+    }
+
+    /* Exercises Layout */
+    .exercises-wrapper {
+      display: grid;
+      grid-template-columns: 280px 1fr;
+      gap: 24px;
+      align-items: start;
+    }
+
+    @media (max-width: 960px) {
+      .exercises-wrapper {
+        grid-template-columns: 1fr;
+      }
+    }
+
+    .ex-sidebar {
+      background: var(--bg-surface);
+      border: 1px solid var(--border);
+      border-radius: var(--radius-lg);
+      padding: 16px;
+      position: sticky;
+      top: 90px;
+      max-height: calc(100vh - 120px);
+      overflow-y: auto;
+    }
+
+    .ex-sidebar-title {
+      font-size: 0.85rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      color: var(--text-muted);
+      margin-bottom: 12px;
+      letter-spacing: 0.5px;
+    }
+
+    .ex-list {
+      display: flex;
+      flex-direction: column;
+      gap: 4px;
+    }
+
+    .ex-nav-item {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 9px 12px;
+      border-radius: var(--radius-md);
+      font-size: 0.85rem;
+      font-weight: 600;
+      color: var(--text-secondary);
+      cursor: pointer;
+      text-decoration: none;
+      border: 1px solid transparent;
+    }
+
+    .ex-nav-item:hover {
+      background: var(--bg-subtle);
+      color: var(--text-main);
+    }
+
+    .ex-nav-item.active {
+      background: var(--primary-light);
+      color: var(--primary);
+      border-color: var(--primary);
+    }
+
+    .ex-nav-item .ex-num {
+      width: 22px;
+      height: 22px;
+      border-radius: var(--radius-sm);
+      background: var(--bg-subtle);
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 0.75rem;
+      font-weight: 700;
+      margin-right: 8px;
+    }
+
+    .ex-nav-item.active .ex-num {
+      background: var(--primary);
+      color: white;
+    }
+
+    .ex-nav-item .ex-score {
+      font-size: 0.75rem;
+      color: var(--text-muted);
+    }
+
+    /* Exercise Content Area */
+    .ex-content-card {
+      background: var(--bg-surface);
+      border: 1px solid var(--border);
+      border-radius: var(--radius-lg);
+      padding: 28px;
+      box-shadow: var(--shadow);
+    }
+
+    .ex-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+      gap: 16px;
+      margin-bottom: 24px;
+      padding-bottom: 20px;
+      border-bottom: 1px solid var(--border);
+      flex-wrap: wrap;
+    }
+
+    .ex-title-wrap h2 {
+      font-family: var(--font-heading);
+      font-size: 1.4rem;
+      font-weight: 700;
+      color: var(--text-main);
+      margin-bottom: 6px;
+    }
+
+    .ex-title-wrap p {
+      font-size: 0.95rem;
+      color: var(--text-secondary);
+    }
+
+    .ex-toolbar {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      flex-wrap: wrap;
+    }
+
+    .btn-check {
+      background: var(--primary);
+      color: white;
+      border: none;
+      padding: 9px 18px;
+      border-radius: var(--radius-full);
+      font-weight: 600;
+      font-size: 0.85rem;
+      cursor: pointer;
+      box-shadow: 0 2px 6px rgba(99, 102, 241, 0.3);
+    }
+
+    .btn-check:hover {
+      background: var(--primary-hover);
+    }
+
+    .btn-reset {
+      background: var(--bg-subtle);
+      color: var(--text-secondary);
+      border: 1px solid var(--border);
+      padding: 9px 16px;
+      border-radius: var(--radius-full);
+      font-weight: 600;
+      font-size: 0.85rem;
+      cursor: pointer;
+    }
+
+    .btn-reset:hover {
+      background: var(--border);
+      color: var(--text-main);
+    }
+
+    .score-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      padding: 6px 12px;
+      border-radius: var(--radius-full);
+      background: var(--bg-subtle);
+      font-weight: 700;
+      font-size: 0.85rem;
+      color: var(--text-main);
+    }
+
+    .score-badge.good {
+      background: var(--success-light);
+      color: var(--success);
+    }
+
+    /* Question Cards */
+    .question-list {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+    }
+
+    .question-card {
+      background: var(--bg-subtle);
+      border: 1px solid var(--border);
+      border-radius: var(--radius-md);
+      padding: 18px 20px;
+      position: relative;
+    }
+
+    .question-card.correct {
+      border-color: var(--success);
+      background: var(--success-light);
+    }
+
+    .question-card.incorrect {
+      border-color: var(--danger);
+      background: var(--danger-light);
+    }
+
+    .q-number {
+      font-weight: 700;
+      color: var(--primary);
+      margin-right: 6px;
+    }
+
+    .q-text {
+      font-size: 1rem;
+      color: var(--text-main);
+      font-weight: 500;
+      margin-bottom: 12px;
+    }
+
+    .target-highlight {
+      font-weight: 700;
+      color: #d97706;
+      text-decoration: underline;
+      padding: 0 4px;
+      background: #fef3c7;
+      border-radius: 3px;
+    }
+
+    [data-theme="dark"] .target-highlight {
+      background: #78350f;
+      color: #fde68a;
+    }
+
+    /* MCQ Options */
+    .mcq-options {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+      gap: 10px;
+      margin-top: 10px;
+    }
+
+    .mcq-option {
+      background: var(--bg-surface);
+      border: 1px solid var(--border);
+      border-radius: var(--radius-md);
+      padding: 10px 14px;
+      font-size: 0.9rem;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      text-align: left;
+      color: var(--text-main);
+      font-weight: 500;
+    }
+
+    .mcq-option:hover {
+      border-color: var(--primary);
+      background: var(--primary-light);
+    }
+
+    .mcq-option.selected {
+      border-color: var(--primary);
+      background: var(--primary-light);
+      font-weight: 600;
+    }
+
+    .mcq-option.is-correct {
+      border-color: var(--success) !important;
+      background: #dcfce7 !important;
+      color: #166534 !important;
+      font-weight: 700;
+    }
+
+    [data-theme="dark"] .mcq-option.is-correct {
+      background: #064e3b !important;
+      color: #a7f3d0 !important;
+    }
+
+    .mcq-option.is-wrong {
+      border-color: var(--danger) !important;
+      background: #fee2e2 !important;
+      color: #991b1b !important;
+    }
+
+    [data-theme="dark"] .mcq-option.is-wrong {
+      background: #7f1d1d !important;
+      color: #fecaca !important;
+    }
+
+    .opt-key {
+      width: 24px;
+      height: 24px;
+      border-radius: var(--radius-full);
+      background: var(--bg-subtle);
+      border: 1px solid var(--border);
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 0.75rem;
+      font-weight: 700;
+      flex-shrink: 0;
+    }
+
+    .mcq-option.selected .opt-key {
+      background: var(--primary);
+      color: white;
+      border-color: var(--primary);
+    }
+
+    /* Word Box for Fill in blanks */
+    .word-box-container {
+      background: var(--bg-surface);
+      border: 1px dashed var(--primary);
+      border-radius: var(--radius-md);
+      padding: 14px 18px;
+      margin-bottom: 20px;
+    }
+
+    .word-box-title {
+      font-size: 0.8rem;
+      font-weight: 700;
+      color: var(--primary);
+      text-transform: uppercase;
+      margin-bottom: 8px;
+    }
+
+    .word-box-chips {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+    }
+
+    .wb-chip {
+      background: var(--bg-subtle);
+      border: 1px solid var(--border);
+      padding: 5px 12px;
+      border-radius: var(--radius-full);
+      font-size: 0.85rem;
+      font-weight: 600;
+      cursor: pointer;
+      color: var(--text-main);
+    }
+
+    .wb-chip:hover {
+      background: var(--primary-light);
+      border-color: var(--primary);
+      color: var(--primary);
+    }
+
+    .wb-chip.used {
+      opacity: 0.45;
+      text-decoration: line-through;
+      background: var(--bg-subtle);
+    }
+
+    /* Inputs */
+    .text-input-field {
+      background: var(--bg-surface);
+      border: 1px solid var(--border);
+      border-radius: var(--radius-sm);
+      padding: 8px 12px;
+      font-size: 0.95rem;
+      color: var(--text-main);
+      outline: none;
+      width: 100%;
+      max-width: 400px;
+    }
+
+    .text-input-field:focus {
+      border-color: var(--primary);
+      box-shadow: 0 0 0 3px var(--primary-light);
+    }
+
+    .answer-key-reveal {
+      margin-top: 8px;
+      font-size: 0.85rem;
+      color: var(--success);
+      font-weight: 600;
+      display: flex;
+      align-items: center;
+      gap: 6px;
+    }
+
+    /* Conversation dialogue */
+    .dialogue-box {
+      background: var(--bg-surface);
+      border: 1px solid var(--border);
+      border-radius: var(--radius-md);
+      padding: 12px 16px;
+      margin-bottom: 12px;
+      display: flex;
+      flex-direction: column;
+      gap: 6px;
+    }
+
+    .dialogue-line {
+      font-size: 0.95rem;
+    }
+
+    .dialogue-speaker {
+      font-weight: 700;
+      color: var(--primary);
+      margin-right: 6px;
+    }
+
+    /* Dictionary Card */
+    .dict-card {
+      background: var(--bg-surface);
+      border: 1px solid var(--border);
+      border-radius: var(--radius-lg);
+      padding: 20px;
+      margin-bottom: 20px;
+    }
+
+    .dict-word-head {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      margin-bottom: 10px;
+      flex-wrap: wrap;
+    }
+
+    .dict-word {
+      font-family: var(--font-heading);
+      font-size: 1.5rem;
+      font-weight: 800;
+      color: var(--primary);
+    }
+
+    .dict-def {
+      font-size: 0.95rem;
+      color: var(--text-secondary);
+      background: var(--bg-subtle);
+      padding: 10px 14px;
+      border-radius: var(--radius-md);
+      margin-bottom: 14px;
+    }
+
+    .dict-bullets {
+      list-style: none;
+      margin-bottom: 16px;
+      display: flex;
+      flex-direction: column;
+      gap: 6px;
+    }
+
+    .dict-bullets li {
+      position: relative;
+      padding-left: 20px;
+      font-size: 0.9rem;
+      color: var(--text-secondary);
+    }
+
+    .dict-bullets li::before {
+      content: "•";
+      position: absolute;
+      left: 6px;
+      color: var(--primary);
+      font-weight: bold;
+    }
+
+    /* Signs and notices */
+    .sign-visual-wrap {
+      display: flex;
+      gap: 16px;
+      align-items: center;
+      margin-bottom: 14px;
+      flex-wrap: wrap;
+    }
+
+    .sign-card-box {
+      width: 140px;
+      height: 140px;
+      border-radius: var(--radius-md);
+      border: 2px solid var(--border);
+      background: var(--bg-surface);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      padding: 10px;
+      text-align: center;
+      box-shadow: var(--shadow-sm);
+    }
+
+    .sign-card-box img {
+      max-width: 100%;
+      max-height: 100%;
+      object-fit: contain;
+    }
+
+    .sign-desc-box {
+      flex: 1;
+      font-size: 0.85rem;
+      color: var(--text-secondary);
+      background: var(--bg-subtle);
+      padding: 12px 16px;
+      border-radius: var(--radius-md);
+      border-left: 3px solid var(--warning);
+    }
+
+    /* Word Families Table */
+    .wf-table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 14px;
+      background: var(--bg-surface);
+      border-radius: var(--radius-md);
+      overflow: hidden;
+    }
+
+    .wf-table th, .wf-table td {
+      border: 1px solid var(--border);
+      padding: 10px 14px;
+      text-align: left;
+      font-size: 0.9rem;
+    }
+
+    .wf-table th {
+      background: var(--bg-subtle);
+      font-weight: 700;
+      color: var(--text-secondary);
+    }
+
+    /* Paragraph fill inline blanks */
+    .paragraph-read-box {
+      background: var(--bg-surface);
+      border: 1px solid var(--border);
+      border-radius: var(--radius-md);
+      padding: 20px 24px;
+      line-height: 2.2;
+      font-size: 1.05rem;
+      color: var(--text-main);
+      margin-bottom: 20px;
+    }
+
+    .inline-blank-input {
+      display: inline-block;
+      vertical-align: middle;
+      width: 140px;
+      padding: 4px 8px;
+      font-size: 0.95rem;
+      border: 1px solid var(--border);
+      border-radius: var(--radius-sm);
+      background: var(--bg-subtle);
+      color: var(--text-main);
+      text-align: center;
+      font-weight: 600;
+    }
+
+    .inline-blank-input:focus {
+      border-color: var(--primary);
+      background: var(--bg-surface);
+    }
+
+    .inline-blank-input.correct {
+      border-color: var(--success);
+      background: #dcfce7;
+      color: #166534;
+    }
+
+    .inline-blank-input.incorrect {
+      border-color: var(--danger);
+      background: #fee2e2;
+      color: #991b1b;
+    }
+
+    /* Image Prompts Tab */
+    .prompts-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(360px, 1fr));
+      gap: 20px;
+    }
+
+    .prompt-card {
+      background: var(--bg-surface);
+      border: 1px solid var(--border);
+      border-radius: var(--radius-lg);
+      padding: 20px;
+      box-shadow: var(--shadow);
+    }
+
+    .prompt-word {
+      font-family: var(--font-heading);
+      font-size: 1.25rem;
+      font-weight: 700;
+      color: var(--primary);
+      margin-bottom: 8px;
+    }
+
+    .prompt-body {
+      font-size: 0.88rem;
+      color: var(--text-secondary);
+      line-height: 1.5;
+      background: var(--bg-subtle);
+      padding: 12px;
+      border-radius: var(--radius-md);
+      font-family: monospace;
+      margin-bottom: 12px;
+    }
+
+    /* Lightbox Modal */
+    .lightbox-modal {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100vw;
+      height: 100vh;
+      background: rgba(0, 0, 0, 0.8);
+      backdrop-filter: blur(8px);
+      display: none;
+      align-items: center;
+      justify-content: center;
+      z-index: 1000;
+      padding: 20px;
+    }
+
+    .lightbox-modal.open {
+      display: flex;
+    }
+
+    .lightbox-content {
+      background: var(--bg-surface);
+      border-radius: var(--radius-lg);
+      max-width: 800px;
+      max-height: 90vh;
+      overflow: hidden;
+      display: flex;
+      flex-direction: column;
+      box-shadow: var(--shadow-lg);
+      position: relative;
+    }
+
+    .lightbox-content img {
+      max-width: 100%;
+      max-height: 70vh;
+      object-fit: contain;
+    }
+
+    .lightbox-caption {
+      padding: 16px 20px;
+      font-size: 0.95rem;
+      color: var(--text-main);
+      font-weight: 600;
+    }
+
+    .lightbox-close {
+      position: absolute;
+      top: 12px;
+      right: 12px;
+      background: rgba(0, 0, 0, 0.6);
+      color: white;
+      border: none;
+      width: 32px;
+      height: 32px;
+      border-radius: var(--radius-full);
+      font-size: 16px;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    /* Print Stylesheet */
+    @media print {
+      header.app-header, .nav-bar, .ex-sidebar, .ex-toolbar, .mode-banner, .btn-action, .search-box, .filter-chip {
+        display: none !important;
+      }
+      body {
+        background: white !important;
+        color: black !important;
+        padding: 0 !important;
+      }
+      .exercises-wrapper {
+        display: block !important;
+      }
+      .ex-content-card {
+        border: none !important;
+        box-shadow: none !important;
+        padding: 0 !important;
+      }
+      .question-card {
+        page-break-inside: avoid;
+        border: 1px solid #ccc !important;
+        background: transparent !important;
+        margin-bottom: 16px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <!-- Lightbox Modal -->
+  <div id="lightbox" class="lightbox-modal" onclick="closeLightbox(event)">
+    <div class="lightbox-content" onclick="event.stopPropagation()">
+      <button class="lightbox-close" onclick="closeLightbox()">&times;</button>
+      <img id="lightbox-img" src="" alt="">
+      <div id="lightbox-caption" class="lightbox-caption"></div>
+    </div>
+  </div>
+
+  <!-- Header -->
+  <header class="app-header">
+    <div class="header-inner">
+      <div class="brand-section">
+        <div class="brand-logo">📚</div>
+        <div class="brand-text">
+          <h1 id="header-unit-title">Unit Vocabulary & Practice</h1>
+          <p id="header-unit-sub">Interactive Review & Practice Suite</p>
+        </div>
+      </div>
+      <div class="header-actions">
+        <div class="search-box">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg>
+          <input type="text" id="global-search" placeholder="Tìm kiếm từ vựng, câu hỏi..." oninput="onSearchInput(this.value)">
+        </div>
+        <button id="mode-toggle-btn" class="btn-action btn-mode-toggle" onclick="toggleMode()">
+          <span id="mode-icon">🎓</span>
+          <span id="mode-label">Chế độ Học sinh</span>
+        </button>
+        <button class="btn-action" onclick="toggleTheme()">
+          <span id="theme-icon">🌙</span>
+        </button>
+        <button class="btn-action" onclick="window.print()" title="In / Xuất PDF">
+          <span>🖨️ In</span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Nav Tabs -->
+  <nav class="nav-bar">
+    <div class="nav-inner">
+      <a class="nav-tab active" id="tab-btn-vocab" onclick="switchMainTab('vocab')">
+        <span>📖 Từ vựng (Vocabulary)</span>
+        <span class="badge" id="vocab-total-count">0</span>
+      </a>
+      <a class="nav-tab" id="tab-btn-exercises" onclick="switchMainTab('exercises')">
+        <span>📝 Bài tập (Exercises)</span>
+        <span class="badge" id="exercises-total-count">16</span>
+      </a>
+      <a class="nav-tab" id="tab-btn-prompts" onclick="switchMainTab('prompts')">
+        <span>🎨 Image Prompts</span>
+        <span class="badge" id="prompts-total-count">0</span>
+      </a>
+    </div>
+  </nav>
+
+  <!-- Main Container -->
+  <main class="app-container">
+    <!-- Mode Alert Banner -->
+    <div id="mode-banner" class="mode-banner">
+      <div>
+        <strong>🎓 Đang ở Chế độ Học sinh (Practice Mode):</strong> Bạn có thể làm bài tương tác, chọn đáp án hoặc nhập từ, sau đó nhấn "Kiểm tra đáp án" để tự chấm điểm.
+      </div>
+      <button class="btn-action" onclick="toggleMode()" style="background: white; color: var(--text-main); font-size: 0.8rem;">
+        Chuyển sang Giáo viên 👨‍🏫
+      </button>
+    </div>
+
+    <!-- Section: Vocabulary -->
+    <section id="section-vocab">
+      <div class="vocab-controls" id="vocab-group-filters">
+        <button class="filter-chip active" onclick="filterVocabGroup('all')">Tất cả nhóm</button>
+      </div>
+      <div class="vocab-grid" id="vocab-grid"></div>
+    </section>
+
+    <!-- Section: Exercises -->
+    <section id="section-exercises" style="display: none;">
+      <div class="exercises-wrapper">
+        <!-- Sidebar with 16 exercises list -->
+        <aside class="ex-sidebar">
+          <div class="ex-sidebar-title">Danh sách bài tập</div>
+          <div class="ex-list" id="exercise-nav-list"></div>
+        </aside>
+
+        <!-- Active Exercise Card -->
+        <div class="ex-content-card">
+          <div class="ex-header">
+            <div class="ex-title-wrap">
+              <h2 id="current-ex-title">Loading...</h2>
+              <p id="current-ex-desc">Instruction</p>
+            </div>
+            <div class="ex-toolbar">
+              <div class="score-badge" id="current-ex-score" style="display: none;">0/0 đúng</div>
+              <button class="btn-check" onclick="checkCurrentExercise()">Kiểm tra đáp án</button>
+              <button class="btn-reset" onclick="resetCurrentExercise()">Làm lại</button>
+            </div>
+          </div>
+
+          <div id="current-ex-body"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Section: Image Prompts -->
+    <section id="section-prompts" style="display: none;">
+      <div class="prompts-grid" id="prompts-grid"></div>
+    </section>
+  </main>
+
+  <script>
+    /* =========================================================
+       DATA INJECTION PLACEHOLDERS
+       These will be populated by generate_preview script
+       ========================================================= */
+    const VOCAB_DATA = /* __VOCAB_DATA__ */ [];
+    const EXERCISES_DATA = /* __EXERCISES_DATA__ */ [];
+    const IMAGE_PROMPTS = /* __IMAGE_PROMPTS_DATA__ */ [];
+    const UNIT_METADATA = /* __UNIT_INFO__ */ {
+      title: "Unit Preview",
+      grade: "Grade",
+      unit: "Unit"
+    };
+
+    /* =========================================================
+       APPLICATION STATE
+       ========================================================= */
+    const state = {
+      theme: 'light',
+      mode: 'practice', // 'practice' or 'review'
+      activeMainTab: 'vocab',
+      activeExIndex: 0,
+      activeVocabGroup: 'all',
+      searchQuery: '',
+      userAnswers: {}, // key: exIndex -> questionId -> answer
+      checkedExercises: {} // key: exIndex -> boolean
+    };
+
+    /* Initialize app */
+    document.addEventListener('DOMContentLoaded', () => {
+      initTheme();
+      initMetadata();
+      renderVocabFilters();
+      renderVocabGrid();
+      renderExerciseNav();
+      renderCurrentExercise();
+      renderPrompts();
+    });
+
+    /* Theme Management */
+    function initTheme() {
+      const savedTheme = localStorage.getItem('vocab_preview_theme') || 
+        (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light');
+      setTheme(savedTheme);
+    }
+
+    function setTheme(theme) {
+      state.theme = theme;
+      document.documentElement.setAttribute('data-theme', theme);
+      document.getElementById('theme-icon').textContent = theme === 'dark' ? '☀️' : '🌙';
+      localStorage.setItem('vocab_preview_theme', theme);
+    }
+
+    function toggleTheme() {
+      setTheme(state.theme === 'dark' ? 'light' : 'dark');
+    }
+
+    /* Mode Management (Student Practice vs Teacher Review) */
+    function toggleMode() {
+      state.mode = state.mode === 'practice' ? 'review' : 'practice';
+      const btn = document.getElementById('mode-toggle-btn');
+      const icon = document.getElementById('mode-icon');
+      const label = document.getElementById('mode-label');
+      const banner = document.getElementById('mode-banner');
+
+      if (state.mode === 'review') {
+        btn.classList.add('teacher-active');
+        icon.textContent = '👨‍🏫';
+        label.textContent = 'Chế độ Giáo viên';
+        banner.className = 'mode-banner teacher-mode';
+        banner.innerHTML = `
+          <div>
+            <strong>👨‍🏫 Đang ở Chế độ Giáo viên (Review Mode):</strong> Toàn bộ đáp án đúng, gợi ý từ loại và giải thích được hiển thị nổi bật màu xanh lá để tiện duyệt nội dung.
+          </div>
+          <button class="btn-action" onclick="toggleMode()" style="background: white; color: var(--text-main); font-size: 0.8rem;">
+            Chuyển sang Học sinh 🎓
+          </button>
+        `;
+      } else {
+        btn.classList.remove('teacher-active');
+        icon.textContent = '🎓';
+        label.textContent = 'Chế độ Học sinh';
+        banner.className = 'mode-banner';
+        banner.innerHTML = `
+          <div>
+            <strong>🎓 Đang ở Chế độ Học sinh (Practice Mode):</strong> Bạn có thể làm bài tương tác, chọn đáp án hoặc nhập từ, sau đó nhấn "Kiểm tra đáp án" để tự chấm điểm.
+          </div>
+          <button class="btn-action" onclick="toggleMode()" style="background: white; color: var(--text-main); font-size: 0.8rem;">
+            Chuyển sang Giáo viên 👨‍🏫
+          </button>
+        `;
+      }
+
+      // Re-render active exercise to reflect mode changes
+      renderCurrentExercise();
+    }
+
+    /* Metadata */
+    function initMetadata() {
+      if (UNIT_METADATA.title) {
+        document.getElementById('header-unit-title').textContent = UNIT_METADATA.title.toUpperCase();
+        document.title = `${UNIT_METADATA.title} - Vocab Preview`;
+      }
+      if (UNIT_METADATA.subtitle) {
+        document.getElementById('header-unit-sub').textContent = UNIT_METADATA.subtitle;
+      }
+      
+      // Calculate total words
+      let totalWords = 0;
+      VOCAB_DATA.forEach(g => {
+        if (g.words) totalWords += g.words.length;
+      });
+      document.getElementById('vocab-total-count').textContent = totalWords;
+      document.getElementById('exercises-total-count').textContent = EXERCISES_DATA.length;
+      document.getElementById('prompts-total-count').textContent = IMAGE_PROMPTS.length;
+
+      if (!IMAGE_PROMPTS || IMAGE_PROMPTS.length === 0) {
+        document.getElementById('tab-btn-prompts').style.display = 'none';
+      }
+    }
+
+    /* Tab Switching */
+    function switchMainTab(tabName) {
+      state.activeMainTab = tabName;
+      document.querySelectorAll('.nav-tab').forEach(t => t.classList.remove('active'));
+      document.getElementById(`tab-btn-${tabName}`).classList.add('active');
+
+      document.getElementById('section-vocab').style.display = tabName === 'vocab' ? 'block' : 'none';
+      document.getElementById('section-exercises').style.display = tabName === 'exercises' ? 'block' : 'none';
+      document.getElementById('section-prompts').style.display = tabName === 'prompts' ? 'block' : 'none';
+    }
+
+    /* =========================================================
+       AUDIO PLAYER & WEB SPEECH SYNTHESIS FALLBACK
+       ========================================================= */
+    function playAudio(audioUrl, fallbackText, btnElement) {
+      if (btnElement) {
+        btnElement.classList.add('playing');
+        setTimeout(() => btnElement.classList.remove('playing'), 1500);
+      }
+
+      let audioPlayed = false;
+      if (audioUrl) {
+        const audio = new Audio(audioUrl);
+        audio.play().then(() => {
+          audioPlayed = true;
+        }).catch(() => {
+          // If file not found or blocked, fall back to Web Speech API
+          speakWithWebSpeech(fallbackText);
+        });
+      } else {
+        speakWithWebSpeech(fallbackText);
+      }
+    }
+
+    function speakWithWebSpeech(text) {
+      if (!window.speechSynthesis || !text) return;
+      window.speechSynthesis.cancel();
+      const utterance = new SpeechSynthesisUtterance(text);
+      utterance.lang = 'en-US';
+      utterance.rate = 0.9;
+      window.speechSynthesis.speak(utterance);
+    }
+
+    /* =========================================================
+       LIGHTBOX MODAL
+       ========================================================= */
+    function openLightbox(imgSrc, captionText) {
+      const modal = document.getElementById('lightbox');
+      const img = document.getElementById('lightbox-img');
+      const cap = document.getElementById('lightbox-caption');
+      img.src = imgSrc;
+      cap.textContent = captionText || '';
+      modal.classList.add('open');
+    }
+
+    function closeLightbox() {
+      document.getElementById('lightbox').classList.remove('open');
+    }
+
+    document.addEventListener('keydown', (e) => {
+      if (e.key === 'Escape') closeLightbox();
+    });
+
+    /* =========================================================
+       VOCABULARY RENDERING
+       ========================================================= */
+    function renderVocabFilters() {
+      const container = document.getElementById('vocab-group-filters');
+      container.innerHTML = `<button class="filter-chip ${state.activeVocabGroup === 'all' ? 'active' : ''}" onclick="filterVocabGroup('all')">Tất cả nhóm</button>`;
+
+      VOCAB_DATA.forEach((grp, idx) => {
+        const grpName = grp.group || `Nhóm ${idx + 1}`;
+        const chip = document.createElement('button');
+        chip.className = `filter-chip ${state.activeVocabGroup === grpName ? 'active' : ''}`;
+        chip.textContent = grpName;
+        chip.onclick = () => filterVocabGroup(grpName);
+        container.appendChild(chip);
+      });
+    }
+
+    function filterVocabGroup(groupName) {
+      state.activeVocabGroup = groupName;
+      renderVocabFilters();
+      renderVocabGrid();
+    }
+
+    function renderVocabGrid() {
+      const grid = document.getElementById('vocab-grid');
+      grid.innerHTML = '';
+
+      const query = state.searchQuery.toLowerCase().trim();
+
+      VOCAB_DATA.forEach(grp => {
+        if (state.activeVocabGroup !== 'all' && grp.group !== state.activeVocabGroup) return;
+
+        (grp.words || []).forEach(w => {
+          // Search filter match
+          if (query) {
+            const matchEn = (w.english_word || '').toLowerCase().includes(query);
+            const matchVi = (w.vietnamese_meaning || '').toLowerCase().includes(query);
+            const matchEx = (w.example_sentence_en || '').toLowerCase().includes(query);
+            if (!matchEn && !matchVi && !matchEx) return;
+          }
+
+          const card = document.createElement('div');
+          card.className = 'vocab-card';
+
+          // Extract POS from vietnamese meaning if possible e.g. "(n): ..."
+          let pos = '';
+          const posMatch = (w.vietnamese_meaning || '').match(/^\(([a-zA-Z\s,]+)\)/);
+          if (posMatch) pos = posMatch[1];
+
+          // Highlight target word in example sentence
+          let exampleEn = w.example_sentence_en || '';
+          if (w.english_word) {
+            const escapedWord = w.english_word.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
+            const regex = new RegExp(`(${escapedWord})`, 'gi');
+            exampleEn = exampleEn.replace(regex, '<mark>$1</mark>');
+          }
+
+          const imgSrc = resolveRelativePath(w.image);
+
+          card.innerHTML = `
+            <div class="vocab-card-header">
+              <div>
+                <div class="vocab-word-title">${escapeHtml(w.english_word || '')}</div>
+                ${pos ? `<span class="vocab-badge">${escapeHtml(pos)}</span>` : ''}
+              </div>
+              ${imgSrc ? `
+                <div class="vocab-thumb-wrap" onclick="openLightbox('${imgSrc}', '${escapeHtml(w.english_word)}')">
+                  <img src="${imgSrc}" alt="${escapeHtml(w.alt || w.english_word)}" onerror="this.parentElement.style.display='none'">
+                </div>
+              ` : ''}
+            </div>
+
+            <div class="vocab-ipa">
+              ${w.pronunciation_british ? `<span>🇬🇧 ${escapeHtml(w.pronunciation_british)}</span>` : ''}
+              ${w.pronunciation_american ? `<span>🇺🇸 ${escapeHtml(w.pronunciation_american)}</span>` : ''}
+            </div>
+
+            <div class="vocab-meaning">
+              ${escapeHtml(w.vietnamese_meaning || '')}
+            </div>
+
+            ${w.example_sentence_en ? `
+              <div class="vocab-examples">
+                <div class="en">${exampleEn}</div>
+                ${w.example_sentence_vi ? `<div class="vi">${escapeHtml(w.example_sentence_vi)}</div>` : ''}
+              </div>
+            ` : ''}
+
+            <div class="vocab-media">
+              <div class="audio-btns">
+                <button class="btn-audio" onclick="playAudio('${resolveRelativePath(w.audio_word)}', '${escapeJs(w.english_word)}', this)" title="Nghe từ vựng">
+                  🔊 Từ
+                </button>
+                ${w.example_sentence_en ? `
+                  <button class="btn-audio" onclick="playAudio('${resolveRelativePath(w.audio_sentence)}', '${escapeJs(w.example_sentence_en)}', this)" title="Nghe câu ví dụ">
+                    🗣️ Câu
+                  </button>
+                ` : ''}
+              </div>
+              <span style="font-size: 0.75rem; color: var(--text-muted);">${escapeHtml(grp.group || '')}</span>
+            </div>
+          `;
+
+          grid.appendChild(card);
+        });
+      });
+
+      if (grid.children.length === 0) {
+        grid.innerHTML = `<div style="grid-column: 1/-1; text-align: center; padding: 40px; color: var(--text-muted);">Không tìm thấy từ vựng nào khớp với từ khóa tìm kiếm.</div>`;
+      }
+    }
+
+    /* Search Handler */
+    function onSearchInput(val) {
+      state.searchQuery = val;
+      if (state.activeMainTab === 'vocab') {
+        renderVocabGrid();
+      } else {
+        renderCurrentExercise();
+      }
+    }
+
+    /* =========================================================
+       EXERCISES RENDERING
+       ========================================================= */
+    function renderExerciseNav() {
+      const nav = document.getElementById('exercise-nav-list');
+      nav.innerHTML = '';
+
+      EXERCISES_DATA.forEach((ex, idx) => {
+        const item = document.createElement('a');
+        item.className = `ex-nav-item ${state.activeExIndex === idx ? 'active' : ''}`;
+        
+        const qCount = getQuestionCount(ex);
+        item.innerHTML = `
+          <div style="display: flex; align-items: center;">
+            <span class="ex-num">${idx + 1}</span>
+            <span style="overflow: hidden; text-overflow: ellipsis; white-space: nowrap; max-width: 170px;">
+              ${escapeHtml(formatExShortTitle(ex, idx))}
+            </span>
+          </div>
+          <span class="ex-score" id="ex-nav-badge-${idx}">${qCount}q</span>
+        `;
+        item.onclick = (e) => {
+          e.preventDefault();
+          state.activeExIndex = idx;
+          renderExerciseNav();
+          renderCurrentExercise();
+        };
+        nav.appendChild(item);
+      });
+    }
+
+    function formatExShortTitle(ex, idx) {
+      if (ex.title) {
+        // Strip prefix numbers or "Multiple Choice - "
+        return ex.title.replace(/^(Multiple Choice\s*-\s*|\d+[\._\s]*)/i, '');
+      }
+      return `Exercise ${idx + 1}`;
+    }
+
+    function getQuestionCount(ex) {
+      if (ex.questions) return ex.questions.length;
+      if (ex.entries) return ex.entries.reduce((acc, cur) => acc + (cur.questions ? cur.questions.length : 1), 0);
+      if (ex.paragraph_parts) {
+        return ex.paragraph_parts.filter(p => typeof p === 'object' && p.type === 'blank').length;
+      }
+      return 0;
+    }
+
+    function renderCurrentExercise() {
+      const ex = EXERCISES_DATA[state.activeExIndex];
+      if (!ex) return;
+
+      document.getElementById('current-ex-title').textContent = `${state.activeExIndex + 1}. ${ex.title || 'Bài tập'}`;
+      document.getElementById('current-ex-desc').textContent = ex.description || '';
+
+      const body = document.getElementById('current-ex-body');
+      body.innerHTML = '';
+
+      // Score badge visibility
+      const scoreBadge = document.getElementById('current-ex-score');
+      if (state.checkedExercises[state.activeExIndex]) {
+        scoreBadge.style.display = 'inline-flex';
+      } else {
+        scoreBadge.style.display = 'none';
+      }
+
+      // Render based on exercise type
+      const type = ex.type || '';
+      if (type === 'multiple_choice' || type === 'word_families_mcq') {
+        renderMCQExercise(ex, body);
+      } else if (type === 'pic_to_word') {
+        renderPicToWordExercise(ex, body);
+      } else if (type === 'write_english_words') {
+        renderWriteWordsExercise(ex, body);
+      } else if (type === 'fill_in_blanks') {
+        renderFillBlanksExercise(ex, body);
+      } else if (type === 'paragraph_fill') {
+        renderParagraphFillExercise(ex, body);
+      } else if (type === 'sentence_ordering_multiple_choice') {
+        renderSentenceOrderingExercise(ex, body);
+      } else if (type === 'dictionary_entry') {
+        renderDictionaryEntryExercise(ex, body);
+      } else if (type === 'signs_and_notices') {
+        renderSignsExercise(ex, body);
+      } else if (type === 'word_families_table') {
+        renderWordFamiliesTableExercise(ex, body);
+      } else if (type === 'word_formation') {
+        renderWordFormationExercise(ex, body);
+      } else if (type === 'translate_sentences') {
+        renderTranslateSentencesExercise(ex, body);
+      } else {
+        // Fallback default renderer
+        renderGenericExercise(ex, body);
+      }
+    }
+
+    /* MCQ Renderer (01, 02, 03, 09, 10, 14) */
+    function renderMCQExercise(ex, container) {
+      const list = document.createElement('div');
+      list.className = 'question-list';
+
+      (ex.questions || []).forEach((q, qIdx) => {
+        const card = document.createElement('div');
+        card.className = 'question-card';
+        card.id = `q-card-${state.activeExIndex}-${q.id}`;
+
+        let textHtml = escapeHtml(q.text || '');
+        // Highlight bracketed words [word]
+        textHtml = textHtml.replace(/\[([^\]]+)\]/g, '<span class="target-highlight">$1</span>');
+
+        // Check if dialogue
+        let dialogueHtml = '';
+        if (textHtml.includes('\n')) {
+          const lines = textHtml.split('\n');
+          dialogueHtml = `
+            <div class="dialogue-box">
+              ${lines.map(l => {
+                const parts = l.split(':');
+                if (parts.length > 1) {
+                  return `<div class="dialogue-line"><span class="dialogue-speaker">${escapeHtml(parts[0])}:</span>${escapeHtml(parts.slice(1).join(':'))}</div>`;
+                }
+                return `<div class="dialogue-line">${escapeHtml(l)}</div>`;
+              }).join('')}
+            </div>
+          `;
+          textHtml = '';
+        }
+
+        const selectedAns = getUserAnswer(state.activeExIndex, q.id);
+        const isChecked = state.checkedExercises[state.activeExIndex] || state.mode === 'review';
+
+        let optionsHtml = '<div class="mcq-options">';
+        (q.options || []).forEach((opt, optIdx) => {
+          const optLetter = String.fromCharCode(65 + optIdx);
+          const isSelected = selectedAns === opt;
+          const isCorrectAnswer = (opt.trim().toLowerCase() === (q.correct_answer || '').trim().toLowerCase());
+
+          let optClass = 'mcq-option';
+          if (isSelected) optClass += ' selected';
+          if (isChecked) {
+            if (isCorrectAnswer) optClass += ' is-correct';
+            else if (isSelected && !isCorrectAnswer) optClass += ' is-wrong';
+          }
+
+          optionsHtml += `
+            <button type="button" class="${optClass}" onclick="selectMCQOption(${state.activeExIndex}, '${q.id}', '${escapeJs(opt)}')">
+              <span class="opt-key">${optLetter}</span>
+              <span>${escapeHtml(opt)}</span>
+              ${isChecked && isCorrectAnswer ? '<span style="margin-left:auto; font-size: 0.8rem;">✓</span>' : ''}
+            </button>
+          `;
+        });
+        optionsHtml += '</div>';
+
+        card.innerHTML = `
+          <div class="q-text"><span class="q-number">${qIdx + 1}.</span> ${textHtml}</div>
+          ${dialogueHtml}
+          ${optionsHtml}
+          ${isChecked ? `
+            <div class="answer-key-reveal">
+              ✓ Đáp án đúng: <strong>${escapeHtml(q.correct_answer || '')}</strong>
+            </div>
+          ` : ''}
+        `;
+        list.appendChild(card);
+      });
+
+      container.appendChild(list);
+    }
+
+    function selectMCQOption(exIdx, qId, value) {
+      if (state.mode === 'review') return;
+      setUserAnswer(exIdx, qId, value);
+      renderCurrentExercise();
+    }
+
+    /* Pic to Word (04) */
+    function renderPicToWordExercise(ex, container) {
+      const list = document.createElement('div');
+      list.className = 'question-list';
+
+      (ex.questions || []).forEach((q, qIdx) => {
+        const card = document.createElement('div');
+        card.className = 'question-card';
+        card.id = `q-card-${state.activeExIndex}-${q.id}`;
+
+        const userVal = getUserAnswer(state.activeExIndex, q.id) || '';
+        const isChecked = state.checkedExercises[state.activeExIndex] || state.mode === 'review';
+        const isCorrect = userVal.trim().toLowerCase() === (q.correct_answer || '').trim().toLowerCase();
+
+        const imgSrc = resolveRelativePath(q.image);
+
+        card.innerHTML = `
+          <div style="display: flex; gap: 20px; align-items: center; flex-wrap: wrap;">
+            <div class="vocab-thumb-wrap" style="width: 110px; height: 110px;" onclick="openLightbox('${imgSrc}', 'Question ${qIdx + 1}')">
+              <img src="${imgSrc}" alt="Picture ${qIdx + 1}" onerror="this.src='data:image/svg+xml;utf8,<svg xmlns=\\'http://www.w3.org/2000/svg\\' width=\\'100\\' height=\\'100\\'><rect fill=\\'%23eee\\' width=\\'100\\' height=\\'100\\'/><text x=\\'50%\\' y=\\'50%\\' dominant-baseline=\\'middle\\' text-anchor=\\'middle\\' fill=\\'%23999\\'>Picture</text></svg>'">
+            </div>
+            <div style="flex: 1; min-width: 240px;">
+              <div class="q-text"><span class="q-number">${qIdx + 1}.</span> Nhìn hình và viết từ tiếng Anh:</div>
+              <input type="text" class="text-input-field" placeholder="Nhập từ..." 
+                value="${state.mode === 'review' ? escapeHtml(q.correct_answer || '') : escapeHtml(userVal)}" 
+                ${state.mode === 'review' ? 'readonly' : ''}
+                oninput="setUserAnswer(${state.activeExIndex}, '${q.id}', this.value)">
+              ${isChecked ? `
+                <div class="answer-key-reveal" style="color: ${isCorrect ? 'var(--success)' : 'var(--danger)'};">
+                  ${isCorrect ? '✓ Chính xác!' : `✗ Đáp án đúng: <strong>${escapeHtml(q.correct_answer || '')}</strong>`}
+                </div>
+              ` : ''}
+            </div>
+          </div>
+        `;
+        list.appendChild(card);
+      });
+
+      container.appendChild(list);
+    }
+
+    /* Write English Words (05) */
+    function renderWriteWordsExercise(ex, container) {
+      const list = document.createElement('div');
+      list.className = 'question-list';
+
+      let count = 1;
+      (ex.questions || []).forEach(q => {
+        (q.parts || []).forEach((part, pIdx) => {
+          const partKey = `${q.id}_${pIdx}`;
+          const card = document.createElement('div');
+          card.className = 'question-card';
+
+          const userVal = getUserAnswer(state.activeExIndex, partKey) || '';
+          const isChecked = state.checkedExercises[state.activeExIndex] || state.mode === 'review';
+          const isCorrect = userVal.trim().toLowerCase() === (part.correct_answer || '').trim().toLowerCase();
+
+          card.innerHTML = `
+            <div class="q-text">
+              <span class="q-number">${count++}.</span> 
+              <strong>${escapeHtml(part.vietnamese || '')}</strong>
+            </div>
+            <input type="text" class="text-input-field" placeholder="Viết từ tiếng Anh tương ứng..." 
+              value="${state.mode === 'review' ? escapeHtml(part.correct_answer || '') : escapeHtml(userVal)}" 
+              ${state.mode === 'review' ? 'readonly' : ''}
+              oninput="setUserAnswer(${state.activeExIndex}, '${partKey}', this.value)">
+            ${isChecked ? `
+              <div class="answer-key-reveal" style="color: ${isCorrect ? 'var(--success)' : 'var(--danger)'};">
+                ${isCorrect ? '✓ Chính xác!' : `✗ Đáp án đúng: <strong>${escapeHtml(part.correct_answer || '')}</strong>`}
+              </div>
+            ` : ''}
+          `;
+          list.appendChild(card);
+        });
+      });
+
+      container.appendChild(list);
+    }
+
+    /* Fill in Blanks (06) */
+    function renderFillBlanksExercise(ex, container) {
+      // Word Box
+      if (ex.word_box && ex.word_box.length > 0) {
+        const wb = document.createElement('div');
+        wb.className = 'word-box-container';
+        wb.innerHTML = `
+          <div class="word-box-title">Khung từ gợi ý (Word Box) - Click vào từ để chèn vào ô trống</div>
+          <div class="word-box-chips">
+            ${ex.word_box.map(w => `<button type="button" class="wb-chip" onclick="insertWordIntoActiveBlank('${escapeJs(w)}')">${escapeHtml(w)}</button>`).join('')}
+          </div>
+        `;
+        container.appendChild(wb);
+      }
+
+      const list = document.createElement('div');
+      list.className = 'question-list';
+
+      (ex.questions || []).forEach((q, qIdx) => {
+        const card = document.createElement('div');
+        card.className = 'question-card';
+
+        const userVal = getUserAnswer(state.activeExIndex, q.id) || '';
+        const isChecked = state.checkedExercises[state.activeExIndex] || state.mode === 'review';
+        const isCorrect = userVal.trim().toLowerCase() === (q.correct_answer || '').trim().toLowerCase();
+
+        card.innerHTML = `
+          <div class="q-text"><span class="q-number">${qIdx + 1}.</span> ${escapeHtml(q.text || '')}</div>
+          <input type="text" class="text-input-field" id="blank-input-${q.id}" placeholder="Điền từ vào đây..." 
+            value="${state.mode === 'review' ? escapeHtml(q.correct_answer || '') : escapeHtml(userVal)}" 
+            ${state.mode === 'review' ? 'readonly' : ''}
+            onfocus="window.lastFocusedBlank = this"
+            oninput="setUserAnswer(${state.activeExIndex}, '${q.id}', this.value)">
+          ${isChecked ? `
+            <div class="answer-key-reveal" style="color: ${isCorrect ? 'var(--success)' : 'var(--danger)'};">
+              ${isCorrect ? '✓ Chính xác!' : `✗ Đáp án đúng: <strong>${escapeHtml(q.correct_answer || '')}</strong>`}
+            </div>
+          ` : ''}
+        `;
+        list.appendChild(card);
+      });
+
+      container.appendChild(list);
+    }
+
+    function insertWordIntoActiveBlank(word) {
+      if (window.lastFocusedBlank) {
+        window.lastFocusedBlank.value = word;
+        window.lastFocusedBlank.dispatchEvent(new Event('input'));
+      }
+    }
+
+    /* Paragraph Fill (07) */
+    function renderParagraphFillExercise(ex, container) {
+      // Word Box
+      if (ex.word_box && ex.word_box.length > 0) {
+        const wb = document.createElement('div');
+        wb.className = 'word-box-container';
+        wb.innerHTML = `
+          <div class="word-box-title">Khung từ gợi ý (Word Box)</div>
+          <div class="word-box-chips">
+            ${ex.word_box.map(w => `<span class="wb-chip" onclick="insertWordIntoActiveBlank('${escapeJs(w)}')">${escapeHtml(w)}</span>`).join('')}
+          </div>
+        `;
+        container.appendChild(wb);
+      }
+
+      const pBox = document.createElement('div');
+      pBox.className = 'paragraph-read-box';
+
+      const isChecked = state.checkedExercises[state.activeExIndex] || state.mode === 'review';
+
+      let paragraphHtml = '';
+      (ex.paragraph_parts || []).forEach(part => {
+        if (typeof part === 'string') {
+          paragraphHtml += escapeHtml(part);
+        } else if (part && part.type === 'blank') {
+          const userVal = getUserAnswer(state.activeExIndex, part.id) || '';
+          const isCorrect = userVal.trim().toLowerCase() === (part.correct_answer || '').trim().toLowerCase();
+          
+          let inputClass = 'inline-blank-input';
+          if (isChecked) {
+            inputClass += isCorrect ? ' correct' : ' incorrect';
+          }
+
+          paragraphHtml += `
+            <input type="text" class="${inputClass}" title="Ô số (${part.id})"
+              placeholder="(${part.id})" 
+              value="${state.mode === 'review' ? escapeHtml(part.correct_answer || '') : escapeHtml(userVal)}"
+              ${state.mode === 'review' ? 'readonly' : ''}
+              onfocus="window.lastFocusedBlank = this"
+              oninput="setUserAnswer(${state.activeExIndex}, '${part.id}', this.value)">
+            ${isChecked && !isCorrect ? `<span style="color: var(--success); font-weight: bold; font-size: 0.85rem;">[${escapeHtml(part.correct_answer)}]</span>` : ''}
+          `;
+        }
+      });
+
+      pBox.innerHTML = paragraphHtml;
+      container.appendChild(pBox);
+    }
+
+    /* Sentence Ordering (08) */
+    function renderSentenceOrderingExercise(ex, container) {
+      const list = document.createElement('div');
+      list.className = 'question-list';
+
+      (ex.questions || []).forEach((q, qIdx) => {
+        const card = document.createElement('div');
+        card.className = 'question-card';
+
+        const selectedAns = getUserAnswer(state.activeExIndex, q.id);
+        const isChecked = state.checkedExercises[state.activeExIndex] || state.mode === 'review';
+
+        let sentencesHtml = '<div style="background: var(--bg-surface); padding: 14px; border-radius: var(--radius-md); margin-bottom: 12px; display: flex; flex-direction: column; gap: 6px;">';
+        (q.sentences || []).forEach(s => {
+          sentencesHtml += `<div style="font-size: 0.92rem;">${escapeHtml(s)}</div>`;
+        });
+        sentencesHtml += '</div>';
+
+        let optionsHtml = '<div class="mcq-options">';
+        (q.options || []).forEach((opt, optIdx) => {
+          const isSelected = selectedAns === opt;
+          const isCorrectAnswer = (opt.trim().toLowerCase() === (q.correct_answer || '').trim().toLowerCase());
+
+          let optClass = 'mcq-option';
+          if (isSelected) optClass += ' selected';
+          if (isChecked) {
+            if (isCorrectAnswer) optClass += ' is-correct';
+            else if (isSelected && !isCorrectAnswer) optClass += ' is-wrong';
+          }
+
+          optionsHtml += `
+            <button type="button" class="${optClass}" onclick="selectMCQOption(${state.activeExIndex}, '${q.id}', '${escapeJs(opt)}')">
+              <span class="opt-key">${String.fromCharCode(65 + optIdx)}</span>
+              <span>${escapeHtml(opt)}</span>
+            </button>
+          `;
+        });
+        optionsHtml += '</div>';
+
+        card.innerHTML = `
+          <div class="q-text"><span class="q-number">${qIdx + 1}.</span> Đọc các câu sau và chọn trật tự đúng:</div>
+          ${sentencesHtml}
+          ${optionsHtml}
+          ${isChecked ? `
+            <div class="answer-key-reveal">
+              ✓ Thứ tự đúng: <strong>${escapeHtml(q.correct_answer || '')}</strong>
+            </div>
+          ` : ''}
+        `;
+        list.appendChild(card);
+      });
+
+      container.appendChild(list);
+    }
+
+    /* Dictionary Entry (11) */
+    function renderDictionaryEntryExercise(ex, container) {
+      (ex.entries || []).forEach(entry => {
+        const card = document.createElement('div');
+        card.className = 'dict-card';
+
+        card.innerHTML = `
+          <div class="dict-word-head">
+            <span class="dict-word">${escapeHtml(entry.word || '')}</span>
+            ${entry.part_of_speech ? `<span class="vocab-badge">${escapeHtml(entry.part_of_speech)}</span>` : ''}
+            ${entry.pronunciation ? `<span style="font-family: monospace; color: var(--text-secondary);">${escapeHtml(entry.pronunciation)}</span>` : ''}
+          </div>
+          <div class="dict-def">
+            <strong>Định nghĩa:</strong> ${escapeHtml(entry.definition || '')}
+          </div>
+          <div style="font-size: 0.85rem; font-weight: 700; color: var(--primary); margin-bottom: 6px;">Cụm từ & Ví dụ thường gặp:</div>
+          <ul class="dict-bullets">
+            ${(entry.bullet_points || []).map(bp => `<li>${escapeHtml(bp)}</li>`).join('')}
+          </ul>
+          <div style="font-size: 0.88rem; font-weight: 700; color: var(--text-main); margin-bottom: 10px; border-top: 1px dashed var(--border); padding-top: 12px;">
+            Áp dụng hoàn thành câu:
+          </div>
+        `;
+
+        const qList = document.createElement('div');
+        qList.className = 'question-list';
+
+        (entry.questions || []).forEach(q => {
+          const qCard = document.createElement('div');
+          qCard.className = 'question-card';
+
+          const userVal = getUserAnswer(state.activeExIndex, q.id) || '';
+          const isChecked = state.checkedExercises[state.activeExIndex] || state.mode === 'review';
+          const isCorrect = userVal.trim().toLowerCase() === (q.correct_answer || '').trim().toLowerCase();
+
+          qCard.innerHTML = `
+            <div class="q-text">${escapeHtml(q.text || '')}</div>
+            <input type="text" class="text-input-field" placeholder="Điền cụm từ..." 
+              value="${state.mode === 'review' ? escapeHtml(q.correct_answer || '') : escapeHtml(userVal)}" 
+              ${state.mode === 'review' ? 'readonly' : ''}
+              oninput="setUserAnswer(${state.activeExIndex}, '${q.id}', this.value)">
+            ${isChecked ? `
+              <div class="answer-key-reveal" style="color: ${isCorrect ? 'var(--success)' : 'var(--danger)'};">
+                ${isCorrect ? '✓ Chính xác!' : `✗ Đáp án đúng: <strong>${escapeHtml(q.correct_answer || '')}</strong>`}
+              </div>
+            ` : ''}
+          `;
+          qList.appendChild(qCard);
+        });
+
+        card.appendChild(qList);
+        container.appendChild(card);
+      });
+    }
+
+    /* Signs and Notices (12) */
+    function renderSignsExercise(ex, container) {
+      const list = document.createElement('div');
+      list.className = 'question-list';
+
+      (ex.questions || []).forEach((q, qIdx) => {
+        const card = document.createElement('div');
+        card.className = 'question-card';
+
+        const selectedAns = getUserAnswer(state.activeExIndex, q.id);
+        const isChecked = state.checkedExercises[state.activeExIndex] || state.mode === 'review';
+
+        const signImg = resolveRelativePath(q.sign_image);
+
+        let optionsHtml = '<div class="mcq-options">';
+        (q.options || []).forEach((opt, optIdx) => {
+          const isSelected = selectedAns === opt;
+          const isCorrectAnswer = (opt.trim().toLowerCase() === (q.correct_answer || '').trim().toLowerCase());
+
+          let optClass = 'mcq-option';
+          if (isSelected) optClass += ' selected';
+          if (isChecked) {
+            if (isCorrectAnswer) optClass += ' is-correct';
+            else if (isSelected && !isCorrectAnswer) optClass += ' is-wrong';
+          }
+
+          optionsHtml += `
+            <button type="button" class="${optClass}" onclick="selectMCQOption(${state.activeExIndex}, '${q.id}', '${escapeJs(opt)}')">
+              <span class="opt-key">${String.fromCharCode(65 + optIdx)}</span>
+              <span>${escapeHtml(opt)}</span>
+            </button>
+          `;
+        });
+        optionsHtml += '</div>';
+
+        card.innerHTML = `
+          <div class="q-text"><span class="q-number">${qIdx + 1}.</span> ${escapeHtml(q.question || 'What does the sign mean?')}</div>
+          <div class="sign-visual-wrap">
+            <div class="sign-card-box">
+              ${signImg ? `<img src="${signImg}" alt="Sign" onerror="this.style.display='none'; this.nextElementSibling.style.display='block';">` : ''}
+              <div style="font-size: 2rem; ${signImg ? 'display:none;' : ''}">🚸</div>
+            </div>
+            <div class="sign-desc-box">
+              <strong>Mô tả biển báo:</strong> ${escapeHtml(q.sign_text || '')}
+            </div>
+          </div>
+          ${optionsHtml}
+          ${isChecked ? `
+            <div class="answer-key-reveal">
+              ✓ Ý nghĩa đúng: <strong>${escapeHtml(q.correct_answer || '')}</strong>
+            </div>
+          ` : ''}
+        `;
+        list.appendChild(card);
+      });
+
+      container.appendChild(list);
+    }
+
+    /* Word Families Table (13) */
+    function renderWordFamiliesTableExercise(ex, container) {
+      const tableWrap = document.createElement('div');
+      tableWrap.style.overflowX = 'auto';
+
+      let tableRows = '';
+      (ex.questions || []).forEach((q, idx) => {
+        tableRows += `
+          <tr>
+            <td style="font-weight: 700; color: var(--primary);">${idx + 1}. ${escapeHtml(q.base_word || '')}</td>
+            <td><span class="vocab-badge">${escapeHtml(q.base_word_type || '')}</span></td>
+            <td>${escapeHtml((q.verb || []).join(', ') || '—')}</td>
+            <td>${escapeHtml((q.noun || []).join(', ') || '—')}</td>
+            <td>${escapeHtml((q.adjective || []).join(', ') || '—')}</td>
+            <td>${escapeHtml((q.adverb || []).join(', ') || '—')}</td>
+          </tr>
+        `;
+      });
+
+      tableWrap.innerHTML = `
+        <table class="wf-table">
+          <thead>
+            <tr>
+              <th>Base Word</th>
+              <th>Word Type</th>
+              <th>Verb</th>
+              <th>Noun</th>
+              <th>Adjective</th>
+              <th>Adverb</th>
+            </tr>
+          </thead>
+          <tbody>
+            ${tableRows}
+          </tbody>
+        </table>
+      `;
+
+      container.appendChild(tableWrap);
+    }
+
+    /* Word Formation (15) */
+    function renderWordFormationExercise(ex, container) {
+      const list = document.createElement('div');
+      list.className = 'question-list';
+
+      (ex.questions || []).forEach((q, qIdx) => {
+        const card = document.createElement('div');
+        card.className = 'question-card';
+
+        const userVal = getUserAnswer(state.activeExIndex, q.id) || '';
+        const isChecked = state.checkedExercises[state.activeExIndex] || state.mode === 'review';
+        const isCorrect = userVal.trim().toLowerCase() === (q.correct_answer || '').trim().toLowerCase();
+
+        card.innerHTML = `
+          <div class="q-text">
+            <span class="q-number">${qIdx + 1}.</span> ${escapeHtml(q.text || '')} 
+            <span class="vocab-badge" style="background: var(--warning-light); color: #b45309; font-size: 0.85rem; padding: 3px 8px;">
+              [${escapeHtml(q.base_word || '')}]
+            </span>
+          </div>
+          <input type="text" class="text-input-field" placeholder="Điền dạng đúng của từ..." 
+            value="${state.mode === 'review' ? escapeHtml(q.correct_answer || '') : escapeHtml(userVal)}" 
+            ${state.mode === 'review' ? 'readonly' : ''}
+            oninput="setUserAnswer(${state.activeExIndex}, '${q.id}', this.value)">
+          ${isChecked ? `
+            <div class="answer-key-reveal" style="color: ${isCorrect ? 'var(--success)' : 'var(--danger)'};">
+              ${isCorrect ? '✓ Chính xác!' : `✗ Đáp án đúng: <strong>${escapeHtml(q.correct_answer || '')}</strong>`}
+            </div>
+          ` : ''}
+        `;
+        list.appendChild(card);
+      });
+
+      container.appendChild(list);
+    }
+
+    /* Translation (16) */
+    function renderTranslateSentencesExercise(ex, container) {
+      const list = document.createElement('div');
+      list.className = 'question-list';
+
+      (ex.questions || []).forEach((q, qIdx) => {
+        const card = document.createElement('div');
+        card.className = 'question-card';
+
+        const userVal = getUserAnswer(state.activeExIndex, q.id) || '';
+        const isChecked = state.checkedExercises[state.activeExIndex] || state.mode === 'review';
+
+        card.innerHTML = `
+          <div class="q-text">
+            <span class="q-number">${qIdx + 1}.</span> 
+            <strong>${escapeHtml(q.vietnamese || '')}</strong>
+          </div>
+          <input type="text" class="text-input-field" style="max-width: 100%;" placeholder="Dịch câu sang tiếng Anh..." 
+            value="${state.mode === 'review' ? escapeHtml(q.correct_answer || '') : escapeHtml(userVal)}" 
+            ${state.mode === 'review' ? 'readonly' : ''}
+            oninput="setUserAnswer(${state.activeExIndex}, '${q.id}', this.value)">
+          ${isChecked ? `
+            <div class="answer-key-reveal" style="color: var(--primary);">
+              ✓ Bản dịch mẫu: <strong>${escapeHtml(q.correct_answer || '')}</strong>
+            </div>
+          ` : ''}
+        `;
+        list.appendChild(card);
+      });
+
+      container.appendChild(list);
+    }
+
+    /* Generic Fallback */
+    function renderGenericExercise(ex, container) {
+      const pre = document.createElement('pre');
+      pre.style.background = 'var(--bg-subtle)';
+      pre.style.padding = '16px';
+      pre.style.borderRadius = 'var(--radius-md)';
+      pre.style.overflowX = 'auto';
+      pre.textContent = JSON.stringify(ex, null, 2);
+      container.appendChild(pre);
+    }
+
+    /* =========================================================
+       ANSWER MANAGEMENT & SCORING
+       ========================================================= */
+    function getUserAnswer(exIdx, qId) {
+      if (!state.userAnswers[exIdx]) return null;
+      return state.userAnswers[exIdx][qId] || null;
+    }
+
+    function setUserAnswer(exIdx, qId, value) {
+      if (!state.userAnswers[exIdx]) state.userAnswers[exIdx] = {};
+      state.userAnswers[exIdx][qId] = value;
+    }
+
+    function checkCurrentExercise() {
+      state.checkedExercises[state.activeExIndex] = true;
+      const ex = EXERCISES_DATA[state.activeExIndex];
+      let correct = 0;
+      let total = 0;
+
+      if (ex.questions) {
+        ex.questions.forEach(q => {
+          if (q.parts) {
+            q.parts.forEach((p, pIdx) => {
+              total++;
+              const userVal = getUserAnswer(state.activeExIndex, `${q.id}_${pIdx}`) || '';
+              if (userVal.trim().toLowerCase() === (p.correct_answer || '').trim().toLowerCase()) {
+                correct++;
+              }
+            });
+          } else {
+            total++;
+            const userVal = getUserAnswer(state.activeExIndex, q.id) || '';
+            if (userVal.trim().toLowerCase() === (q.correct_answer || '').trim().toLowerCase()) {
+              correct++;
+            }
+          }
+        });
+      } else if (ex.paragraph_parts) {
+        ex.paragraph_parts.forEach(p => {
+          if (typeof p === 'object' && p.type === 'blank') {
+            total++;
+            const userVal = getUserAnswer(state.activeExIndex, p.id) || '';
+            if (userVal.trim().toLowerCase() === (p.correct_answer || '').trim().toLowerCase()) {
+              correct++;
+            }
+          }
+        });
+      } else if (ex.entries) {
+        ex.entries.forEach(entry => {
+          (entry.questions || []).forEach(q => {
+            total++;
+            const userVal = getUserAnswer(state.activeExIndex, q.id) || '';
+            if (userVal.trim().toLowerCase() === (q.correct_answer || '').trim().toLowerCase()) {
+              correct++;
+            }
+          });
+        });
+      }
+
+      const scoreBadge = document.getElementById('current-ex-score');
+      scoreBadge.style.display = 'inline-flex';
+      const pct = total > 0 ? Math.round((correct / total) * 100) : 0;
+      scoreBadge.textContent = `${correct}/${total} đúng (${pct}%)`;
+      if (pct >= 80) scoreBadge.className = 'score-badge good';
+      else scoreBadge.className = 'score-badge';
+
+      renderCurrentExercise();
+    }
+
+    function resetCurrentExercise() {
+      state.checkedExercises[state.activeExIndex] = false;
+      if (state.userAnswers[state.activeExIndex]) {
+        state.userAnswers[state.activeExIndex] = {};
+      }
+      renderCurrentExercise();
+    }
+
+    /* =========================================================
+       IMAGE PROMPTS RENDERING
+       ========================================================= */
+    function renderPrompts() {
+      const container = document.getElementById('prompts-grid');
+      container.innerHTML = '';
+
+      IMAGE_PROMPTS.forEach(item => {
+        const card = document.createElement('div');
+        card.className = 'prompt-card';
+        card.innerHTML = `
+          <div class="prompt-word">${escapeHtml(item.word || item.english_word || 'Prompt')}</div>
+          <div class="prompt-body">${escapeHtml(item.prompt || item.prompt_en || JSON.stringify(item))}</div>
+          ${item.notes ? `<div style="font-size: 0.8rem; color: var(--text-muted);">Ghi chú: ${escapeHtml(item.notes)}</div>` : ''}
+        `;
+        container.appendChild(card);
+      });
+    }
+
+    /* =========================================================
+       UTILITIES
+       ========================================================= */
+    function resolveRelativePath(path) {
+      if (!path) return '';
+      if (path.startsWith('http://') || path.startsWith('https://') || path.startsWith('data:')) {
+        return path;
+      }
+      // If absolute web path starting with '/', compute relative path from HTML file to workspace root
+      // Target HTML is placed at data/gs6/unit-X/vocab/preview.html (4 levels deep)
+      // So /lessons/media/... becomes ../../../../lessons/media/...
+      if (path.startsWith('/')) {
+        return '../../../../' + path.substring(1);
+      }
+      return path;
+    }
+
+    function escapeHtml(str) {
+      if (typeof str !== 'string') return '';
+      return str.replace(/&/g, '&amp;')
+                .replace(/</g, '&lt;')
+                .replace(/>/g, '&gt;')
+                .replace(/"/g, '&quot;')
+                .replace(/'/g, '&#039;');
+    }
+
+    function escapeJs(str) {
+      if (typeof str !== 'string') return '';
+      return str.replace(/\\/g, '\\\\').replace(/'/g, "\\'").replace(/\n/g, '\\n');
+    }
+  </script>
+</body>
+</html>
