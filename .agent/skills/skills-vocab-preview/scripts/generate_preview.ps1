@@ -126,7 +126,7 @@ $OutputContent = $TemplateContent
 $OutputContent = $OutputContent.Replace("/* __VOCAB_DATA__ */ []", $VocabJsonRaw)
 $OutputContent = $OutputContent.Replace("/* __EXERCISES_DATA__ */ []", $ExercisesJsonRaw)
 $OutputContent = $OutputContent.Replace("/* __IMAGE_PROMPTS_DATA__ */ []", $PromptsJsonRaw)
-$OutputContent = $OutputContent.Replace('/* __UNIT_INFO__ */ {', "$MetaJsonRaw //")
+$OutputContent = $OutputContent.Replace("/* __UNIT_INFO__ */ {}", $MetaJsonRaw)
 
 # 6. Write output HTML file
 Write-Host "[+] Writing output file to $OutputPath..." -ForegroundColor Green

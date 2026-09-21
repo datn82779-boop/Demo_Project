@@ -111,7 +111,7 @@ def main():
     output_content = output_content.replace("/* __VOCAB_DATA__ */ []", vocab_raw)
     output_content = output_content.replace("/* __EXERCISES_DATA__ */ []", exercises_raw)
     output_content = output_content.replace("/* __IMAGE_PROMPTS_DATA__ */ []", prompts_raw)
-    output_content = output_content.replace('/* __UNIT_INFO__ */ {', f"{meta_raw} //")
+    output_content = output_content.replace("/* __UNIT_INFO__ */ {}", meta_raw)
 
     # 6. Write output
     print(f"[+] Writing output file to {output_path}...")
