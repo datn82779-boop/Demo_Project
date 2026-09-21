@@ -1,4 +1,4 @@
-{
+﻿{
     "id":  "8",
     "type":  "sentence_ordering_multiple_choice",
     "title":  "Put the sentences in the correct order",
@@ -7,48 +7,48 @@
                       {
                           "id":  "1",
                           "sentences":  [
-                                            "a. These amazing animals travel across long savannas in search of clean water.",
-                                            "b. Our grandfather often invites us to watch nature documentaries on television.",
-                                            "c. He turns on the screen every Sunday afternoon to watch African wildlife.",
-                                            "d. We always learn so much about their survival habits from these weekly broadcasts."
+                                            "a. These brave birds protect their small eggs from icy winds and deep snow.",
+                                            "b. Our science teacher often encourages us to watch marine wildlife programmes.",
+                                            "c. She introduces a wonderful series about emperor penguins in freezing Antarctica.",
+                                            "d. We always learn fascinating facts about animal survival in extreme cold climates."
                                         ],
                           "options":  [
-                                          "c-a-d-b",
-                                          "b-c-a-d",
                                           "c-b-a-d",
-                                          "b-a-c-d"
+                                          "b-c-a-d",
+                                          "b-a-c-d",
+                                          "c-a-d-b"
                                       ],
                           "correct_answer":  "b-c-a-d"
                       },
                       {
                           "id":  "2",
                           "sentences":  [
-                                            "a. Peter: \u0027Yes, she has a wonderful voice and sings with great energy.\u0027",
-                                            "b. Mary: \u0027I like the young girl from Da Nang. Do you think she can win?\u0027",
-                                            "c. Mary: \u0027I agree, and millions of viewers are voting for her right now.\u0027",
-                                            "d. Peter: \u0027Which performer do you like best on the music talent show tonight?\u0027"
+                                            "a. Peter: \u0027Yes, they perform difficult flips with amazing energy and teamwork.\u0027",
+                                            "b. Mary: \u0027I love the gymnastic team from Can Tho. Can they win?\u0027",
+                                            "c. Mary: \u0027I agree, and many viewers are voting for them right now.\u0027",
+                                            "d. Peter: \u0027Which act do you like best on the youth talent show tonight?\u0027"
                                         ],
                           "options":  [
-                                          "b-a-c-d",
+                                          "d-b-a-c",
                                           "b-d-a-c",
-                                          "d-a-b-c",
-                                          "d-b-a-c"
+                                          "b-a-c-d",
+                                          "d-a-b-c"
                                       ],
                           "correct_answer":  "d-b-a-c"
                       },
                       {
                           "id":  "3",
                           "sentences":  [
-                                            "a. Phong: \u0027That sounds great, but do you know what channel it is on?\u0027",
-                                            "b. Lan: \u0027Let\u0027s check the TV guide on the coffee table to find the schedule.\u0027",
-                                            "c. Lan: \u0027Why don\u0027t we turn on a funny comedy after finishing our homework?\u0027",
-                                            "d. Phong: \u0027It says the humorous show begins on channel seven at eight o\u0027clock.\u0027"
+                                            "a. Phong: \u0027That sounds fun, but which channel is broadcasting it tonight?\u0027",
+                                            "b. Lan: \u0027Let\u0027s open the TV guide app on my smartphone to check.\u0027",
+                                            "c. Lan: \u0027Why don\u0027t we watch an English cartoon after finishing our school project?\u0027",
+                                            "d. Phong: \u0027Great, the schedule shows it starts on channel three right now.\u0027"
                                         ],
                           "options":  [
-                                          "c-a-b-d",
-                                          "c-b-a-d",
                                           "a-c-b-d",
-                                          "a-b-d-c"
+                                          "a-b-d-c",
+                                          "c-a-b-d",
+                                          "c-b-a-d"
                                       ],
                           "correct_answer":  "c-a-b-d"
                       },
@@ -61,26 +61,26 @@
                                             "d. Young viewers around the world fall in love with the finished animated film."
                                         ],
                           "options":  [
-                                          "a-c-b-d",
-                                          "c-b-a-d",
                                           "a-c-d-b",
-                                          "c-a-b-d"
+                                          "c-b-a-d",
+                                          "c-a-b-d",
+                                          "a-c-b-d"
                                       ],
                           "correct_answer":  "a-c-b-d"
                       },
                       {
                           "id":  "5",
                           "sentences":  [
-                                            "a. They prepare by studying science facts and practicing with tricky puzzles.",
-                                            "b. The top winner receives a shiny golden trophy and a new computer for their school.",
-                                            "c. During the live broadcast, each contestant answers difficult questions under pressure.",
-                                            "d. Smart students from different secondary schools gather for the annual game show."
+                                            "a. They prepare by researching plastic recycling solutions and planting techniques.",
+                                            "b. The winning team receives trees and solar panels for their local park.",
+                                            "c. During the live rounds, each team solves tricky environmental challenges quickly.",
+                                            "d. Young eco-volunteers gather at the studio for the Green Earth game show."
                                         ],
                           "options":  [
-                                          "d-a-b-c",
                                           "d-c-a-b",
-                                          "d-a-c-b",
-                                          "a-d-c-b"
+                                          "a-d-c-b",
+                                          "d-a-b-c",
+                                          "d-a-c-b"
                                       ],
                           "correct_answer":  "d-a-c-b"
                       }

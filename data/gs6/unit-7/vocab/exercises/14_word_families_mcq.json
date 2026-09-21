@@ -1,4 +1,4 @@
-{
+﻿{
     "id":  "14",
     "type":  "word_families_mcq",
     "title":  "Multiple Choice – Word Families",
@@ -9,31 +9,31 @@
                           "text":  "Good television programmes provide children with useful __________.",
                           "options":  [
                                           "educate",
-                                          "educational",
                                           "educating",
-                                          "education"
+                                          "education",
+                                          "educational"
                                       ],
                           "correct_answer":  "education"
                       },
                       {
                           "id":  "2",
-                          "text":  "The young singer gives a great __________ on the music stage tonight.",
+                          "text":  "Our school drama club gives a wonderful __________ at the city theatre tonight.",
                           "options":  [
                                           "performance",
-                                          "performer",
                                           "performing",
-                                          "perform"
+                                          "perform",
+                                          "performer"
                                       ],
                           "correct_answer":  "performance"
                       },
                       {
                           "id":  "3",
-                          "text":  "Each active __________ can vote for their favourite contestant by phone.",
+                          "text":  "Each online __________ can vote for the best school robot project on the website.",
                           "options":  [
-                                          "viewed",
+                                          "viewing",
                                           "view",
                                           "viewer",
-                                          "viewing"
+                                          "viewed"
                                       ],
                           "correct_answer":  "viewer"
                       },
@@ -41,32 +41,32 @@
                           "id":  "4",
                           "text":  "My brother is very __________ in watching science documentaries about animals.",
                           "options":  [
-                                          "interested",
+                                          "interests",
                                           "interesting",
                                           "interest",
-                                          "interests"
+                                          "interested"
                                       ],
                           "correct_answer":  "interested"
                       },
                       {
                           "id":  "5",
-                          "text":  "The children have a lot of __________ watching the silly puppy on TV.",
+                          "text":  "Students have a lot of __________ making their own science video at school.",
                           "options":  [
+                                          "funniest",
                                           "funny",
                                           "funnier",
-                                          "fun",
-                                          "funniest"
+                                          "fun"
                                       ],
                           "correct_answer":  "fun"
                       },
                       {
                           "id":  "6",
-                          "text":  "I feel very __________ when the actors talk for too long without action.",
+                          "text":  "Passengers feel quite __________ while waiting for delayed buses during heavy traffic.",
                           "options":  [
-                                          "boring",
                                           "boredom",
                                           "bored",
-                                          "bore"
+                                          "bore",
+                                          "boring"
                                       ],
                           "correct_answer":  "bored"
                       },
@@ -74,10 +74,10 @@
                           "id":  "7",
                           "text":  "The game show enjoys great __________ among teenagers across the city.",
                           "options":  [
-                                          "popularity",
-                                          "popularize",
                                           "popularly",
-                                          "popular"
+                                          "popularity",
+                                          "popular",
+                                          "popularize"
                                       ],
                           "correct_answer":  "popularity"
                       },
@@ -85,21 +85,21 @@
                           "id":  "8",
                           "text":  "The talented gymnast performs __________ on the balance beam tonight.",
                           "options":  [
-                                          "wonderful",
-                                          "wonderfully",
                                           "wonders",
-                                          "wonder"
+                                          "wonderfully",
+                                          "wonder",
+                                          "wonderful"
                                       ],
                           "correct_answer":  "wonderfully"
                       },
                       {
                           "id":  "9",
-                          "text":  "Documentaries about nature show the daily __________ of wild elephants.",
+                          "text":  "Undersea cameras capture the colourful daily __________ of deep ocean creatures.",
                           "options":  [
-                                          "alive",
                                           "live",
-                                          "living",
-                                          "life"
+                                          "alive",
+                                          "life",
+                                          "living"
                                       ],
                           "correct_answer":  "life"
                       },
@@ -107,10 +107,10 @@
                           "id":  "10",
                           "text":  "Famous musicians always __________ with passion on the national stage.",
                           "options":  [
-                                          "performances",
                                           "perform",
                                           "performer",
-                                          "performance"
+                                          "performance",
+                                          "performances"
                                       ],
                           "correct_answer":  "perform"
                       }

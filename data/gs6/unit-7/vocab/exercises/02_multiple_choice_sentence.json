@@ -1,4 +1,4 @@
-{
+﻿{
     "id":  "2",
     "type":  "multiple_choice",
     "title":  "Multiple Choice - Sentence Completion",
@@ -6,23 +6,23 @@
     "questions":  [
                       {
                           "id":  "1",
-                          "text":  "The children love that __________ because the drawings of the talking rabbit are very cute.",
+                          "text":  "Our computer club creates a short __________ about a friendly robot exploring Mars.",
                           "options":  [
-                                          "sports programme",
-                                          "weather report",
                                           "news interview",
-                                          "animated film"
+                                          "sports programme",
+                                          "animated film",
+                                          "weather report"
                                       ],
                           "correct_answer":  "animated film"
                       },
                       {
                           "id":  "2",
-                          "text":  "My older sister never watches that show because she thinks it is extremely __________.",
+                          "text":  "That video game tutorial is terribly __________ because the speaker repeats every rule.",
                           "options":  [
-                                          "clever",
-                                          "boring",
                                           "popular",
-                                          "wonderful"
+                                          "wonderful",
+                                          "boring",
+                                          "clever"
                                       ],
                           "correct_answer":  "boring"
                       },
@@ -30,10 +30,10 @@
                           "id":  "3",
                           "text":  "Can you switch to another television __________? I want to see the cartoon on channel nine.",
                           "options":  [
-                                          "hospital",
+                                          "stadium",
                                           "channel",
                                           "cinema",
-                                          "stadium"
+                                          "hospital"
                                       ],
                           "correct_answer":  "channel"
                       },
@@ -41,10 +41,10 @@
                           "id":  "4",
                           "text":  "The magician on the stage is a very skillful __________ and everyone claps happily.",
                           "options":  [
-                                          "viewer",
-                                          "performer",
+                                          "doctor",
                                           "farmer",
-                                          "doctor"
+                                          "viewer",
+                                          "performer"
                                       ],
                           "correct_answer":  "performer"
                       },
@@ -53,26 +53,26 @@
                           "text":  "Our teacher shares a short video __________ of sea turtles swimming around coral reefs.",
                           "options":  [
                                           "clip",
-                                          "channel",
                                           "guide",
+                                          "channel",
                                           "series"
                                       ],
                           "correct_answer":  "clip"
                       },
                       {
                           "id":  "6",
-                          "text":  "Mr. David likes watching the weekend __________ because he loves football and tennis.",
+                          "text":  "My cousin never misses that weekly __________ because she loves mountain biking races.",
                           "options":  [
-                                          "bedtime story",
                                           "animated film",
-                                          "cooking lesson",
-                                          "sports programme"
+                                          "sports programme",
+                                          "bedtime story",
+                                          "cooking lesson"
                                       ],
                           "correct_answer":  "sports programme"
                       },
                       {
                           "id":  "7",
-                          "text":  "This mystery detective is a very __________ character who solves hard puzzles easily.",
+                          "text":  "The trained rescue dog is very __________ and helps firefighters find lost campers.",
                           "options":  [
                                           "clever",
                                           "slow",
@@ -83,7 +83,7 @@
                       },
                       {
                           "id":  "8",
-                          "text":  "The football final is a __________ broadcast, so millions of fans are watching it right now.",
+                          "text":  "The New Year countdown is a __________ broadcast, so millions of people are watching.",
                           "options":  [
                                           "past",
                                           "quiet",
@@ -96,20 +96,20 @@
                           "id":  "9",
                           "text":  "That science quiz show is very __________ among school students in our country.",
                           "options":  [
+                                          "terrible",
                                           "dark",
                                           "lonely",
-                                          "popular",
-                                          "terrible"
+                                          "popular"
                                       ],
                           "correct_answer":  "popular"
                       },
                       {
                           "id":  "10",
-                          "text":  "We learn many useful things about space and stars from this weekly __________.",
+                          "text":  "Students explore ocean mysteries and volcanoes through this weekly __________.",
                           "options":  [
-                                          "comedy",
                                           "game show",
                                           "science programme",
+                                          "comedy",
                                           "cartoon"
                                       ],
                           "correct_answer":  "science programme"

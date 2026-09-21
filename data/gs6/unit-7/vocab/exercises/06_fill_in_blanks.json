@@ -23,7 +23,7 @@
                       },
                       {
                           "id":  "2",
-                          "text":  "Young musicians from across the country sing on the __________ to win first prize.",
+                          "text":  "Skilled teenage dancers perform modern hip-hop on the __________ to win the trophy.",
                           "correct_answer":  "talent show"
                       },
                       {
@@ -48,22 +48,22 @@
                       },
                       {
                           "id":  "7",
-                          "text":  "My younger sister watches a colourful __________ about two talking mice every morning.",
+                          "text":  "Our English teacher shows a short __________ about healthy food during break time.",
                           "correct_answer":  "cartoon"
                       },
                       {
                           "id":  "8",
-                          "text":  "The lecture is so __________ that half of the students are almost falling asleep.",
+                          "text":  "The repeated advertisements on the train screen are very __________ for passengers.",
                           "correct_answer":  "boring"
                       },
                       {
                           "id":  "9",
-                          "text":  "My father watches the evening __________ to see the latest tennis results.",
+                          "text":  "Our PE teacher records the morning __________ to show us badminton techniques.",
                           "correct_answer":  "sports programme"
                       },
                       {
                           "id":  "10",
-                          "text":  "The detective in the book is very __________ and always solves every mystery.",
+                          "text":  "The young programmer is very __________ and designs a robot to clean classrooms.",
                           "correct_answer":  "clever"
                       }
                   ]

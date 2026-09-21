@@ -1,4 +1,4 @@
-{
+﻿{
     "id":  "10",
     "type":  "multiple_choice",
     "title":  "Multiple Choice - Opposite in Meaning",
@@ -6,23 +6,23 @@
     "questions":  [
                       {
                           "id":  "1",
-                          "text":  "The children do not want to watch that documentary because it is so [boring].",
+                          "text":  "Staying indoors during rainy weekends feels [boring] compared to outdoor camping adventures.",
                           "options":  [
                                           "exciting",
-                                          "tiring",
                                           "quiet",
+                                          "tiring",
                                           "sleepy"
                                       ],
                           "correct_answer":  "exciting"
                       },
                       {
                           "id":  "2",
-                          "text":  "This cartoon features an extremely [cute] kitten that makes everyone smile.",
+                          "text":  "My cousin designs a [cute] baby monster for his mobile video game.",
                           "options":  [
-                                          "sweet",
-                                          "clever",
+                                          "tiny",
                                           "ugly",
-                                          "tiny"
+                                          "sweet",
+                                          "clever"
                                       ],
                           "correct_answer":  "ugly"
                       },
@@ -30,10 +30,10 @@
                           "id":  "3",
                           "text":  "The comedian tells very [funny] jokes and makes the audience laugh all night.",
                           "options":  [
-                                          "bright",
                                           "humorous",
+                                          "playful",
                                           "serious",
-                                          "playful"
+                                          "bright"
                                       ],
                           "correct_answer":  "serious"
                       },
@@ -41,10 +41,10 @@
                           "id":  "4",
                           "text":  "The main hero in this animated film is very [clever] and outsmarts all the traps.",
                           "options":  [
-                                          "quick",
-                                          "foolish",
                                           "active",
-                                          "talented"
+                                          "quick",
+                                          "talented",
+                                          "foolish"
                                       ],
                           "correct_answer":  "foolish"
                       },
@@ -52,10 +52,10 @@
                           "id":  "5",
                           "text":  "The nature documentary gives viewers a [wonderful] view of high mountains.",
                           "options":  [
-                                          "peaceful",
+                                          "terrible",
                                           "grand",
                                           "beautiful",
-                                          "terrible"
+                                          "peaceful"
                                       ],
                           "correct_answer":  "terrible"
                       }
