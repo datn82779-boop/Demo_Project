@@ -13,10 +13,10 @@
                                             "d. We always learn fascinating facts about animal survival in extreme cold climates."
                                         ],
                           "options":  [
-                                          "c-b-a-d",
                                           "b-c-a-d",
                                           "b-a-c-d",
-                                          "c-a-d-b"
+                                          "c-a-d-b",
+                                          "c-b-a-d"
                                       ],
                           "correct_answer":  "b-c-a-d"
                       },
@@ -24,15 +24,15 @@
                           "id":  "2",
                           "sentences":  [
                                             "a. Peter: \u0027Yes, they perform difficult flips with amazing energy and teamwork.\u0027",
-                                            "b. Mary: \u0027I love the gymnastic team from Can Tho. Can they win?\u0027",
+                                            "b. Mary: \u0027I love the gymnastics team from Can Tho. Can they win?\u0027",
                                             "c. Mary: \u0027I agree, and many viewers are voting for them right now.\u0027",
                                             "d. Peter: \u0027Which act do you like best on the youth talent show tonight?\u0027"
                                         ],
                           "options":  [
-                                          "d-b-a-c",
+                                          "d-a-b-c",
                                           "b-d-a-c",
                                           "b-a-c-d",
-                                          "d-a-b-c"
+                                          "d-b-a-c"
                                       ],
                           "correct_answer":  "d-b-a-c"
                       },
@@ -46,9 +46,9 @@
                                         ],
                           "options":  [
                                           "a-c-b-d",
-                                          "a-b-d-c",
                                           "c-a-b-d",
-                                          "c-b-a-d"
+                                          "c-b-a-d",
+                                          "a-b-d-c"
                                       ],
                           "correct_answer":  "c-a-b-d"
                       },
@@ -57,14 +57,14 @@
                           "sentences":  [
                                             "a. The story production starts with creative artists designing a clever character.",
                                             "b. Modern computers then combine these drawings into smooth moving scenes.",
-                                            "c. Artists draw thousands of colorful pictures to give the cute animals life.",
+                                            "c. Artists draw thousands of colourful pictures to bring the animals to life.",
                                             "d. Young viewers around the world fall in love with the finished animated film."
                                         ],
                           "options":  [
                                           "a-c-d-b",
-                                          "c-b-a-d",
                                           "c-a-b-d",
-                                          "a-c-b-d"
+                                          "a-c-b-d",
+                                          "c-b-a-d"
                                       ],
                           "correct_answer":  "a-c-b-d"
                       },
@@ -78,8 +78,8 @@
                                         ],
                           "options":  [
                                           "d-c-a-b",
-                                          "a-d-c-b",
                                           "d-a-b-c",
+                                          "a-d-c-b",
                                           "d-a-c-b"
                                       ],
                           "correct_answer":  "d-a-c-b"

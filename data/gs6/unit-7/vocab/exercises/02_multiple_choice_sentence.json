@@ -8,10 +8,10 @@
                           "id":  "1",
                           "text":  "Our computer club creates a short __________ about a friendly robot exploring Mars.",
                           "options":  [
-                                          "news interview",
-                                          "sports programme",
+                                          "weather report",
                                           "animated film",
-                                          "weather report"
+                                          "sports programme",
+                                          "news interview"
                                       ],
                           "correct_answer":  "animated film"
                       },
@@ -19,32 +19,32 @@
                           "id":  "2",
                           "text":  "That video game tutorial is terribly __________ because the speaker repeats every rule.",
                           "options":  [
-                                          "popular",
+                                          "clever",
                                           "wonderful",
-                                          "boring",
-                                          "clever"
+                                          "popular",
+                                          "boring"
                                       ],
                           "correct_answer":  "boring"
                       },
                       {
                           "id":  "3",
-                          "text":  "Can you switch to another television __________? I want to see the cartoon on channel nine.",
+                          "text":  "Can you switch to another television __________? I want to see the cartoon on number nine.",
                           "options":  [
                                           "stadium",
-                                          "channel",
+                                          "hospital",
                                           "cinema",
-                                          "hospital"
+                                          "channel"
                                       ],
                           "correct_answer":  "channel"
                       },
                       {
                           "id":  "4",
-                          "text":  "The magician on the stage is a very skillful __________ and everyone claps happily.",
+                          "text":  "The magician on the stage is a very skilful __________ and everyone claps happily.",
                           "options":  [
-                                          "doctor",
-                                          "farmer",
+                                          "performer",
                                           "viewer",
-                                          "performer"
+                                          "farmer",
+                                          "doctor"
                                       ],
                           "correct_answer":  "performer"
                       },
@@ -52,10 +52,10 @@
                           "id":  "5",
                           "text":  "Our teacher shares a short video __________ of sea turtles swimming around coral reefs.",
                           "options":  [
-                                          "clip",
                                           "guide",
                                           "channel",
-                                          "series"
+                                          "series",
+                                          "clip"
                                       ],
                           "correct_answer":  "clip"
                       },
@@ -63,10 +63,10 @@
                           "id":  "6",
                           "text":  "My cousin never misses that weekly __________ because she loves mountain biking races.",
                           "options":  [
-                                          "animated film",
-                                          "sports programme",
+                                          "cooking lesson",
                                           "bedtime story",
-                                          "cooking lesson"
+                                          "sports programme",
+                                          "animated film"
                                       ],
                           "correct_answer":  "sports programme"
                       },
@@ -74,10 +74,10 @@
                           "id":  "7",
                           "text":  "The trained rescue dog is very __________ and helps firefighters find lost campers.",
                           "options":  [
+                                          "sleepy",
                                           "clever",
                                           "slow",
-                                          "boring",
-                                          "sleepy"
+                                          "boring"
                                       ],
                           "correct_answer":  "clever"
                       },
@@ -85,9 +85,9 @@
                           "id":  "8",
                           "text":  "The New Year countdown is a __________ broadcast, so millions of people are watching.",
                           "options":  [
+                                          "live",
                                           "past",
                                           "quiet",
-                                          "live",
                                           "cold"
                                       ],
                           "correct_answer":  "live"
@@ -96,10 +96,10 @@
                           "id":  "9",
                           "text":  "That science quiz show is very __________ among school students in our country.",
                           "options":  [
-                                          "terrible",
                                           "dark",
-                                          "lonely",
-                                          "popular"
+                                          "terrible",
+                                          "popular",
+                                          "lonely"
                                       ],
                           "correct_answer":  "popular"
                       },
@@ -107,10 +107,10 @@
                           "id":  "10",
                           "text":  "Students explore ocean mysteries and volcanoes through this weekly __________.",
                           "options":  [
-                                          "game show",
                                           "science programme",
-                                          "comedy",
-                                          "cartoon"
+                                          "game show",
+                                          "cartoon",
+                                          "comedy"
                                       ],
                           "correct_answer":  "science programme"
                       }

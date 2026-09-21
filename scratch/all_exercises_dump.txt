@@ -1,0 +1,219 @@
+﻿========================================================
+FILE: 01_multiple_choice_direct.json | Title: Multiple Choice - Direct Questions | Type: multiple_choice
+========================================================
+ID: 1 | Text: Which type of TV programme makes people laugh with humorous stories? | Options: [news report, science programme, comedy, weather forecast] | Ans: comedy
+ID: 2 | Text: What do we call a person who watches a television show or broadcast? | Options: [writer, viewer, doctor, performer] | Ans: viewer
+ID: 3 | Text: Which show usually invites contestants to answer quiz questions or play games for prizes? | Options: [game show, wildlife programme, action film, music video] | Ans: game show
+ID: 4 | Text: What do we check to know the schedule of TV programmes? | Options: [ticket machine, TV guide, story book, station map] | Ans: TV guide
+ID: 5 | Text: Which type of programme teaches students useful knowledge about nature, languages, or science? | Options: [shopping channel, horror film, detective story, educational programme] | Ans: educational programme
+ID: 6 | Text: What kind of show features people displaying special abilities like dancing, singing, or magic? | Options: [weather report, talent show, sports programme, news broadcast] | Ans: talent show
+ID: 7 | Text: Which broadcast shows wild animals in natural habitats like forests and grasslands? | Options: [wildlife programme, comedy, game show, cartoon] | Ans: wildlife programme
+ID: 8 | Text: What do you call an imaginary animal or person in a film or story? | Options: [director, viewer, character, reporter] | Ans: character
+ID: 9 | Text: Which word describes a TV show that is shown at the exact moment it happens? | Options: [clever, tasty, boring, live] | Ans: live
+ID: 10 | Text: What term describes a television story with many continuous episodes over several weeks? | Options: [TV series, single photo, paper notice, short clip] | Ans: TV series
+========================================================
+FILE: 02_multiple_choice_sentence.json | Title: Multiple Choice - Sentence Completion | Type: multiple_choice
+========================================================
+ID: 1 | Text: Our computer club creates a short __________ about a friendly robot exploring Mars. | Options: [weather report, animated film, sports programme, news interview] | Ans: animated film
+ID: 2 | Text: That video game tutorial is terribly __________ because the speaker repeats every rule. | Options: [clever, wonderful, popular, boring] | Ans: boring
+ID: 3 | Text: Can you switch to another television __________? I want to see the cartoon on number nine. | Options: [stadium, hospital, cinema, channel] | Ans: channel
+ID: 4 | Text: The magician on the stage is a very skilful __________ and everyone claps happily. | Options: [performer, viewer, farmer, doctor] | Ans: performer
+ID: 5 | Text: Our teacher shares a short video __________ of sea turtles swimming around coral reefs. | Options: [guide, channel, series, clip] | Ans: clip
+ID: 6 | Text: My cousin never misses that weekly __________ because she loves mountain biking races. | Options: [cooking lesson, bedtime story, sports programme, animated film] | Ans: sports programme
+ID: 7 | Text: The trained rescue dog is very __________ and helps firefighters find lost campers. | Options: [sleepy, clever, slow, boring] | Ans: clever
+ID: 8 | Text: The New Year countdown is a __________ broadcast, so millions of people are watching. | Options: [live, past, quiet, cold] | Ans: live
+ID: 9 | Text: That science quiz show is very __________ among school students in our country. | Options: [dark, terrible, popular, lonely] | Ans: popular
+ID: 10 | Text: Students explore ocean mysteries and volcanoes through this weekly __________. | Options: [science programme, game show, cartoon, comedy] | Ans: science programme
+========================================================
+FILE: 03_multiple_choice_conversation.json | Title: Multiple Choice - Conversation Completion | Type: multiple_choice
+========================================================
+ID: 1 | Text: Tom: 'What kind of TV show should we watch tonight?'
+Mary: '______________________________' | Options: [I want to cook some hot soup for dinner., We should walk to the sports club today., Please wash your green school shirt now., Let's watch that new comedy to relax.] | Ans: Let's watch that new comedy to relax.
+ID: 2 | Text: Peter: 'Why do you love that space cartoon?'
+Linda: '______________________________' | Options: [Because our father buys a big brown table now., Because my brother walks to the city library., Because the maths homework is very hard for me., Because the space robot character is so funny.] | Ans: Because the space robot character is so funny.
+ID: 3 | Text: Kevin: 'That young violinist plays so well on stage!'
+Anna: '______________________________' | Options: [Yes, she is a wonderful performer., Yes, the kitchen floor is very clean now., No, we must buy a new football today., No, our school begins at seven on Monday.] | Ans: Yes, she is a wonderful performer.
+ID: 4 | Text: David: 'When does the science documentary start?'
+Sarah: '______________________________' | Options: [Buy two train tickets at the railway station., Close the bedroom window because of the rain., Wash your dirty sports shoes after the match., Check the TV guide on the school website.] | Ans: Check the TV guide on the school website.
+ID: 5 | Text: Jack: 'Would you like to watch this animated film?'
+Emma: '______________________________' | Options: [No, the bus arrives at the station now., No, I do not like eating sweet apples., Yes, I would love to watch it., Yes, my sister has three white rabbits.] | Ans: Yes, I would love to watch it.
+ID: 6 | Text: Mark: 'What do you think of this English channel?'
+Lucy: '______________________________' | Options: [It has four large wooden chairs in the room., It is raining heavily outside on the street., It has many educational programmes for kids., It costs too much money to buy a computer.] | Ans: It has many educational programmes for kids.
+ID: 7 | Text: Mai: 'Why did you stop that video clip?'
+Nick: '______________________________' | Options: [Because our dog is sleeping under the table., Because it is so boring and nothing happens., Because the hot tea is very sweet and tasty., Because my friends are swimming in the lake.] | Ans: Because it is so boring and nothing happens.
+ID: 8 | Text: Alex: 'Shall we watch the Olympic swimming race together?'
+Ben: '______________________________' | Options: [Yes, because I really love watching swimming competitions., No, because the library is very quiet today., Yes, because our bus goes to school at eight., No, because my new bicycle has bright wheels.] | Ans: Yes, because I really love watching swimming competitions.
+ID: 9 | Text: Lan: 'Does your brother like that weekend game show?'
+Tom: '______________________________' | Options: [Yes, he answers every question very quickly., No, the weather is very cold in the morning., Yes, my little brother can ride his bicycle., No, we should buy fresh bread for breakfast.] | Ans: Yes, he answers every question very quickly.
+ID: 10 | Text: Sam: 'Is this rocket launch a live broadcast?'
+Kelly: '______________________________' | Options: [Yes, my mother makes delicious apple pies., Yes, the spaceship is lifting off right now., No, the train leaves the station at ten a.m., No, we must borrow some storybooks at school.] | Ans: Yes, the spaceship is lifting off right now.
+========================================================
+FILE: 04_pic_to_word.json | Title: Write the English Words for the Pictures | Type: pic_to_word
+========================================================
+ID: 1 | Ans: programme
+ID: 2 | Ans: animated film
+ID: 3 | Ans: cartoon
+ID: 4 | Ans: comedy
+ID: 5 | Ans: talent show
+ID: 6 | Ans: game show
+ID: 7 | Ans: educational programme
+ID: 8 | Ans: wildlife programme
+ID: 9 | Ans: sports programme
+ID: 10 | Ans: science programme
+ID: 11 | Ans: TV series
+ID: 12 | Ans: channel
+ID: 13 | Ans: TV guide
+ID: 14 | Ans: film
+ID: 15 | Ans: clip
+ID: 16 | Ans: viewer
+ID: 17 | Ans: character
+ID: 18 | Ans: performer
+ID: 19 | Ans: cute
+ID: 20 | Ans: boring
+========================================================
+FILE: 05_write_english_words.json | Title: Write English words | Type: write_english_words
+========================================================
+ID: 1 | Parts: .  -> programme; .  -> animated film
+ID: 2 | Parts: .  -> cartoon; .  -> comedy
+ID: 3 | Parts: .  -> talent show; .  -> game show
+ID: 4 | Parts: .  -> educational programme; .  -> wildlife programme
+ID: 5 | Parts: .  -> sports programme; .  -> science programme
+ID: 6 | Parts: .  -> TV series; .  -> channel
+ID: 7 | Parts: .  -> TV guide; .  -> viewer
+ID: 8 | Parts: .  -> character; .  -> performer
+ID: 9 | Parts: .  -> educational; .  -> interesting
+ID: 10 | Parts: .  -> funny; .  -> clever
+========================================================
+FILE: 06_fill_in_blanks.json | Title: Fill in the Blanks | Type: fill_in_blanks
+========================================================
+ID: 1 | Text: A careful __________ always pays close attention to the details on the screen. | Ans: viewer
+ID: 2 | Text: Skilled teenage dancers perform modern hip-hop on the __________ to win the trophy. | Ans: talent show
+ID: 3 | Text: Please turn to this local news __________ so we can check the weather report. | Ans: channel
+ID: 4 | Text: The friendly blue dolphin is my favourite cartoon __________ in the whole story. | Ans: character
+ID: 5 | Text: We love watching that new __________ on Friday evening because it makes us laugh. | Ans: comedy
+ID: 6 | Text: Teachers recommend this science channel because its shows are very __________. | Ans: educational
+ID: 7 | Text: Our English teacher shows a short __________ about healthy food during break time. | Ans: cartoon
+ID: 8 | Text: The repeated advertisements on the train screen are very __________ for passengers. | Ans: boring
+ID: 9 | Text: Our PE teacher records the morning __________ to show us badminton techniques. | Ans: sports programme
+ID: 10 | Text: The young programmer is very __________ and designs a robot to clean classrooms. | Ans: clever
+========================================================
+FILE: 07_paragraph_fill.json | Title: Fill in the Blanks in the Paragraph | Type: paragraph_fill
+========================================================
+PARAGRAPH FILL: word_box=[programme, animated film, TV guide, interesting, performer, science programme, wildlife programme, wonderful, game show, cute]
+  Content: Television is a popular entertainment medium in many homes. Every morning, my family checks the  [Blank 1: TV guide]  to choose a good  [Blank 2: programme]  for the evening. In the afternoon, my sister enjoys watching an  [Blank 3: animated film]  because the baby animal characters are very  [Blank 4: cute] . At seven o'clock, we usually watch a  [Blank 5: science programme]  to learn  [Blank 6: interesting]  facts about our solar system. Sometimes we switch over to a  [Blank 7: wildlife programme]  to explore African lions and elephants in nature. On Saturday night, my parents like watching an exciting  [Blank 8: game show]  where contestants answer quiz questions. A talented  [Blank 9: performer]  also sings between the quiz rounds. Watching these high-quality shows together is a  [Blank 10: wonderful]  way to spend time as a family.
+========================================================
+FILE: 08_sentence_ordering.json | Title: Put the sentences in the correct order | Type: sentence_ordering_multiple_choice
+========================================================
+ID: 1 | Sentences: a. These brave birds protect their small eggs from icy winds and deep snow. // b. Our science teacher often encourages us to watch marine wildlife programmes. // c. She introduces a wonderful series about emperor penguins in freezing Antarctica. // d. We always learn fascinating facts about animal survival in extreme cold climates. | Options: [b-c-a-d, b-a-c-d, c-a-d-b, c-b-a-d] | Ans: b-c-a-d
+ID: 2 | Sentences: a. Peter: 'Yes, they perform difficult flips with amazing energy and teamwork.' // b. Mary: 'I love the gymnastics team from Can Tho. Can they win?' // c. Mary: 'I agree, and many viewers are voting for them right now.' // d. Peter: 'Which act do you like best on the youth talent show tonight?' | Options: [d-a-b-c, b-d-a-c, b-a-c-d, d-b-a-c] | Ans: d-b-a-c
+ID: 3 | Sentences: a. Phong: 'That sounds fun, but which channel is broadcasting it tonight?' // b. Lan: 'Let's open the TV guide app on my smartphone to check.' // c. Lan: 'Why don't we watch an English cartoon after finishing our school project?' // d. Phong: 'Great, the schedule shows it starts on channel three right now.' | Options: [a-c-b-d, c-a-b-d, c-b-a-d, a-b-d-c] | Ans: c-a-b-d
+ID: 4 | Sentences: a. The story production starts with creative artists designing a clever character. // b. Modern computers then combine these drawings into smooth moving scenes. // c. Artists draw thousands of colourful pictures to bring the animals to life. // d. Young viewers around the world fall in love with the finished animated film. | Options: [a-c-d-b, c-a-b-d, a-c-b-d, c-b-a-d] | Ans: a-c-b-d
+ID: 5 | Sentences: a. They prepare by researching plastic recycling solutions and planting techniques. // b. The winning team receives trees and solar panels for their local park. // c. During the live rounds, each team solves tricky environmental challenges quickly. // d. Young eco-volunteers gather at the studio for the Green Earth game show. | Options: [d-c-a-b, d-a-b-c, a-d-c-b, d-a-c-b] | Ans: d-a-c-b
+========================================================
+FILE: 09_multiple_choice_closest.json | Title: Multiple Choice - Closest in Meaning | Type: multiple_choice
+========================================================
+ID: 1 | Text: The film on channel three is very [funny], so my whole family laughs out loud. | Options: [scary, heavy, humorous, serious] | Ans: humorous
+ID: 2 | Text: The little mouse in the cartoon is very [clever] and escapes from the cat every time. | Options: [slow, lazy, smart, foolish] | Ans: smart
+ID: 3 | Text: My family always watches our favourite television [programme] after dinner. | Options: [ticket, show, tool, screen] | Ans: show
+ID: 4 | Text: The special effects in this fantasy film are truly [wonderful] to watch. | Options: [fantastic, terrible, ugly, ordinary] | Ans: fantastic
+ID: 5 | Text: Football is the most [popular] sport in Viet Nam, and many people play it after work. | Options: [rare, hidden, boring, well-known] | Ans: well-known
+========================================================
+FILE: 10_multiple_choice_opposite.json | Title: Multiple Choice - Opposite in Meaning | Type: multiple_choice
+========================================================
+ID: 1 | Text: Staying indoors during rainy weekends feels [boring] compared to outdoor camping adventures. | Options: [quiet, exciting, tiring, sleepy] | Ans: exciting
+ID: 2 | Text: My cousin designs a [cute] baby monster for his mobile video game. | Options: [ugly, clever, tiny, sweet] | Ans: ugly
+ID: 3 | Text: The comedian tells very [funny] jokes and makes the audience laugh all night. | Options: [bright, humorous, playful, serious] | Ans: serious
+ID: 4 | Text: The hero in this animated film is very [clever] and outsmarts all the traps. | Options: [active, foolish, quick, talented] | Ans: foolish
+ID: 5 | Text: The nature documentary gives viewers a [wonderful] view of high mountains. | Options: [beautiful, peaceful, terrible, grand] | Ans: terrible
+========================================================
+FILE: 11_dictionary_entry.json | Title: Dictionary Entries | Type: dictionary_entry
+========================================================
+ENTRY: 1. Word: programme (noun) Pron: /ˈprəʊɡræm/
+  Def: a broadcast on television or radio
+  Bullets: Families often sit together on the sofa to [watch a programme] in the evening. // She turns on the television right at seven to catch her [favourite programme]. // The weekly magazine contains a detailed [programme schedule] for all channels. // Many morning commuters [listen to a programme] on their car radio.
+    Q1: After dinner, the children usually gather around the TV screen to __________ about wild animals. -> watch a programme
+    Q2: Our school newspaper prints the daily __________ so students can plan their viewing time. -> programme schedule
+ENTRY: 2. Word: character (noun) Pron: /ˈkærəktə/
+  Def: a person or an animal represented in a film, play, or story
+  Bullets: Children love the funny yellow sponge [cartoon character] living under the ocean. // Costume fans like to [dress as a character] from popular fantasy comics. // Novelists spend months thinking of interesting traits to [create a character]. // The brave young princess is the [main character] of this animated story.
+    Q3: Art students learn how to sketch expressive faces to __________ for their comic books. -> create a character
+    Q4: A brave teenage diver is the __________ who protects rare turtles in this film. -> main character
+ENTRY: 3. Word: channel (noun) Pron: /ˈtʃænl/
+  Def: a television station and its broadcast programmes
+  Bullets: Viewers can find many high-quality cooking lessons [on this channel]. // Please check the [channel number] in the guide before entering it on the remote. // My uncle subscribes to a dedicated [sports channel] for weekend matches. // Press the red button on the remote to [change the channel] quickly.
+    Q5: Members at the local gym watch the __________ while exercising on indoor bicycles. -> sports channel
+    Q6: When loud advertisements interrupt your cooking show, just use the remote to __________. -> change the channel
+ENTRY: 4. Word: viewer (noun) Pron: /ˈvjuːə/
+  Def: a person who watches television
+  Bullets: Colourful animations are designed specifically to entertain [young viewers]. // Humorous jokes and bright costumes help the comedy [appeal to viewers]. // High [viewer ratings] show that the singing contest is very successful. // Action films usually [attract viewers] with exciting special effects.
+    Q7: The educational broadcast uses cheerful animal songs so that __________ can easily remember English words. -> young viewers
+    Q8: Stunning visual effects and dinosaur scenes help the new show __________ to television screens. -> attract viewers
+ENTRY: 5. Word: comedy (noun) Pron: /ˈkɒmədi/
+  Def: a film, play, or show with humorous characters and a happy ending
+  Bullets: That weekly [comedy series] has six episodes full of funny school situations. // Amateur comedians perform their funniest stand-up jokes at the downtown [comedy club]. // Families gather in the living room to [enjoy a comedy] together on weekends. // Students often choose a lighthearted [romantic comedy] to watch with friends.
+    Q9: After a busy school week, students like to sit back on the sofa and __________ to relax. -> enjoy a comedy
+    Q10: The television network is showing a delightful new __________ about the adventures of four young friends. -> comedy series
+========================================================
+FILE: 12_signs_and_notices.json | Title: Signs and Notices | Type: signs_and_notices
+========================================================
+ID: 1 | Stem: What does the sign mean? | Options: [Visitors can borrow cameras from the studio media room now., Please buy camera batteries at the studio reception office., Flash photography is not permitted in the live studio room., Taking pictures with cameras is allowed in the studio room.] | Ans: Flash photography is not permitted in the live studio room. | SignText: A standard circular prohibition sign with a thick red border and diagonal slash over a black camera icon with a flash on a plain white background, centred and filling 90% of the square canvas, NO outer border frame, NO inner border box, NO text or words of any kind.
+ID: 2 | Stem: What does the sign mean? | Options: [Staff members can use mobile phones anywhere inside., Please answer all mobile phone calls in the hallway., Free phone chargers are provided inside this studio., You must not use your mobile phone during recording.] | Ans: You must not use your mobile phone during recording. | SignText: A standard circular prohibition sign with a thick red border and diagonal slash over a black smartphone icon displaying sound waves on a plain white background, centred and filling 90% of the square canvas, NO outer border frame, NO inner border box, NO text or words of any kind.
+ID: 3 | Stem: What does the sign mean? | Options: [You can buy stereo headphones in this studio shop., Do not touch any headphones in this TV sound room., Please return headphones to the main control desk., You must wear audio headphones in this sound room.] | Ans: You must wear audio headphones in this sound room. | SignText: A circular mandatory action sign with a deep blue background and a crisp white symbol of over-ear studio headphones centred, filling 90% of the square canvas, NO outer border frame, NO inner border box, NO text or words of any kind.
+ID: 4 | Stem: What does the sign say? | Options: [Watch out for loose cables on the stage floor., Electric cables are on sale in the media room., You must not bring any cables onto this stage., Studio workers will repair all damaged cables.] | Ans: Watch out for loose cables on the stage floor. | SignText: A triangular hazard warning sign with a bold yellow background, thick black triangular border, and a black symbol of a tripping figure over tangled electric cables, centred and filling 90% of the square canvas, NO outer border frame, NO inner border box, NO text or words of any kind.
+ID: 5 | Stem: What does the sign say? | Options: [Stage lights are not allowed inside this room., Please turn off all bright stage lights today., You can buy spare stage lights in this studio., Be careful because stage lights hang overhead.] | Ans: Be careful because stage lights hang overhead. | SignText: A triangular warning hazard sign with a bright yellow background, bold black border, and a black silhouette symbol of heavy stage lights falling from above, centred and filling 90% of the square canvas, NO outer border frame, NO inner border box, NO text or words of any kind.
+ID: 6 | Stem: What does the sign tell us? | Options: [The TV studio is open for all visitors now., You should turn on the studio lights today., Recording is active, so you must not enter., Visitors can enter the studio to watch now.] | Ans: Recording is active, so you must not enter. | SignText: Full-bleed square graphic design, 100% edge-to-edge layout filling the entire square image canvas with zero outer background margins, showing a studio door warning sign with a glowing red illuminated box that says 'ON AIR - RECORDING IN PROGRESS' with text below: 'Do Not Enter When Lit', sleek metallic and illuminated texture, large bold typography.
+ID: 7 | Stem: What does the note say? | Options: [Minh and Duy will watch television at five now., Minh should record the cartoon for Duy at home., The cartoon on Channel 7 is cancelled tonight., Duy wants Minh to attend the maths class today.] | Ans: Minh should record the cartoon for Duy at home. | SignText: Full-bleed square graphic design, 100% edge-to-edge layout filling the entire square image canvas with zero outer background margins, showing a yellow sticky note texture with realistic handwritten text: 'Minh, our favourite cartoon starts at 5:30 p.m. on Channel 7. Please record it because I have extra maths class! - Duy', clear legible handwriting.
+ID: 8 | Stem: What does the email say? | Options: [Students can audition to host school news., Studio B is closed for students this week., The media club meeting moves to next week., Grade 6 students must write a long report.] | Ans: Students can audition to host school news. | SignText: Full-bleed square graphic design, 100% edge-to-edge layout filling the entire square image canvas with zero outer background margins, showing an email client interface card with clean typography: 'From: Media Club <media@school.edu>
+To: Grade 6 Students
+Subject: Auditions for Student News Host
+Date: Thursday, 3 PM
+Room: Studio B
+Prepare a 1-minute speech about your favourite school activity.'
+ID: 9 | Stem: What does the notice tell us? | Options: [All educational TV channels are free forever., You pay for six months and get one full year., Only fifty lucky children can join this week., The subscription discount ends in two months.] | Ans: You pay for six months and get one full year. | SignText: Full-bleed square graphic design, 100% edge-to-edge layout filling the entire square image canvas with zero outer background margins, showing a modern advertisement poster: 'KIDS TV STREAM - Annual Subscription Special! Pay for 6 months and get 6 months FREE! Unlimited access to 50+ educational channels and cartoons. Offer ends Sunday!'
+ID: 10 | Stem: What does the flyer tell us? | Options: [Teams of three students can enter the quiz free., The quiz takes place at the national TV station., Only individual players can enter this quiz now., The winners will get free tickets to the cinema.] | Ans: Teams of three students can enter the quiz free. | SignText: Full-bleed square graphic design, 100% edge-to-edge layout filling the entire square image canvas with zero outer background margins, showing an event flyer poster: 'Junior TV Quiz Championship! Teams of 3 students. Date: Saturday, October 15 at 9:00 AM. Venue: Main School Auditorium. Grand Prize: School Trip to National TV Station! Free entry for all students.'
+========================================================
+FILE: 13_word_families_table.json | Title: Word Families | Type: word_families_table
+========================================================
+ID: 1 | Base: educational
+ID: 2 | Base: performer
+ID: 3 | Base: viewer
+ID: 4 | Base: interesting
+ID: 5 | Base: funny
+ID: 6 | Base: boring
+ID: 7 | Base: popular
+ID: 8 | Base: wonderful
+ID: 9 | Base: live
+========================================================
+FILE: 14_word_families_mcq.json | Title: Multiple Choice – Word Families | Type: word_families_mcq
+========================================================
+ID: 1 | Text: Good television programmes provide children with useful __________. | Options: [educational, educate, educating, education] | Ans: education
+ID: 2 | Text: Our school drama club gives a wonderful __________ at the city theatre tonight. | Options: [performance, performer, performing, perform] | Ans: performance
+ID: 3 | Text: Each online __________ can vote for the best school robot project on the website. | Options: [viewing, view, viewed, viewer] | Ans: viewer
+ID: 4 | Text: My brother is very __________ in watching science documentaries about animals. | Options: [interesting, interested, interest, interests] | Ans: interested
+ID: 5 | Text: Students have a lot of __________ making their own science video at school. | Options: [funniest, fun, funny, funnier] | Ans: fun
+ID: 6 | Text: Passengers feel quite __________ while waiting for delayed buses during heavy traffic. | Options: [boredom, bore, bored, boring] | Ans: bored
+ID: 7 | Text: The game show enjoys great __________ among teenagers across the city. | Options: [popularise, popular, popularity, popularly] | Ans: popularity
+ID: 8 | Text: The young gymnast performs __________ on the balance beam tonight. | Options: [wonderfully, wonders, wonderful, wonder] | Ans: wonderfully
+ID: 9 | Text: Undersea cameras capture the colourful daily __________ of deep ocean creatures. | Options: [alive, life, live, living] | Ans: life
+ID: 10 | Text: Professional musicians always __________ with passion on the national stage. | Options: [performances, performance, performer, perform] | Ans: perform
+========================================================
+FILE: 15_word_formation.json | Title: Supply the correct form of the word given in each sentence. | Type: word_formation
+========================================================
+ID: 1 | Text: Discovery Channel produces many __________ programmes for students. | Ans: educational | Base: EDUCATE
+ID: 2 | Text: The comedy show is full of __________ and laughter. | Ans: fun | Base: FUNNY
+ID: 3 | Text: Each street __________ dances with energetic rhythm during the annual flower carnival. | Ans: performer | Base: PERFORM
+ID: 4 | Text: The magic show on television is truly __________ and surprising. | Ans: wonderful | Base: WONDER
+ID: 5 | Text: Football matches enjoy huge __________ among sports fans everywhere. | Ans: popularity | Base: POPULAR
+========================================================
+FILE: 16_translate_sentences.json | Title: Translation | Type: translate_sentences
+========================================================
+ID: 1 | Ans: My family often watches an interesting TV programme together after dinner.
+ID: 2 | Ans: My little brother likes watching animated films because the characters are very cute.
+ID: 3 | Ans: This comedy is very funny, so everyone laughs out loud.
+ID: 4 | Ans: Many young singers join the music talent show on this channel.
+ID: 5 | Ans: The contestants answer difficult quiz questions in the game show.
+ID: 6 | Ans: This educational programme helps students learn English and science.
+ID: 7 | Ans: My father likes sports programmes, but my mother likes wildlife programmes.
+ID: 8 | Ans: Check the TV guide to see what time the film starts.
+ID: 9 | Ans: Millions of viewers are watching the live concert tonight.
+ID: 10 | Ans: This TV series is very popular and is full of surprises.

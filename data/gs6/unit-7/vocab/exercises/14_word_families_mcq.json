@@ -8,10 +8,10 @@
                           "id":  "1",
                           "text":  "Good television programmes provide children with useful __________.",
                           "options":  [
+                                          "educational",
                                           "educate",
                                           "educating",
-                                          "education",
-                                          "educational"
+                                          "education"
                                       ],
                           "correct_answer":  "education"
                       },
@@ -20,9 +20,9 @@
                           "text":  "Our school drama club gives a wonderful __________ at the city theatre tonight.",
                           "options":  [
                                           "performance",
+                                          "performer",
                                           "performing",
-                                          "perform",
-                                          "performer"
+                                          "perform"
                                       ],
                           "correct_answer":  "performance"
                       },
@@ -32,8 +32,8 @@
                           "options":  [
                                           "viewing",
                                           "view",
-                                          "viewer",
-                                          "viewed"
+                                          "viewed",
+                                          "viewer"
                                       ],
                           "correct_answer":  "viewer"
                       },
@@ -41,10 +41,10 @@
                           "id":  "4",
                           "text":  "My brother is very __________ in watching science documentaries about animals.",
                           "options":  [
-                                          "interests",
                                           "interesting",
+                                          "interested",
                                           "interest",
-                                          "interested"
+                                          "interests"
                                       ],
                           "correct_answer":  "interested"
                       },
@@ -53,9 +53,9 @@
                           "text":  "Students have a lot of __________ making their own science video at school.",
                           "options":  [
                                           "funniest",
+                                          "fun",
                                           "funny",
-                                          "funnier",
-                                          "fun"
+                                          "funnier"
                                       ],
                           "correct_answer":  "fun"
                       },
@@ -64,8 +64,8 @@
                           "text":  "Passengers feel quite __________ while waiting for delayed buses during heavy traffic.",
                           "options":  [
                                           "boredom",
-                                          "bored",
                                           "bore",
+                                          "bored",
                                           "boring"
                                       ],
                           "correct_answer":  "bored"
@@ -74,21 +74,21 @@
                           "id":  "7",
                           "text":  "The game show enjoys great __________ among teenagers across the city.",
                           "options":  [
-                                          "popularly",
-                                          "popularity",
+                                          "popularise",
                                           "popular",
-                                          "popularize"
+                                          "popularity",
+                                          "popularly"
                                       ],
                           "correct_answer":  "popularity"
                       },
                       {
                           "id":  "8",
-                          "text":  "The talented gymnast performs __________ on the balance beam tonight.",
+                          "text":  "The young gymnast performs __________ on the balance beam tonight.",
                           "options":  [
-                                          "wonders",
                                           "wonderfully",
-                                          "wonder",
-                                          "wonderful"
+                                          "wonders",
+                                          "wonderful",
+                                          "wonder"
                                       ],
                           "correct_answer":  "wonderfully"
                       },
@@ -96,21 +96,21 @@
                           "id":  "9",
                           "text":  "Undersea cameras capture the colourful daily __________ of deep ocean creatures.",
                           "options":  [
-                                          "live",
                                           "alive",
                                           "life",
+                                          "live",
                                           "living"
                                       ],
                           "correct_answer":  "life"
                       },
                       {
                           "id":  "10",
-                          "text":  "Famous musicians always __________ with passion on the national stage.",
+                          "text":  "Professional musicians always __________ with passion on the national stage.",
                           "options":  [
-                                          "perform",
-                                          "performer",
+                                          "performances",
                                           "performance",
-                                          "performances"
+                                          "performer",
+                                          "perform"
                                       ],
                           "correct_answer":  "perform"
                       }

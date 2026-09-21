@@ -18,7 +18,7 @@
     "questions":  [
                       {
                           "id":  "1",
-                          "text":  "An active __________ always pays close attention to the details on the screen.",
+                          "text":  "A careful __________ always pays close attention to the details on the screen.",
                           "correct_answer":  "viewer"
                       },
                       {
@@ -33,12 +33,12 @@
                       },
                       {
                           "id":  "4",
-                          "text":  "The friendly blue dolphin is my favorite cartoon __________ in the whole story.",
+                          "text":  "The friendly blue dolphin is my favourite cartoon __________ in the whole story.",
                           "correct_answer":  "character"
                       },
                       {
                           "id":  "5",
-                          "text":  "We love watching that funny __________ on Friday evening because it makes us laugh.",
+                          "text":  "We love watching that new __________ on Friday evening because it makes us laugh.",
                           "correct_answer":  "comedy"
                       },
                       {

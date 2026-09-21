@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="vi" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AI Agent Operating Hub & Studio | .agent Ecosystem</title>
+  <meta name="description" content="Trung tâm điều phối và trực quan hóa toàn bộ 10 AI Agent Skills, quy trình 7 bước tạo dữ liệu học liệu và ban thẩm định chất lượng 6 subagent cho chương trình tiếng Anh Global Success.">
+  <meta name="keywords" content="AI Agent, Global Success, Vocab Preview, Exercise Generator, Multi-Agent Audit">
+  
+  <!-- Google Fonts: Outfit (Headings), Inter (Body), JetBrains Mono (Code) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600;700&family=Outfit:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+  <!-- Core Stylesheet -->
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+  <!-- Top Sticky Header -->
+  <header class="app-header">
+    <div class="container header-inner">
+      <div class="brand" onclick="window.scrollTo({ top: 0, behavior: 'smooth' })">
+        <div class="brand-icon">⚡</div>
+        <div class="brand-info">
+          <h1>AGENT STUDIO</h1>
+          <span class="tagline">.agent Ecosystem Hub</span>
+        </div>
+      </div>
+
+      <ul class="nav-links">
+        <li class="nav-item"><a href="#pipeline-section">⚡ Quy Trình</a></li>
+        <li class="nav-item"><a href="#skills-section">🤖 10 AI Skills</a></li>
+        <li class="nav-item"><a href="#exercise-section">📝 16 Dạng Bài</a></li>
+        <li class="nav-item"><a href="#studio-section">🎯 Prompt Studio</a></li>
+        <li class="nav-item"><a href="#docs-section">📖 Tài Liệu</a></li>
+      </ul>
+
+      <div class="nav-actions">
+        <div class="search-trigger-btn" onclick="document.getElementById('global-search-input')?.focus()">
+          <span>🔍 Tìm kiếm...</span>
+          <span class="kbd-shortcut">Ctrl K</span>
+        </div>
+
+        <button class="btn-icon" id="theme-toggle-btn" title="Chuyển đổi giao diện Sáng / Tối">
+          <span id="theme-icon">☀️</span>
+        </button>
+
+        <button class="btn-primary" onclick="openLivePreview()" title="Mở bản xem trước Unit 7 thực tế">
+          🚀 Xem Live Unit 7
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Main Content Container -->
+  <main class="container">
+
+    <!-- Hero Section -->
+    <section class="hero-section">
+      <div class="hero-banner">
+        <div class="hero-badge-wrap">
+          <span class="badge-live">
+            <span class="pulse-dot"></span>
+            Hệ Thống Sẵn Sàng (Zero-CORS Offline)
+          </span>
+          <span class="skill-tag" style="background: rgba(99, 102, 241, 0.2); color: var(--primary);">Global Success 6 - 9</span>
+        </div>
+
+        <h1 class="hero-title">AI Agent Operating Hub & Studio</h1>
+        <p class="hero-subtitle">
+          Nền tảng điều phối & trực quan hóa toàn bộ 10 AI Agent Skills từ thư mục <code>.agent</code>: Tự động hóa trọn gói từ OCR sách giáo khoa, xây dựng từ điển số, sinh bài tập đến ban thẩm định chất lượng 6 subagent chuyên biệt.
+        </p>
+
+        <div style="display: flex; gap: 12px; flex-wrap: wrap;">
+          <a href="#pipeline-section" class="btn-primary">⚡ Khám phá Pipeline</a>
+          <a href="#studio-section" class="btn-secondary">🎯 Tạo lệnh điều khiển Agent</a>
+          <button class="btn-secondary" onclick="openDocModal('exercise-rules')">📜 Quy tắc vàng biên soạn</button>
+        </div>
+
+        <!-- KPI Summary Counter Grid -->
+        <div class="kpi-grid">
+          <div class="kpi-card">
+            <div class="kpi-value">10</div>
+            <div class="kpi-label">AI Agent Skills</div>
+            <div class="kpi-desc">Chuyên môn hóa từ OCR đến thẩm định bài tập</div>
+          </div>
+          <div class="kpi-card">
+            <div class="kpi-value">6</div>
+            <div class="kpi-label">Subagents QA</div>
+            <div class="kpi-desc">Ban thẩm định đa chiều: Bản ngữ, Ngữ pháp, Logic, CEFR</div>
+          </div>
+          <div class="kpi-card">
+            <div class="kpi-value">16</div>
+            <div class="kpi-label">Dạng Bài Tập</div>
+            <div class="kpi-desc">Trắc nghiệm, Cloze test, Biển báo, Từ điển & Dịch câu</div>
+          </div>
+          <div class="kpi-card">
+            <div class="kpi-value">≥95%</div>
+            <div class="kpi-label">Độ Phủ Từ Vựng</div>
+            <div class="kpi-desc">Kiểm soát chặt chẽ bằng script coverage tự động</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Pipeline Visualizer Section -->
+    <section class="section" id="pipeline-section">
+      <div class="section-header">
+        <div class="section-title-wrap">
+          <span class="section-tag">Interactive Architecture</span>
+          <h2 class="section-title">Quy Trình Tự Động Hóa 3 Giai Đoạn</h2>
+          <p class="section-subtitle">Sơ đồ tương tác toàn diện từ dữ liệu sách giáo khoa thô đến sản phẩm học liệu xuất bản. Nhấp vào từng khối để xem chi tiết.</p>
+        </div>
+      </div>
+
+      <div class="pipeline-flow-wrapper" id="pipeline-flow-container">
+        <!-- Rendered via app.js -->
+      </div>
+    </section>
+
+    <!-- Skills & Agents Catalog Section -->
+    <section class="section" id="skills-section">
+      <div class="section-header">
+        <div class="section-title-wrap">
+          <span class="section-tag">Autonomous Agents Directory</span>
+          <h2 class="section-title">Danh Mục 10 AI Agent Skills</h2>
+          <p class="section-subtitle">Hệ thống kỹ năng chuyên môn hóa cao trong thư mục <code>.agent/skills</code>.</p>
+        </div>
+
+        <div style="display: flex; gap: 12px; align-items: center; flex-wrap: wrap;">
+          <input type="text" id="global-search-input" class="form-control" placeholder="Tìm tên skill, từ khóa, trigger..." style="min-width: 260px;">
+          
+          <div class="filter-tabs">
+            <button class="filter-btn active" data-filter="all">Tất cả (10)</button>
+            <button class="filter-btn" data-filter="pipeline">Pipeline (4)</button>
+            <button class="filter-btn" data-filter="media">Media AI (2)</button>
+            <button class="filter-btn" data-filter="quality">QA & Thẩm định (3)</button>
+            <button class="filter-btn" data-filter="preview">Delivery Web (1)</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="skills-grid" id="skills-grid-container">
+        <!-- Rendered via app.js -->
+      </div>
+    </section>
+
+    <!-- 16 Exercise Types Matrix Section -->
+    <section class="section" id="exercise-section">
+      <div class="section-header">
+        <div class="section-title-wrap">
+          <span class="section-tag">Standardized Exercise Suite</span>
+          <h2 class="section-title">16 Dạng Bài Tập Chuẩn Hóa</h2>
+          <p class="section-subtitle">Bộ bài tập từ vựng toàn diện được thiết kế độc quyền cho từng Unit (click vào từng thẻ để xem JSON schema và quy chuẩn).</p>
+        </div>
+        <div>
+          <button class="btn-secondary" onclick="openDocModal('json-schemas')">📋 Toàn bộ 16 JSON Schemas</button>
+        </div>
+      </div>
+
+      <div class="exercise-grid" id="exercise-grid-container">
+        <!-- Rendered via app.js -->
+      </div>
+    </section>
+
+    <!-- Studio Assistant & Prompt Generator Section -->
+    <section class="section" id="studio-section">
+      <div class="section-header">
+        <div class="section-title-wrap">
+          <span class="section-tag">Agent Command Center</span>
+          <h2 class="section-title">Studio Tạo Lệnh & Prompt Điều Khiển</h2>
+          <p class="section-subtitle">Tùy chỉnh thông số bài học và tự động tạo câu lệnh Prompt hoặc câu lệnh Terminal/PowerShell để chạy ngay lập tức.</p>
+        </div>
+      </div>
+
+      <div class="studio-box">
+        <div class="studio-form-grid">
+          <div class="form-group">
+            <label class="form-label">Chọn AI Skill:</label>
+            <select class="form-control" id="studio-skill-select"></select>
+          </div>
+
+          <div class="form-group">
+            <label class="form-label">Bộ sách mục tiêu:</label>
+            <select class="form-control" id="studio-book-select">
+              <option value="gs6">Global Success 6 (gs6)</option>
+              <option value="gs7">Global Success 7 (gs7)</option>
+              <option value="gs8">Global Success 8 (gs8)</option>
+              <option value="gs9">Global Success 9 (gs9)</option>
+            </select>
+          </div>
+
+          <div class="form-group">
+            <label class="form-label">Tên Unit (Thư mục):</label>
+            <input type="text" class="form-control" id="studio-unit-input" value="unit-7">
+          </div>
+
+          <div class="form-group">
+            <label class="form-label">Trang sách giáo khoa (Step 1):</label>
+            <input type="text" class="form-control" id="studio-pages-input" value="58-69">
+          </div>
+        </div>
+
+        <div class="output-panel-grid">
+          <div class="output-box">
+            <div class="output-box-header">
+              <span class="output-title">🤖 Prompt Gửi Agent (Antigravity Chat)</span>
+              <button class="btn-primary" id="btn-copy-prompt" style="padding: 6px 12px; font-size: 0.78rem;">📋 Copy Prompt</button>
+            </div>
+            <pre class="code-output" id="generated-prompt-output"></pre>
+          </div>
+
+          <div class="output-box">
+            <div class="output-box-header">
+              <span class="output-title">💻 Lệnh Terminal / PowerShell</span>
+              <button class="btn-secondary" id="btn-copy-cli" style="padding: 6px 12px; font-size: 0.78rem;">📋 Copy Lệnh</button>
+            </div>
+            <pre class="code-output" id="generated-cli-output"></pre>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Documentation & References Section -->
+    <section class="section" id="docs-section">
+      <div class="section-header">
+        <div class="section-title-wrap">
+          <span class="section-tag">Knowledge Base & Reference</span>
+          <h2 class="section-title">Tài Liệu Quy Chuẩn & Tiêu Chuẩn Thẩm Định</h2>
+          <p class="section-subtitle">Các tài liệu hướng dẫn kỹ thuật nằm trong <code>.agent/skills/.../reference</code>.</p>
+        </div>
+      </div>
+
+      <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 18px;">
+        <div class="kpi-card" style="cursor: pointer;" onclick="openDocModal('exercise-rules')">
+          <div style="font-size: 1.5rem; margin-bottom: 8px;">📜</div>
+          <div class="kpi-label">Exercise Rules & Guidelines</div>
+          <div class="kpi-desc">Quy tắc vàng biên soạn 16 dạng bài, chuẩn cân bằng đáp án A/B/C/D.</div>
+        </div>
+
+        <div class="kpi-card" style="cursor: pointer;" onclick="openDocModal('json-schemas')">
+          <div style="font-size: 1.5rem; margin-bottom: 8px;">📋</div>
+          <div class="kpi-label">16 JSON Schemas</div>
+          <div class="kpi-desc">Chi tiết cấu trúc trường dữ liệu chuẩn cho từng tệp bài tập.</div>
+        </div>
+
+        <div class="kpi-card" style="cursor: pointer;" onclick="openDocModal('logic-checklist')">
+          <div style="font-size: 1.5rem; margin-bottom: 8px;">🔍</div>
+          <div class="kpi-label">Logic & Naturalness Checklist</div>
+          <div class="kpi-desc">6 nhóm lỗi hành động, collocation và diễn đạt thiếu tự nhiên cần tránh.</div>
+        </div>
+
+        <div class="kpi-card" style="cursor: pointer;" onclick="openDocModal('quality-checks')">
+          <div style="font-size: 1.5rem; margin-bottom: 8px;">🛡️</div>
+          <div class="kpi-label">Quality Checks Rubric</div>
+          <div class="kpi-desc">Quy trình kiểm tra độ phủ từ vựng ≥95% và rà soát pre-release.</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Live Unit 7 Preview Showcase Banner -->
+    <section class="section">
+      <div class="hero-banner" style="background: linear-gradient(135deg, rgba(16, 185, 129, 0.12) 0%, rgba(6, 182, 212, 0.1) 100%);">
+        <div style="display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 24px;">
+          <div>
+            <span class="badge-live" style="margin-bottom: 12px;">Demo Dữ Liệu Thực Tế</span>
+            <h2 style="font-size: 1.8rem; margin-bottom: 8px;">Khám Phá Trọn Bộ Học Liệu Unit 7 Đã Biên Soạn</h2>
+            <p style="color: var(--text-muted); max-width: 600px;">
+              Dữ liệu từ vựng và 16 dạng bài tập của Global Success 6 - Unit 7 (Traffic & Environment) đã được biên soạn và đóng gói thành công.
+            </p>
+          </div>
+          <div style="display: flex; gap: 12px;">
+            <button class="btn-primary" onclick="openLivePreview()" style="font-size: 1rem; padding: 12px 24px;">
+              🚀 Mở Giao Diện Live Preview
+            </button>
+            <a href="data/gs6/unit-7/vocab/preview.html" target="_blank" class="btn-secondary" style="font-size: 1rem; padding: 12px 20px;">
+              ↗️ Mở Tab Mới
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Common Modal for Skill / Exercise / Document Details -->
+  <div class="modal-overlay" id="common-modal">
+    <div class="modal-dialog">
+      <div class="modal-header">
+        <div class="modal-title" id="modal-title">Tiêu đề Modal</div>
+        <button class="modal-close-btn" onclick="closeModals()">✕</button>
+      </div>
+      <div class="modal-body" id="modal-body">
+        <!-- Injected via JavaScript -->
+      </div>
+      <div class="modal-footer">
+        <button class="btn-secondary modal-close-action" onclick="closeModals()">Đóng</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Fullscreen Live Preview Modal -->
+  <div class="modal-overlay" id="preview-modal">
+    <div class="modal-dialog" style="max-width: 95vw; height: 92vh; max-height: 92vh;">
+      <div class="modal-header" style="padding: 12px 20px;">
+        <div class="modal-title" style="font-size: 1.1rem; display: flex; align-items: center; gap: 10px;">
+          <span>🎓</span>
+          <span>Bản Xem Trước Trực Quan: Global Success 6 - Unit 7</span>
+        </div>
+        <div style="display: flex; align-items: center; gap: 10px;">
+          <a href="data/gs6/unit-7/vocab/preview.html" target="_blank" class="btn-secondary" style="padding: 6px 12px; font-size: 0.8rem;">
+            Mở Tab Mới ↗
+          </a>
+          <button class="modal-close-btn" onclick="closeModals()">✕</button>
+        </div>
+      </div>
+      <div style="flex: 1; position: relative; background: #fff;">
+        <iframe id="preview-iframe" src="" style="width: 100%; height: 100%; border: none;"></iframe>
+      </div>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer class="app-footer">
+    <div class="container footer-inner">
+      <div>
+        <strong>AI Agent Operating Hub & Studio</strong> — Hệ sinh thái tự động hóa biên soạn học liệu số tiếng Anh từ thư mục <code>.agent</code>.
+      </div>
+      <div>
+        © 2026 Curriculum AI Studio. Standalone Offline System.
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="assets/js/data.js"></script>
+  <script src="assets/js/app.js"></script>
+</body>
+</html>

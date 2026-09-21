@@ -8,21 +8,21 @@
                           "id":  "1",
                           "text":  "Tom: \u0027What kind of TV show should we watch tonight?\u0027\nMary: \u0027______________________________\u0027",
                           "options":  [
-                                          "Let\u0027s watch that funny comedy to relax.",
-                                          "Please wash your green school shirt now.",
                                           "I want to cook some hot soup for dinner.",
-                                          "We should walk to the sports club today."
+                                          "We should walk to the sports club today.",
+                                          "Please wash your green school shirt now.",
+                                          "Let\u0027s watch that new comedy to relax."
                                       ],
-                          "correct_answer":  "Let\u0027s watch that funny comedy to relax."
+                          "correct_answer":  "Let\u0027s watch that new comedy to relax."
                       },
                       {
                           "id":  "2",
                           "text":  "Peter: \u0027Why do you love that space cartoon?\u0027\nLinda: \u0027______________________________\u0027",
                           "options":  [
-                                          "Because the math homework is very hard for me.",
                                           "Because our father buys a big brown table now.",
-                                          "Because the space robot character is so funny.",
-                                          "Because my brother walks to the city library."
+                                          "Because my brother walks to the city library.",
+                                          "Because the maths homework is very hard for me.",
+                                          "Because the space robot character is so funny."
                                       ],
                           "correct_answer":  "Because the space robot character is so funny."
                       },
@@ -30,49 +30,49 @@
                           "id":  "3",
                           "text":  "Kevin: \u0027That young violinist plays so well on stage!\u0027\nAnna: \u0027______________________________\u0027",
                           "options":  [
-                                          "Yes, she is a truly brilliant performer.",
-                                          "No, our school begins at seven on Monday.",
+                                          "Yes, she is a wonderful performer.",
                                           "Yes, the kitchen floor is very clean now.",
-                                          "No, we must buy a new soccer ball today."
+                                          "No, we must buy a new football today.",
+                                          "No, our school begins at seven on Monday."
                                       ],
-                          "correct_answer":  "Yes, she is a truly brilliant performer."
+                          "correct_answer":  "Yes, she is a wonderful performer."
                       },
                       {
                           "id":  "4",
                           "text":  "David: \u0027When does the science documentary start?\u0027\nSarah: \u0027______________________________\u0027",
                           "options":  [
-                                          "Wash your dirty sports shoes after the match.",
+                                          "Buy two train tickets at the railway station.",
                                           "Close the bedroom window because of the rain.",
-                                          "Check the TV guide on the school website.",
-                                          "Buy two train tickets at the railway station."
+                                          "Wash your dirty sports shoes after the match.",
+                                          "Check the TV guide on the school website."
                                       ],
                           "correct_answer":  "Check the TV guide on the school website."
                       },
                       {
                           "id":  "5",
-                          "text":  "Jack: \u0027Would you like to watch an animated film with me?\u0027\nEmma: \u0027______________________________\u0027",
+                          "text":  "Jack: \u0027Would you like to watch this animated film?\u0027\nEmma: \u0027______________________________\u0027",
                           "options":  [
-                                          "Yes, my sister has three white rabbits.",
-                                          "Yes, I would love to watch it with you.",
+                                          "No, the bus arrives at the station now.",
                                           "No, I do not like eating sweet apples.",
-                                          "No, the bus arrives at the station now."
+                                          "Yes, I would love to watch it.",
+                                          "Yes, my sister has three white rabbits."
                                       ],
-                          "correct_answer":  "Yes, I would love to watch it with you."
+                          "correct_answer":  "Yes, I would love to watch it."
                       },
                       {
                           "id":  "6",
                           "text":  "Mark: \u0027What do you think of this English channel?\u0027\nLucy: \u0027______________________________\u0027",
                           "options":  [
-                                          "It has many educational programmes for kids.",
-                                          "It is raining heavily outside on the street.",
                                           "It has four large wooden chairs in the room.",
+                                          "It is raining heavily outside on the street.",
+                                          "It has many educational programmes for kids.",
                                           "It costs too much money to buy a computer."
                                       ],
                           "correct_answer":  "It has many educational programmes for kids."
                       },
                       {
                           "id":  "7",
-                          "text":  "Mai: \u0027Why are you closing that video clip?\u0027\nNick: \u0027______________________________\u0027",
+                          "text":  "Mai: \u0027Why did you stop that video clip?\u0027\nNick: \u0027______________________________\u0027",
                           "options":  [
                                           "Because our dog is sleeping under the table.",
                                           "Because it is so boring and nothing happens.",
@@ -85,10 +85,10 @@
                           "id":  "8",
                           "text":  "Alex: \u0027Shall we watch the Olympic swimming race together?\u0027\nBen: \u0027______________________________\u0027",
                           "options":  [
-                                          "No, because my new bicycle has bright wheels.",
+                                          "Yes, because I really love watching swimming competitions.",
                                           "No, because the library is very quiet today.",
                                           "Yes, because our bus goes to school at eight.",
-                                          "Yes, because I really love watching swimming competitions."
+                                          "No, because my new bicycle has bright wheels."
                                       ],
                           "correct_answer":  "Yes, because I really love watching swimming competitions."
                       },
@@ -96,10 +96,10 @@
                           "id":  "9",
                           "text":  "Lan: \u0027Does your brother like that weekend game show?\u0027\nTom: \u0027______________________________\u0027",
                           "options":  [
-                                          "No, we should buy fresh bread for breakfast.",
-                                          "Yes, my little brother can ride his bicycle.",
+                                          "Yes, he answers every question very quickly.",
                                           "No, the weather is very cold in the morning.",
-                                          "Yes, he answers every question very quickly."
+                                          "Yes, my little brother can ride his bicycle.",
+                                          "No, we should buy fresh bread for breakfast."
                                       ],
                           "correct_answer":  "Yes, he answers every question very quickly."
                       },
@@ -107,9 +107,9 @@
                           "id":  "10",
                           "text":  "Sam: \u0027Is this rocket launch a live broadcast?\u0027\nKelly: \u0027______________________________\u0027",
                           "options":  [
-                                          "No, the train leaves the station at ten a.m.",
                                           "Yes, my mother makes delicious apple pies.",
                                           "Yes, the spaceship is lifting off right now.",
+                                          "No, the train leaves the station at ten a.m.",
                                           "No, we must borrow some storybooks at school."
                                       ],
                           "correct_answer":  "Yes, the spaceship is lifting off right now."

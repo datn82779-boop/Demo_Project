@@ -42,7 +42,7 @@
                       {
                           "id":  "8",
                           "vietnamese":  "Hãy xem lịch phát sóng truyền hình để biết phim truyện bắt đầu lúc mấy giờ.",
-                          "correct_answer":  "Check the TV guide to know what time the film starts."
+                          "correct_answer":  "Check the TV guide to see what time the film starts."
                       },
                       {
                           "id":  "9",
@@ -52,7 +52,7 @@
                       {
                           "id":  "10",
                           "vietnamese":  "Bộ phim truyền hình nhiều tập này rất nổi tiếng và có nhiều tình tiết bất ngờ.",
-                          "correct_answer":  "This TV series is very popular and has many surprising events."
+                          "correct_answer":  "This TV series is very popular and is full of surprises."
                       }
                   ]
 }

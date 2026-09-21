@@ -8,10 +8,10 @@
                           "id":  "1",
                           "text":  "The film on channel three is very [funny], so my whole family laughs out loud.",
                           "options":  [
-                                          "serious",
                                           "scary",
+                                          "heavy",
                                           "humorous",
-                                          "heavy"
+                                          "serious"
                                       ],
                           "correct_answer":  "humorous"
                       },
@@ -19,32 +19,32 @@
                           "id":  "2",
                           "text":  "The little mouse in the cartoon is very [clever] and escapes from the cat every time.",
                           "options":  [
-                                          "foolish",
                                           "slow",
+                                          "lazy",
                                           "smart",
-                                          "lazy"
+                                          "foolish"
                                       ],
                           "correct_answer":  "smart"
                       },
                       {
                           "id":  "3",
-                          "text":  "Millions of [viewers] watch the international fireworks festival on television every New Year.",
+                          "text":  "My family always watches our favourite television [programme] after dinner.",
                           "options":  [
-                                          "directors",
-                                          "singers",
-                                          "actors",
-                                          "audiences"
+                                          "ticket",
+                                          "show",
+                                          "tool",
+                                          "screen"
                                       ],
-                          "correct_answer":  "audiences"
+                          "correct_answer":  "show"
                       },
                       {
                           "id":  "4",
-                          "text":  "The special effects in this fantasy movie are truly [wonderful] and breathtaking.",
+                          "text":  "The special effects in this fantasy film are truly [wonderful] to watch.",
                           "options":  [
-                                          "ordinary",
                                           "fantastic",
                                           "terrible",
-                                          "ugly"
+                                          "ugly",
+                                          "ordinary"
                                       ],
                           "correct_answer":  "fantastic"
                       },
@@ -52,10 +52,10 @@
                           "id":  "5",
                           "text":  "Football is the most [popular] sport in Viet Nam, and many people play it after work.",
                           "options":  [
-                                          "well-known",
-                                          "boring",
+                                          "rare",
                                           "hidden",
-                                          "rare"
+                                          "boring",
+                                          "well-known"
                                       ],
                           "correct_answer":  "well-known"
                       }

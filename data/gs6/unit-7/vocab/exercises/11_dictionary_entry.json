@@ -49,7 +49,7 @@
                                           },
                                           {
                                               "id":  "4",
-                                              "text":  "A brave teenage diver is the __________ who protects rare turtles in this movie.",
+                                              "text":  "A brave teenage diver is the __________ who protects rare turtles in this film.",
                                               "correct_answer":  "main character"
                                           }
                                       ]
@@ -89,7 +89,7 @@
                                               "Colourful animations are designed specifically to entertain [young viewers].",
                                               "Humorous jokes and bright costumes help the comedy [appeal to viewers].",
                                               "High [viewer ratings] show that the singing contest is very successful.",
-                                              "Action movies usually [attract viewers] with exciting special effects."
+                                              "Action films usually [attract viewers] with exciting special effects."
                                           ],
                         "questions":  [
                                           {
@@ -99,7 +99,7 @@
                                           },
                                           {
                                               "id":  "8",
-                                              "text":  "Stunning visual effects and dinosaur scenes help the new film __________ to local cinemas.",
+                                              "text":  "Stunning visual effects and dinosaur scenes help the new show __________ to television screens.",
                                               "correct_answer":  "attract viewers"
                                           }
                                       ]
@@ -113,18 +113,18 @@
                         "bullet_points":  [
                                               "That weekly [comedy series] has six episodes full of funny school situations.",
                                               "Amateur comedians perform their funniest stand-up jokes at the downtown [comedy club].",
-                                              "People gather in the living room to [enjoy a comedy] after a long workday.",
-                                              "Couples often choose a lighthearted [romantic comedy] for date night at the cinema."
+                                              "Families gather in the living room to [enjoy a comedy] together on weekends.",
+                                              "Students often choose a lighthearted [romantic comedy] to watch with friends."
                                           ],
                         "questions":  [
                                           {
                                               "id":  "9",
-                                              "text":  "Tired workers like to sit back on the couch and __________ to forget their daily stress.",
+                                              "text":  "After a busy school week, students like to sit back on the sofa and __________ to relax.",
                                               "correct_answer":  "enjoy a comedy"
                                           },
                                           {
                                               "id":  "10",
-                                              "text":  "The television network is airing a delightful new __________ about the adventures of four college roommates.",
+                                              "text":  "The television network is showing a delightful new __________ about the adventures of four young friends.",
                                               "correct_answer":  "comedy series"
                                           }
                                       ]
